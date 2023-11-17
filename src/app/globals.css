@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url(/public/font/NotoSansJP-VariableFont_wght.eot),
+    url(/public/font/NotoSansJP-VariableFont_wght.ttf),
+    url(/public/font/NotoSansJP-VariableFont_wght.woff);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --ourly-theme: #ff4448;
+  --base-color: #f0f0ff;
+  --purple-dark: #3f4066;
+  --purple-light: #5a5b90;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +25,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
