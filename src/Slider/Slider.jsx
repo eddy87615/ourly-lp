@@ -86,7 +86,7 @@ export default function Slider() {
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
             <button
-              className={`${obj.button} relative w-[400px] h-[100px] bg-[var(--ourly-theme)] rounded-2xl text-h3 text-white mt-[8%] shadow-ourly transition-all duration-300`}
+              className={`${obj.button} relative w-[350px] h-[100px] bg-ourly-theme border-white border-4 rounded-2xl text-h3 text-white mt-[8%] shadow-ourly transition-all duration-300`}
             >
               お問い合わせ
             </button>

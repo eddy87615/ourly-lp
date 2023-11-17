@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .otoiawase:hover {
   box-shadow: none;
 }
@@ -25,4 +26,4 @@
   100% {
     transform: scale(1);
   }
-}/*# sourceMappingURL=Header.css.map */
+} /*# sourceMappingURL=Header.css.map */

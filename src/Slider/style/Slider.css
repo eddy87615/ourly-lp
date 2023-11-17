@@ -19,7 +19,7 @@
 
 .title03 {
   position: absolute;
-  top: 48%;
+  top: 42%;
   right: 100px;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ button:hover {
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
   left: 47%;
-  top: 55%;
+  top: 50%;
   transform: rotate(-30deg);
 }
 
@@ -154,7 +154,7 @@ button:hover {
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
   left: 47%;
-  top: 85%;
+  top: 80%;
   transform: rotate(30deg);
 }
 
