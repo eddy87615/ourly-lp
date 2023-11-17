@@ -1,1 +1,147 @@
-/*# sourceMappingURL=Main.css.map */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.annoyingman01 {
+  background-image: url(/img/question-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.annoyingman01 img {
+  width: 26%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 4%;
+  animation: shake 2s infinite;
+}
+
+.solvedman01 {
+  background-image: url(/img/communication.webp);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 80% 90%;
+}
+
+.solvedman01 img {
+  width: 32%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 8%;
+  background-image: url(/img/surprise.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 30%;
+}
+
+.annoyingman02 {
+  background-image: url(/img/question-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.annoyingman02 img {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+.solvedman02 {
+  background-image: url(/img/report.webp);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 90% 90%;
+}
+
+.solvedman02 img {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 8%;
+}
+
+.solvedman02::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 48%;
+  width: 30%;
+  height: 30%;
+  background-image: url(/img/illu-04.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60%;
+}
+
+.solvedman02::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4%;
+  width: 50%;
+  height: 50%;
+  transform: rotate(-20deg);
+  background-image: url(/img/light.gif);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 30%;
+}
+
+.annoyingwoman {
+  background-image: url(/img/question-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.annoyingwoman img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+.solvedwoman {
+  background-image: url(/img/usability-03.gif);
+  background-repeat: no-repeat;
+  background-size: 38%;
+  background-position: 90% 90%;
+}
+
+.solvedwoman img {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.solvedwoman::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/KViphone.webp);
+  top: 42%;
+  right: 43%;
+  background-size: 80%;
+  width: 10%;
+  height: 50%;
+  background-repeat: no-repeat;
+}
+
+.solvedwoman::before {
+  content: "";
+  background-image: url(/img/heart.gif);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.bubble-triangle {
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  transform: rotate(130deg);
+}/*# sourceMappingURL=Main.css.map */
