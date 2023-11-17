@@ -35,6 +35,17 @@ module.exports = {
         md: '14px',
         lg: '16px',
         xl: '40px',
+        h1: '48px',
+        h2: '40px',
+        h3: '32px',
+        h4: '24px',
+        text: '16px',
+        button: '18px',
+      },
+      lineHeight: {
+        h1: '80px',
+        h2: '60px',
+        h3: '50px',
       },
       screen: {
         md: '768px',

@@ -1,6 +1,8 @@
 import React from 'react';
+//CSS導入
 import '@/Header/style/Header.css';
 import '@/app/globals.css';
+//
 
 export default function Header() {
   return (
@@ -8,7 +10,7 @@ export default function Header() {
       <a href="/">
         <img src="/img/ourly_logo.webp" className="w-56" />
       </a>
-      <button className="otoiawase border-4 border-solid border-[#ff4448] px-10 rounded-full ml-auto text-[18px] bg-white font-bold transition-all duration-300 shadow-ourly">
+      <button className="otoiawase border-4 border-solid border-[#ff4448] px-10 rounded-full ml-auto text-button bg-white font-bold transition-all duration-300 shadow-ourly">
         お問い合わせ
       </button>
     </div>
