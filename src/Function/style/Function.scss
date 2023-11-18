@@ -9,38 +9,67 @@
   right: 0;
 }
 
-// .hexagon01 img:nth-child(1):hover,
-// .hexagon01 img:nth-child(2):hover,
-// .hexagon02 img:nth-child(1):hover,
-// .hexagon02 img:nth-child(3):hover,
-// .hexagon03 img:nth-child(1):hover,
-// .hexagon03 img:nth-child(2):hover {
-//   transform: scale(1.8);
-//   transition-duration: 0.5s;
-// }
-.hexagon01:hover {
+.hexagon01:hover,
+.hexagon02:hover,
+.hexagon03:hover,
+.hexagon05:hover,
+.hexagon06:hover,
+.hexagon07:hover {
   z-index: 5;
+  transition-duration: 0.5s;
 }
 
 .hexagon01:hover img,
 .hexagon02:hover img,
-.hexagon03:hover img {
+.hexagon05:hover img,
+.hexagon06:hover img,
+.hexagon07:hover img {
   transform: scale(2);
+  transition-duration: 0.5s;
+}
+.hexagon03:hover img {
+  transform: scale(2.5);
   transition-duration: 0.5s;
 }
 
 .hexagon01:hover h4,
 .hexagon02:hover h4,
-.hexagon03:hover h4 {
+.hexagon03:hover h4,
+.hexagon05:hover h4,
+.hexagon06:hover h4 {
   transition-duration: 0.5s;
   top: 0;
+}
+.hexagon07:hover h4 {
+  transition-duration: 0.5s;
+  top: -10%;
+}
+.hexagon03:hover h4 {
+  transition-duration: 0.5s;
+  top: -30%;
 }
 
 .hexagon01:hover ul,
 .hexagon02:hover ul,
-.hexagon03:hover ul {
+.hexagon05:hover ul,
+.hexagon06:hover ul,
+.hexagon07:hover ul {
   opacity: 1;
   top: 30%;
+  display: block;
+
+  transition-duration: 0.5s;
+}
+.hexagon03:hover ul {
+  opacity: 1;
+  top: -20%;
+  display: block;
+
+  transition-duration: 0.5s;
+}
+.hexagon07:hover ul {
+  opacity: 1;
+  top: 20%;
   display: block;
 
   transition-duration: 0.5s;
