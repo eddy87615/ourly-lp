@@ -93,8 +93,10 @@ export default function Main() {
             key={index}
             name={`section${index + 1}`}
           >
-            <h2 className="text-[40px] font-bold">
-              <span className="underLine">{personal.content}</span>
+            <h2 className="text-h2 font-bold pt-[8%] pb-[4%] pl-[8%]">
+              <span className="border-b-[5px] border-solid border-[--ourly-theme]">
+                {personal.content}
+              </span>
             </h2>
             <img src={personal.imgAnnoying} alt={personal.annoyingImgInfo} />
 
