@@ -46,6 +46,7 @@ module.exports = {
         h1: '80px',
         h2: '60px',
         h3: '50px',
+        text: '40px',
       },
       screen: {
         md: '768px',

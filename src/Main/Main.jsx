@@ -70,7 +70,8 @@ function SpeechBubble({ text, className }) {
   return (
     <div
       ref={ref}
-      className={`w-fit h-fit text-center text-h4 leading-h4 bg-white relative border-[5px] border-[--ourly-theme] rounded-full font-bold  m-10 px-[4%] py-4 ${className}`}
+      className={`w-fit h-fit text-center text-h4 leading-h4
+       bg-white relative border-[5px] border-[--ourly-theme] rounded-full font-bold  m-12 px-[4%] py-4 ${className}`}
       style={{
         transform: isInView ? 'none' : 'translateX(-100%)',
         opacity: isInView ? 1 : 0,
@@ -106,7 +107,7 @@ export default function Main() {
             <SpeechBubble text={personal.article04} className="left-[10%]" />
           </div>
           <div className={personal.classSolved} key={personal}>
-            <h2 className="text-[40px] text-center font-bold p-16">
+            <h2 className="text-h2 text-center leading-h2 font-bold p-16">
               {personal.solvedTitle}
               <br />
               {personal.solvedSubtitle}

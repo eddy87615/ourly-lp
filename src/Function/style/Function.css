@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.function > img {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hexagon01:hover {
+  z-index: 5;
+}
+
+.hexagon01:hover img,
+.hexagon02:hover img,
+.hexagon03:hover img {
+  transform: scale(2);
+  transition-duration: 0.5s;
+}
+
+.hexagon01:hover h4,
+.hexagon02:hover h4,
+.hexagon03:hover h4 {
+  transition-duration: 0.5s;
+  top: 0;
+}
+
+.hexagon01:hover ul,
+.hexagon02:hover ul,
+.hexagon03:hover ul {
+  opacity: 1;
+  top: 30%;
+  display: block;
+  transition-duration: 0.5s;
+}/*# sourceMappingURL=Function.css.map */

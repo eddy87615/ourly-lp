@@ -1,1 +1,120 @@
-/*# sourceMappingURL=Sub.css.map */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.content-div:hover {
+  transform: scale(1.1) !important;
+  box-shadow: #5a5b90 0px 0px 16px;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.content-div:hover .pic-grid {
+  transform: scale(1.15) !important;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  grid-template-areas: "num pic title" "num pic txt";
+}
+.title .num-grid {
+  grid-area: num;
+}
+.title .pic-grid {
+  grid-area: pic;
+  transition-duration: 0.5s;
+}
+.title .title-grid {
+  grid-area: title;
+}
+.title .text-grid {
+  grid-area: txt;
+}
+
+.detail-content img {
+  width: 480px;
+  height: auto;
+  gap: 10%;
+  margin: 0 auto;
+}
+
+.sub-container::before {
+  content: "";
+  background-image: url(/img/logo-P.svg);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.sub-container::after {
+  content: "";
+  background-image: url(/img/logo-DP.svg);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.subend01 {
+  background-color: var(--purple-light);
+  justify-content: right;
+  background-image: url(/img/logo-LP.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.subend01 img {
+  position: absolute;
+  left: 12%;
+  bottom: 0;
+  width: 35%;
+}
+.subend01 p {
+  color: #fff;
+}
+
+.subend02 {
+  background-color: var(--base-color);
+  justify-content: left;
+  background-image: url(/img/logo-P.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+.subend02 img {
+  position: absolute;
+  right: 8%;
+  bottom: 0;
+  width: 35%;
+}
+
+.subend03 {
+  background-color: var(--purple-dark);
+  justify-content: right;
+  background-image: url(/img/logo-LP.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.subend03 img {
+  position: absolute;
+  left: 12%;
+  bottom: 0%;
+  width: 24%;
+}
+.subend03 p {
+  color: #fff;
+}/*# sourceMappingURL=Sub.css.map */

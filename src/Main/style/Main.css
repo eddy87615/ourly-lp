@@ -118,7 +118,7 @@
   content: "";
   position: absolute;
   background-image: url(/img/KViphone.webp);
-  top: 42%;
+  top: 55%;
   right: 43%;
   background-size: 80%;
   width: 10%;
@@ -184,26 +184,6 @@
   transform: rotate(130deg);
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0px);
-  }
-  20% {
-    transform: translateX(16px);
-  }
-  40% {
-    transform: translateX(0px);
-  }
-  60% {
-    transform: translateX(0px);
-  }
-  80% {
-    transform: translateX(8px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 @keyframes question {
   0% {
     transform: scale(1.1);
