@@ -12,26 +12,28 @@
   content: "";
   background-image: url(/img/logo-P.svg);
   background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 2% 98%;
+  background-size: contain;
+  background-position: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 2%;
+  left: 2%;
+  width: 30%;
+  height: 60%;
+  z-index: 0;
 }
 
 .function::before {
   content: "";
   background-image: url(/img/logo-B.svg);
   background-repeat: no-repeat;
-  background-size: 32%;
-  background-position: 98% 2%;
+  background-size: contain;
+  background-position: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 2%;
+  right: 2%;
+  width: 30%;
+  height: 60%;
+  z-index: 0;
 }
 
 .hexagon01:hover,
