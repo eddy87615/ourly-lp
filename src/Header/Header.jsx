@@ -7,7 +7,9 @@ import '@/app/globals.css';
 
 export default function Header() {
   const backToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
