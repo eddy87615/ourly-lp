@@ -1,9 +1,4 @@
-'use client';
 import React from 'react';
-import Hexagon from './component/Hexagon';
-//CSS導入
-import '@/Function/style/Function.css';
-import '@/app/globals.css';
 
 const data = [
   {
@@ -11,7 +6,7 @@ const data = [
     imgalt: 'orange hexagon',
     title: '社内報管理',
     color: '#e5836c',
-    class: 'hexagon01',
+    hexagonclass: 'hexagon01',
     list: [
       {
         type: 'text',
@@ -157,7 +152,7 @@ const data = [
         content: '導入・運用サポート',
       },
       {
-        type: 'text',
+        type: 'p',
         content:
           'これまでインナーコミュニケーションの課題解決に携わってきたエキスパートが、導入・運用をサポートします。',
       },
@@ -196,25 +191,42 @@ const data = [
   },
 ];
 
-export default function Function() {
-  return (
-    <div>
-      <div className="function bg-white h-screen relative">
-        <h3 className="text-[32px] font-bold text-center pt-16">機能一覧</h3>
-        <div className="hexagon flex flex-col relative top-[8%]">
-          <div className="flex justify-center w-full h-full">
-            {data.slice(0, 2).map(Hexagon)} {/* Render hexagon 01 and 02 */}
-          </div>
-          <div className="flex justify-center mt-[-30px]">
-            {data.slice(2, 5).map(Hexagon)}{' '}
-            {/* Render hexagon 03, 04, and 05 */}
-          </div>
-          <div className="flex justify-center mt-[-30px]">
-            {data.slice(5).map(Hexagon)} {/* Render hexagon 06 and 07 */}
-          </div>
-        </div>
-        <img src="/img/20Yman-05-bgN.webp" />
-      </div>
-    </div>
-  );
-}
+const Hexagon = ({
+  imgsrc,
+  imgalt,
+  title,
+  color,
+  list,
+  class: hexagonclass,
+}) => (
+  <div className={`${hexagonclass} ${color} h-[12%] w-[12%] relative`}>
+    <img src={imgsrc} alt={imgalt} className="duration-500" />
+    {title && (
+      <h4
+        className={`text-h4 text-center font-semibold text-[${color}] duration-500
+        absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full`}
+      >
+        {title}
+      </h4>
+    )}
+    {list && (
+      <ul
+        className={`text-text text-center text-[${color}] duration-500
+        absolute top-0 leading-[40px] left-1/2 w-[150%] translate-x-[-50%]
+        opacity-0`}
+      >
+        {list.map((item, index) => (
+          <li key={index} className="font-semibold text-text">
+            {item.type === 'text' ? (
+              item.content
+            ) : (
+              <p className="text-text">{item.content}</p>
+            )}
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+);
+
+export default Hexagon;

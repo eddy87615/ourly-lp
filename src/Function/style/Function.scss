@@ -8,6 +8,30 @@
   bottom: 0;
   right: 0;
 }
+.function::after {
+  content: '';
+  background-image: url(/img/logo-P.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 2% 98%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.function::before {
+  content: '';
+  background-image: url(/img/logo-B.svg);
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: 98% 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .hexagon01:hover,
 .hexagon02:hover,
@@ -73,4 +97,17 @@
   display: block;
 
   transition-duration: 0.5s;
+}
+
+.hexagon04::before {
+  content: '';
+  background-image: url(/img/ourly_logo.webp);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50%, 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
