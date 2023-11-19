@@ -5,6 +5,14 @@ import { useInView, motion } from 'framer-motion';
 //CSS導入
 import '@/Sub/style/Sub.css';
 import '@/app/globals.css';
+//
+import {
+  Link as ScrollLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSPy,
+} from 'react-scroll';
 
 const content = [
   {
@@ -119,7 +127,7 @@ export default function Sub() {
         {content.map((obj, index) => (
           <motion.div
             className="content-div z-[1] w-full h-[30%] bg-white rounded-2xl 
-            shadow-ourly transition-all duration-300"
+          shadow-ourly transition-all duration-300"
             key={index}
             ref={refs[`ref0${index + 1}`]}
             variants={itemVariants}
@@ -127,69 +135,74 @@ export default function Sub() {
             animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
             transition={{ delay: index * 0.5 }}
           >
-            <div>
-              <motion.div
-                ref={refs[`ref0${index + 1}`]}
-                variants={titleVariants}
-                initial="hidden"
-                animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
-                transition={{ delay: index * 0.5, duration: 0.5 }}
-              >
-                <ul className="title w-full p-[4%]">
-                  <li className="num-grid flex justify-center items-center">
-                    <img
-                      src={obj.imgNum}
-                      alt={obj.imgNumAlt}
-                      className="h-[70%] "
-                    />
-                  </li>
-                  <li className="pic-grid flex justify-center items-center">
-                    <img
-                      src={obj.imgContent}
-                      alt={obj.imgimgContentAlt}
-                      className="w-[90%]"
-                    />
-                  </li>
-                  <li>
-                    <h3
-                      dangerouslySetInnerHTML={{ __html: obj.title }}
-                      className="title-grid text-h3 text-left font-bold pt-10 text-[--ourly-theme]"
-                    ></h3>
-                  </li>
-                  <li>
-                    <p
-                      dangerouslySetInnerHTML={{ __html: obj.text }}
-                      className="text-grid text-text leading-text px-[4%]"
-                    ></p>
-                  </li>
-                </ul>
-              </motion.div>
-            </div>
+            <Element>
+              <div>
+                <motion.div
+                  ref={refs[`ref0${index + 1}`]}
+                  variants={titleVariants}
+                  initial="hidden"
+                  animate={
+                    inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'
+                  }
+                  transition={{ delay: index * 0.5, duration: 0.5 }}
+                >
+                  <ul className="title w-full p-[4%]">
+                    <li className="num-grid flex justify-center items-center">
+                      <img
+                        src={obj.imgNum}
+                        alt={obj.imgNumAlt}
+                        className="h-[70%] "
+                      />
+                    </li>
+                    <li className="pic-grid flex justify-center items-center">
+                      <img
+                        src={obj.imgContent}
+                        alt={obj.imgimgContentAlt}
+                        className="w-[90%]"
+                      />
+                    </li>
+                    <li>
+                      <h3
+                        dangerouslySetInnerHTML={{ __html: obj.title }}
+                        className="title-grid text-h3 text-left font-bold pt-10 text-[--ourly-theme]"
+                      ></h3>
+                    </li>
+                    <li>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: obj.text }}
+                        className="text-grid text-text leading-text px-[4%]"
+                      ></p>
+                    </li>
+                  </ul>
+                </motion.div>
+              </div>
+            </Element>
           </motion.div>
         ))}
       </div>
       <ul className="h-full ">
         {subEndDiv.map((item, index) => (
-          <motion.li
-            className={`${item.class} relative flex h-[400px]`}
-            key={index}
-            ref={refs[`ref0${index + 4}`]} // Dynamic ref based on index
-            variants={
-              inViews.inView04 &&
-              refs.ref04 &&
-              refs[`ref0${index + 4}`] === refs.ref05
-                ? rightVariants
-                : leftVariants
-            } // Check inView to determine variants
-            initial="hidden"
-            animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            <img src={item.img} alt={item.alt} />
-            <p className="text-h2 font-bold flex items-center p-[8%]">
-              {item.text}
-            </p>
-          </motion.li>
+          <Element key={index}>
+            <motion.li
+              className={`${item.class} relative flex h-[400px]`}
+              ref={refs[`ref0${index + 4}`]} // Dynamic ref based on index
+              variants={
+                inViews.inView04 &&
+                refs.ref04 &&
+                refs[`ref0${index + 4}`] === refs.ref05
+                  ? rightVariants
+                  : leftVariants
+              } // Check inView to determine variants
+              initial="hidden"
+              animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <img src={item.img} alt={item.alt} />
+              <p className="text-h2 font-bold flex items-center p-[8%]">
+                {item.text}
+              </p>
+            </motion.li>
+          </Element>
         ))}
       </ul>
     </div>

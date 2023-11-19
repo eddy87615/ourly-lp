@@ -6,6 +6,7 @@ import { useInView, motion } from 'framer-motion';
 import '@/Main/style/Main.css';
 import '@/app/globals.css';
 //
+import { Element } from 'react-scroll';
 
 const data = [
   {
@@ -88,11 +89,11 @@ export default function Main() {
   return (
     <main className="w-full relative">
       {data.map((personal, index) => (
-        <React.Fragment key={`fragment-${index}`}>
+        <Element key={`fragment-${index}`} name={`section${index + 1}`}>
           <div
             className={personal.classAnnoying}
             key={index}
-            name={`section${index + 1}`}
+            id={`section${index + 1}`}
           >
             <h2 className="text-h2 font-bold pt-[8%] pb-[4%] pl-[8%]">
               <span className="border-b-[5px] border-solid border-[--ourly-theme]">
@@ -118,7 +119,7 @@ export default function Main() {
               className="w-[40%] text-[16px] leading-8 text-center flex justify-center m-auto"
             ></p>
           </div>
-        </React.Fragment>
+        </Element>
       ))}
     </main>
   );

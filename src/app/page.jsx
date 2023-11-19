@@ -5,12 +5,14 @@ import Intro from '@/Intro/Intro';
 import Main from '@/Main/Main';
 import Sub from '@/Sub/Sub';
 import Function from '@/Function/Function';
+import Scrollnav from '@/Scrollnav/Scrollnav';
 
 export default function App() {
   return (
     <>
       <Header />
       <Slider />
+      <Scrollnav />
       <Intro />
       <Main />
       <Sub />

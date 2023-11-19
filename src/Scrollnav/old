@@ -129,17 +129,26 @@ export default function Scrollnav() {
 
   return (
     <nav className={`scroll-nav ${showNav ? '' : 'scroll-nav-hide'}`}>
-      {scrollnav.map((section, index) => (
-        <Link
-          to={section.id}
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          key={section.text}
-          activeClass="active"
-        ></Link>
-      ))}
+      <ul>
+        {scrollnav.map((section, index) => (
+          <Link
+            to={section.id}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            key={section.id}
+            onSetActive={() => setActiveSection(section.id)}
+            onSetInactive={() => setActiveSection(null)}
+          >
+            <li
+              className={`nav-dot ${
+                activeSection === section.id ? 'nav-dot-active' : ''
+              }`}
+            ></li>
+          </Link>
+        ))}
+      </ul>
     </nav>
   );
 }

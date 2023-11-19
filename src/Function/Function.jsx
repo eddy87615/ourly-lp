@@ -199,7 +199,7 @@ const data = [
 export default function Function() {
   return (
     <div>
-      <div className="function bg-white h-screen relative">
+      <div className="function bg-white h-screen relative" id="section5">
         <h3 className="text-[32px] font-bold text-center pt-16">機能一覧</h3>
         <div className="hexagon flex flex-col relative top-[8%]">
           <div className="flex justify-center w-full h-full">
