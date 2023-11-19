@@ -106,7 +106,6 @@ export default function Sub() {
     visible: { opacity: 1 },
   };
 
-  const screenwidth = window.innerWidth;
   const leftVariants = {
     hidden: { x: 1 * -1000, opacity: 0 },
     visible: { x: 0, opacity: 1 },
