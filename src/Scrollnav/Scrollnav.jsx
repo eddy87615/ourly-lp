@@ -136,8 +136,10 @@ export default function Scrollnav() {
           smooth={true}
           offset={0}
           duration={500}
-          key={section.text}
+          key={section.link}
           activeClass="active"
+          alt={section.text}
+          className="duration-500"
         ></Link>
       ))}
     </nav>
