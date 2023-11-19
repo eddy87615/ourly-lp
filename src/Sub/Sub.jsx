@@ -106,12 +106,13 @@ export default function Sub() {
     visible: { opacity: 1 },
   };
 
+  const screenwidth = window.innerWidth;
   const leftVariants = {
-    hidden: { x: 1 * -100, opacity: 0 },
+    hidden: { x: 1 * -1000, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   const rightVariants = {
-    hidden: { x: 1 * 100, opacity: 0 },
+    hidden: { x: 1 * 1000, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
 
@@ -164,13 +165,13 @@ export default function Sub() {
                     <li>
                       <h3
                         dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className="title-grid text-h3 text-left font-bold pt-10 text-[--ourly-theme]"
+                        className="title-grid leading-h2 text-h3 text-center font-bold pt-10 text-[--ourly-theme] mt-[-32px]"
                       ></h3>
                     </li>
                     <li>
                       <p
                         dangerouslySetInnerHTML={{ __html: obj.text }}
-                        className="text-grid text-text leading-text px-[4%]"
+                        className="text-grid text-text leading-text px-[4%] mt-[-24px]"
                       ></p>
                     </li>
                   </ul>
@@ -195,7 +196,7 @@ export default function Sub() {
               } // Check inView to determine variants
               initial="hidden"
               animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.2, duration: 0.2 }}
             >
               <img src={item.img} alt={item.alt} />
               <p className="text-h2 font-bold flex items-center p-[8%]">

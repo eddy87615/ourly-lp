@@ -199,24 +199,24 @@ const Hexagon = ({
   list,
   class: hexagonclass,
 }) => (
-  <div
-    className={`${hexagonclass} ${color} h-[12%] w-[12%] relative`}
-    key={color}
-  >
+  <div className={`${hexagonclass}  h-[12%] w-[12%] relative`} key={color}>
     <img src={imgsrc} alt={imgalt} className="duration-500" />
     {title && (
       <h4
-        className={`text-h4 text-center font-semibold text-[${color}] duration-500
+        className={`text-h4 text-center font-semibold
+         duration-500
         absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full`}
+        style={{ color: color }}
       >
         {title}
       </h4>
     )}
     {list && (
       <ul
-        className={`text-text text-center text-[${color}] duration-500
+        className={`text-text text-center duration-500
         absolute top-0 leading-[40px] left-1/2 w-[150%] translate-x-[-50%]
         opacity-0`}
+        style={{ color: color }}
       >
         {list.map((item, index) => (
           <li key={index} className="font-semibold text-text">

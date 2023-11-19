@@ -213,7 +213,16 @@ export default function Function() {
             {data.slice(5).map(Hexagon)} {/* Render hexagon 06 and 07 */}
           </div>
         </div>
-        <img src="/img/20Yman-05-bgN.webp" />
+        <img
+          src="/img/20Yman-05-bgN.webp"
+          className="move01"
+          style={{ transition: 'none' }}
+        />
+        <img
+          src="img/20Yman-05-bgN-2.webp"
+          className="move02"
+          style={{ transition: 'none' }}
+        />
       </div>
     </div>
   );
