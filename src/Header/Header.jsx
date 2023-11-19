@@ -4,13 +4,24 @@ import React from 'react';
 import '@/Header/style/Header.css';
 import '@/app/globals.css';
 //
+import { useEffect } from 'react';
 
 export default function Header() {
-  const backToTop = () => {
-    if (typeof window !== 'undefined') {
+  useEffect(() => {
+    const backToTop = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const img = document.querySelector('.w-56 .cursor-pointer');
+    if (img) {
+      img.addEventListener('click', backToTop);
     }
-  };
+    return () => {
+      if (img) {
+        img.removeEventListener('click', backToTop);
+      }
+    };
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
