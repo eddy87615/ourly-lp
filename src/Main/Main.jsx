@@ -103,15 +103,9 @@ export default function Main() {
             <img src={personal.imgAnnoying} alt={personal.annoyingImgInfo} />
 
             <SpeechBubble text={personal.article01} className="left-[16%]" />
-            <SpeechBubble
-              text={personal.article02}
-              className="left-[32%] bg-[#ff4448] text-white"
-            />
+            <SpeechBubble text={personal.article02} className="left-[32%]" />
             <SpeechBubble text={personal.article03} className="left-[20%]" />
-            <SpeechBubble
-              text={personal.article04}
-              className="left-[10%]  bg-[#ff4448] text-white"
-            />
+            <SpeechBubble text={personal.article04} className="left-[10%]  " />
           </div>
           <div className={personal.classSolved} key={personal}>
             <h2 className="text-h2 text-center leading-h2 font-bold p-16">

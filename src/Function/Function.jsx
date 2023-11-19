@@ -200,7 +200,7 @@ export default function Function() {
   return (
     <div>
       <div className="function bg-white h-screen relative" id="section5">
-        <h3 className="text-[32px] font-bold text-center pt-16">機能一覧</h3>
+        <h3 className="text-h3 font-bold text-center pt-16">機能一覧</h3>
         <div className="hexagon flex flex-col relative top-[8%]">
           <div className="flex justify-center w-full h-full">
             {data.slice(0, 2).map(Hexagon)} {/* Render hexagon 01 and 02 */}
@@ -215,11 +215,13 @@ export default function Function() {
         </div>
         <img
           src="/img/20Yman-05-bgN.webp"
+          alt="young happy man pointing the picture"
           className="move01"
           style={{ transition: 'none' }}
         />
         <img
           src="img/20Yman-05-bgN-2.webp"
+          alt="young happy man pointing the picture"
           className="move02"
           style={{ transition: 'none' }}
         />
