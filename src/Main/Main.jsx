@@ -52,9 +52,9 @@ const data = [
     solvedImgInfo: 'happy young woman cause problems solved',
     content: '私は皆んなの好みに合う社内報を作りたい…',
     article01: '編集や印刷とか時間をかかりすぎて…',
-    article02: '皆んなはどんな内容が好きですか？',
+    article02: '皆んな本当に社内報読んでくれているのかを知りたい…',
     article03: '皆んなは社内報の内容をどう思っていますか？',
-    article04: '皆んな本当に社内報読んでくれているのかを知りたい…',
+    article04: '皆んなはどんな内容が好きですか？',
     classAnnoying:
       'annoyingwoman w-full h-screen bg-[--base-color] relative z-[-2]',
     classSolved: 'solvedwoman w-full h-screen bg-white relative',
@@ -72,7 +72,7 @@ function SpeechBubble({ text, className }) {
     <div
       ref={ref}
       className={`w-fit h-fit text-center text-h4 leading-h4
-       bg-white relative border-[5px] border-[--ourly-theme] rounded-full font-bold  m-12 px-[4%] py-4 ${className}`}
+       relative border-[5px] border-[--ourly-theme] rounded-full font-bold  m-12 px-[4%] py-4 ${className}`}
       style={{
         transform: isInView ? 'none' : 'translateX(-100%)',
         opacity: isInView ? 1 : 0,
@@ -102,10 +102,22 @@ export default function Main() {
             </h2>
             <img src={personal.imgAnnoying} alt={personal.annoyingImgInfo} />
 
-            <SpeechBubble text={personal.article01} className="left-[16%]" />
-            <SpeechBubble text={personal.article02} className="left-[32%]" />
-            <SpeechBubble text={personal.article03} className="left-[20%]" />
-            <SpeechBubble text={personal.article04} className="left-[10%]  " />
+            <SpeechBubble
+              text={personal.article01}
+              className="left-[16%] bg-white"
+            />
+            <SpeechBubble
+              text={personal.article02}
+              className="left-[30%] bg-[--ourly-theme] text-white"
+            />
+            <SpeechBubble
+              text={personal.article03}
+              className="left-[20%] bg-white"
+            />
+            <SpeechBubble
+              text={personal.article04}
+              className="left-[10%] bg-[--ourly-theme] text-white"
+            />
           </div>
           <div className={personal.classSolved} key={personal}>
             <h2 className="text-h2 text-center leading-h2 font-bold p-16">
