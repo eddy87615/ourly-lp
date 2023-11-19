@@ -8,9 +8,11 @@ import { useEffect } from 'react';
 
 export default function Header() {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    const backToTop = () => {
+      if (typeof window !== 'undefined') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
 
     const img = document.querySelector('.w-56.cursor-pointer');
     if (img) {
