@@ -128,7 +128,11 @@ export default function Scrollnav() {
   //
 
   return (
-    <nav className={`scroll-nav ${showNav ? '' : 'scroll-nav-hide'}`}>
+    <nav
+      className={`scroll-nav fixed top-1/2 translate-y-[-50%] left-[3%]
+      flex flex-col justify-center z-20 opcaity-100 duration-500
+    ${showNav ? '' : 'duration-500 flex left-[-10%] opacity-0'}`}
+    >
       {scrollnav.map((section, index) => (
         <Link
           to={section.id}
@@ -139,7 +143,6 @@ export default function Scrollnav() {
           key={section.link}
           activeClass="active"
           alt={section.text}
-          className="duration-500"
         ></Link>
       ))}
     </nav>

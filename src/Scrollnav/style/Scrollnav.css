@@ -13,33 +13,6 @@
   list-style: none;
 }
 
-nav {
-  width: 20px;
-  height: 500px;
-}
-
-.scroll-nav {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 20;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-
-.scroll-nav-hide {
-  transition: all 0.5s ease;
-  display: flex;
-  left: 0;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
 .scroll-nav > a.active {
   width: 20px;
   height: 20px;

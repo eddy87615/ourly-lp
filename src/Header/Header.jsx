@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed top-0 left-0 z-30 p-8 w-screen h-28 flex">
+    <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
       <img
         src="/img/ourly_logo.webp"
         className="w-56 cursor-pointer"
