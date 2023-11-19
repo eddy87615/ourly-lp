@@ -12,7 +12,7 @@ export default function Header() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const img = document.querySelector('.w-56 .cursor-pointer');
+    const img = document.querySelector('.w-56.cursor-pointer');
     if (img) {
       img.addEventListener('click', backToTop);
     }
@@ -27,8 +27,8 @@ export default function Header() {
     <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
       <img
         src="/img/ourly_logo.webp"
+        alt="ourly logo"
         className="w-56 cursor-pointer"
-        onClick={backToTop}
       />
 
       <button
