@@ -15,10 +15,10 @@ const data = [
     imgSolved: '/img/20Yman-04-bgN.webp',
     solvedImgInfo: 'happy young man cause problems solved',
     content: '私は会社のコミュニケーションについて悩んでいます…',
-    article01: '会社に今何が流行っているのが知りたい…',
-    article02: '会社の最新情報をキャッチしたい…',
-    article03: '従業員向けのイベントがあるのか知りたい…',
-    article04: '帰属意識を高めたい…',
+    article01: '会社の最新情報をキャッチしたい…',
+    article02: '会社に今何が流行っているのが知りたい…',
+    article03: '帰属意識を高めたい…',
+    article04: '従業員向けのイベントがあるのか知りたい…',
     classAnnoying:
       'annoyingman01 w-full h-screen bg-[--base-color] relative z-[-2]',
     classSolved: 'solvedman01 w-full h-screen bg-white relative',
@@ -33,10 +33,10 @@ const data = [
     imgSolved: '/img/30Yman-04-bgN.webp',
     solvedImgInfo: 'happy 30y man cause problems solved',
     content: '社内の雰囲気をもっと向上させたい…',
-    article01: '社内の雰囲気を良くしたい…',
-    article02: '私の声がちゃんと届いているのか知りたい…',
-    article03: '会社をもっといい会社にしたい…',
-    article04: '従業員とのコミュニケーションを良くしたい…',
+    article01: '私の声がちゃんと届いているのか知りたい…',
+    article02: '社内の雰囲気を良くしたい…',
+    article03: '従業員とのコミュニケーションを良くしたい…',
+    article04: '会社をもっといい会社にしたい…',
     classAnnoying:
       'annoyingman02 w-full h-screen bg-[--base-color] relative z-[-2]',
     classSolved: 'solvedman02 w-full h-screen bg-white relative',
@@ -51,10 +51,10 @@ const data = [
     imgSolved: '/img/30Ywoman-02-bgN-2.webp',
     solvedImgInfo: 'happy young woman cause problems solved',
     content: '私は皆んなの好みに合う社内報を作りたい…',
-    article01: '編集や印刷とか時間をかかりすぎて…',
-    article02: '皆んな本当に社内報読んでくれているのかを知りたい…',
-    article03: '皆んなは社内報の内容をどう思っていますか？',
-    article04: '皆んなはどんな内容が好きですか？',
+    article01: '皆んな本当に社内報読んでくれているのかを知りたい…',
+    article02: '編集や印刷とか時間をかかりすぎて…',
+    article03: '皆んなはどんな内容が好きですか？',
+    article04: '皆んなは社内報の内容をどう思っていますか？',
     classAnnoying:
       'annoyingwoman w-full h-screen bg-[--base-color] relative z-[-2]',
     classSolved: 'solvedwoman w-full h-screen bg-white relative',
@@ -104,19 +104,19 @@ export default function Main() {
 
             <SpeechBubble
               text={personal.article01}
-              className="left-[16%] bg-white"
+              className="left-[16%]  bg-[--ourly-theme] text-white"
             />
             <SpeechBubble
               text={personal.article02}
-              className="left-[30%] bg-[--ourly-theme] text-white"
+              className="left-[30%] bg-white"
             />
             <SpeechBubble
               text={personal.article03}
-              className="left-[20%] bg-white"
+              className="left-[20%] bg-[--ourly-theme] text-white"
             />
             <SpeechBubble
               text={personal.article04}
-              className="left-[10%] bg-[--ourly-theme] text-white"
+              className="left-[10%] bg-white"
             />
           </div>
           <div className={personal.classSolved} key={personal}>

@@ -34,10 +34,6 @@
   text-align: right;
 }
 
-.btn01 {
-  margin-top: 8%;
-}
-
 button:active {
   animation: bounce 0.3s;
 }
@@ -141,7 +137,7 @@ button:hover {
   border-width: 30px 400px 30px 0;
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
-  left: 47%;
+  left: 42%;
   top: 50%;
   transform: rotate(-30deg);
 }
@@ -153,7 +149,7 @@ button:hover {
   border-width: 30px 200px 30px 0;
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
-  left: 47%;
+  left: 42%;
   top: 80%;
   transform: rotate(30deg);
 }

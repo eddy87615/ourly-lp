@@ -4,7 +4,7 @@ import React from 'react';
 import '@/Header/style/Header.css';
 import '@/app/globals.css';
 //
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
   useEffect(() => {
@@ -25,6 +25,23 @@ export default function Header() {
     };
   }, []);
 
+  const [showBtn, setShowBtn] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'indefined') {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+      }
+
+      const threshold = window.innerHeight;
+      setShowBtn(scrollY > threshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
       <img
@@ -38,6 +55,9 @@ export default function Header() {
       border-4 border-solid border-ourly-theme 
       px-10 font-bold text-button rounded-full ml-auto bg-white 
       transition-all duration-300 shadow-ourly"
+        style={{
+          opacity: showBtn ? 1 : 0,
+        }}
       >
         お問い合わせ
       </button>
