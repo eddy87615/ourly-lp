@@ -9,6 +9,7 @@
   width: 20px;
   height: 20px;
   background-color: var(--ourly-theme);
+  box-shadow: 0px 0px 8px #aa3535;
   transition: all 0.5s;
   border-radius: 50%;
 }

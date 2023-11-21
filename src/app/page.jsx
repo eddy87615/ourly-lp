@@ -9,6 +9,7 @@ import Function from '@/Function/Function';
 import Scrollnav from '@/Scrollnav/Scrollnav';
 import Compare from '@/Compare/Compare';
 import Form from '@/Form/Form';
+import Footer from '@/Footer/Footer';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <Function />
       <Compare />
       <Form />
+      <Footer />
     </>
   );
 }

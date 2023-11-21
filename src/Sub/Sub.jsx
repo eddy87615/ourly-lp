@@ -195,7 +195,7 @@ export default function Sub() {
               } // Check inView to determine variants
               initial="hidden"
               animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
-              transition={{ delay: 0.2, duration: 0.2 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
             >
               <img src={item.img} alt={item.alt} />
               <p className="text-h2 font-bold flex items-center p-[8%]">

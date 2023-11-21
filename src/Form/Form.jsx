@@ -66,7 +66,7 @@ export default function Form() {
     },
   ];
   return (
-    <Element name="section8" className="form p-32 pt-0">
+    <Element name="section8" className="form px-32 pb-16 pt-0">
       <Fee />
       <form
         className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto mt-24
@@ -183,7 +183,7 @@ export default function Form() {
             ご提供いただく個人情報は弊社プライバシーポリシーに従い管理されますので、同意の上ダウンロードください。
           </p>
           <label className="flex items-center font-normal">
-            <input type="checkbox" id="privacy" />
+            <input type="checkbox" id="privacy" required />
             <a
               href="https://service.ourly.jp/privacy"
               target="_black"
@@ -207,6 +207,9 @@ export default function Form() {
           お問い合わせを送信
         </button>
       </form>
+      <p className="text-center text-button pt-16">
+        ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
+      </p>
     </Element>
   );
 }

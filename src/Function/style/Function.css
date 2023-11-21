@@ -16,10 +16,12 @@
 
 .move01 {
   animation: move01 0.8s infinite;
+  transition-delay: 0;
 }
 
 .move02 {
   animation: move02 0.8s infinite;
+  transition-delay: 0;
 }
 
 .function::after {

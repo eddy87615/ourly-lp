@@ -5,19 +5,44 @@ import '@/Guide/style/Guide.css';
 import '@/app/globals.css';
 //
 import { Link } from 'react-scroll';
+import { TypeAnimation } from 'react-type-animation';
+
+//type animation //
+const Type = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        '社内報に関するお悩みありませんか？',
+        3000,
+        '社内報のツールを探していますか？',
+        2000,
+        '社内報に関するお悩みありませんか？',
+        1000,
+        () => {
+          console.log('Sequence completed');
+        },
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: '48px', display: 'inline-block' }}
+    />
+  );
+};
+//
 
 export default function Guide() {
   useEffect(() => {
     // 在组件加载后，设置一个短暂的延时来启动动画
     const animateElements = () => {
       const elements = document.querySelectorAll(
-        '.guide-title, .guide01, .guide02, .guide03, .open'
+        ' .container,#guide01, #guide02, #guide03, .open'
       );
       elements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1';
           element.style.transform = 'translateY(0)';
-        }, (index + 1) * 500); // 递增的延迟时间（500ms）
+        }, (index + 1) * 300); // 递增的延迟时间（500ms）
       });
     };
 
@@ -100,14 +125,14 @@ export default function Guide() {
         />
       </div>
       <h1 className="text-h1 font-bold text-center mt-16">
-        社内報に関するお悩みありませんか？
+        <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-24">
         {guideinfo.map((obj, index) => (
           <Link
             to={`section${index + 1}`}
             key={index}
-            className={`container list01 w-[20%] h-[500px] absolute ${
+            className={`container list01 w-[20%] h-[500px] absolute cursor-pointer  ${
               obj.id === 'guide01'
                 ? 'left-[16%]'
                 : obj.id === 'guide03'
@@ -118,7 +143,8 @@ export default function Guide() {
           >
             <div
               id={obj.id}
-              className={`list01 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white ${
+              className={`list01 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
+              shadow-ourly ${
                 obj.id === 'guide01'
                   ? 'left-0'
                   : obj.id === 'guide03'
@@ -143,7 +169,8 @@ export default function Guide() {
             <div
               key={obj.backAlt}
               id={obj.id02}
-              className={`list02 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white ${
+              className={`list02 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
+              shadow-ourly ${
                 obj.id02 === 'guide01-1'
                   ? 'left-0'
                   : obj.id02 === 'guide03-1'

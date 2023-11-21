@@ -73,6 +73,7 @@ export default function Slider() {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
+      id="silder"
     >
       {slider.map((obj, index) => (
         <SwiperSlide className={`${obj.bgclass} relative`} key={index}>

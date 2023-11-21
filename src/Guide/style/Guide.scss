@@ -19,10 +19,20 @@
   background-size: 60%;
 }
 
+.container {
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-500px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 #guide01,
 #guide02,
 #guide03 {
-  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #guide01-1,
@@ -43,11 +53,13 @@
 .container:hover #guide02-1,
 .container:hover #guide03-1 {
   transform: perspective(1000px) rotateY(0);
+  box-shadow: 4px 4px 8px #3e3e3e;
 }
 .container:hover #guide01,
 .container:hover #guide02,
 .container:hover #guide03 {
-  transform: perspective(1000px) rotateY(180deg);
+  transform: perspective(1000px) rotateY(180deg) !important;
+  box-shadow: none;
 }
 #guide01-1:hover,
 #guide02-1:hover,
@@ -63,8 +75,8 @@
 .open::after {
   content: url(/img/arrow.svg);
   position: absolute;
-  top: 16px;
-  left: -48px;
+  top: 20px;
+  left: 0px;
   width: 250px;
 }
 

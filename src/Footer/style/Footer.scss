@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.purplesection {
+  background-image: url(/img/logo-LP.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 70%;
+}
+
+.purplesection::after {
+  content: '';
+  background-image: url(/img/personal-06-bgN.webp);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 180%;
+}

@@ -5,6 +5,7 @@ import '@/Header/style/Header.css';
 import '@/app/globals.css';
 //
 import { useEffect, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header() {
   useEffect(() => {
@@ -49,18 +50,18 @@ export default function Header() {
         alt="ourly logo"
         className="w-56 cursor-pointer"
       />
-
-      <button
-        className="otoiawase 
-      border-4 border-solid border-ourly-theme 
-      px-10 font-bold text-button rounded-full ml-auto bg-white 
-      transition-all duration-300 shadow-ourly"
+      <ScrollLink
+        to="section8"
+        className="otoiawase flex
+        border-4 border-solid border-ourly-theme 
+        px-10  rounded-full ml-auto bg-white 
+        transition-all duration-300 shadow-ourly"
         style={{
           opacity: showBtn ? 1 : 0,
         }}
       >
-        お問い合わせ
-      </button>
+        <button className="font-bold text-button">お問い合わせ</button>
+      </ScrollLink>
     </div>
   );
 }

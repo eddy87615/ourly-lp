@@ -19,7 +19,7 @@ module.exports = {
         'ourly-theme': '#ff4448',
         'base-color': '#F0F0FF',
         'purple-dark': '#3F4066',
-        'purple-light': '#5A5B90',
+        'purple-light': '#797AAF',
       },
       borderColor: {
         'ourly-theme': '#ff4448',
@@ -29,7 +29,7 @@ module.exports = {
         'ourly-theme': '#ff4448',
         'base-color': '#F0F0FF',
         'purple-dark': '#3F4066',
-        'purple-light': '#5A5B90',
+        'purple-light': '#797AAF',
       },
       fontSize: {
         sm: '8px',

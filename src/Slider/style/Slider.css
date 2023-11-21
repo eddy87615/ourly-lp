@@ -137,7 +137,7 @@ button:hover {
   border-width: 30px 400px 30px 0;
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
-  left: 42%;
+  left: 45%;
   top: 50%;
   transform: rotate(-30deg);
 }
@@ -149,7 +149,7 @@ button:hover {
   border-width: 30px 200px 30px 0;
   border-color: transparent var(--ourly-theme) transparent transparent;
   position: absolute;
-  left: 42%;
+  left: 45%;
   top: 80%;
   transform: rotate(30deg);
 }
