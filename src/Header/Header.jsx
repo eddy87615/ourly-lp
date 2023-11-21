@@ -52,12 +52,16 @@ export default function Header() {
       />
       <ScrollLink
         to="section8"
+        smooth={true}
+        offset={0}
+        duration={500}
         className="otoiawase flex
         border-4 border-solid border-ourly-theme 
         px-10  rounded-full ml-auto bg-white 
         transition-all duration-300 shadow-ourly"
         style={{
           opacity: showBtn ? 1 : 0,
+          visibility: showBtn ? 'visible' : 'hidden',
         }}
       >
         <button className="font-bold text-button">お問い合わせ</button>
