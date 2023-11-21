@@ -20,3 +20,47 @@ label textarea {
   padding: 8px 16px;
   font-weight: normal;
 }
+
+.bottomtxt::after {
+  content: '';
+  background-image: url(/img/logo-B.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -100%;
+  right: -6%;
+  width: 32%;
+  height: 600%;
+
+  z-index: -1;
+}
+
+.form {
+  background-image: url(/img/logo-P.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 2% 2%;
+}
+
+.fee::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 8px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple-dark);
+}
+.fee::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 60px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple-dark);
+}
