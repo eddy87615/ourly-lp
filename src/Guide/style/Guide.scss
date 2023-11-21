@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back {
+  background: linear-gradient(250deg, #ffffff, #f0f0ff);
+}
+
+.container > .list01 {
+  background-image: url(/img/logo-P.svg);
+  background-repeat: no-repeat;
+  background-position: 4% 4%;
+  background-size: 60%;
+}
+.container > .list02 {
+  background-image: url(/img/question-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 4% 4%;
+  background-size: 60%;
+}
+
+#guide01,
+#guide02,
+#guide03 {
+  transition: 0.5s;
+}
+
+#guide01-1,
+#guide02-1,
+#guide03-1 {
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(-180deg);
+  transition: 0.5s;
+}
+#guide01-1 > img {
+  width: 65%;
+}
+#guide02-1 > img {
+  width: 80%;
+}
+
+.container:hover #guide01-1,
+.container:hover #guide02-1,
+.container:hover #guide03-1 {
+  transform: perspective(1000px) rotateY(0);
+}
+.container:hover #guide01,
+.container:hover #guide02,
+.container:hover #guide03 {
+  transform: perspective(1000px) rotateY(180deg);
+}
+#guide01-1:hover,
+#guide02-1:hover,
+#guide03-1:hover {
+  transform: perspective(1000px) rotateY(0);
+}
+
+.open {
+  transition: opacity 1s ease, transform 1s ease;
+  animation: openanimation infinite 1s;
+}
+
+.open::after {
+  content: url(/img/arrow.svg);
+  position: absolute;
+  top: 16px;
+  left: -48px;
+  width: 250px;
+}
+
+@media (max-width: 1000px) {
+  .guide {
+    display: none;
+  }
+}
+
+@keyframes openanimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(16px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

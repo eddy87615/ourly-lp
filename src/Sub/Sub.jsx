@@ -158,7 +158,7 @@ export default function Sub() {
                       <img
                         src={obj.imgContent}
                         alt={obj.imgimgContentAlt}
-                        className="w-[90%]"
+                        className="w-[90%] duration-500"
                       />
                     </li>
                     <li>

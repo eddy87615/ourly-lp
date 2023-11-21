@@ -20,4 +20,9 @@
   background-position: 100% 0;
   background-size: 30%;
   position: absolute;
+}
+
+#section6 > img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=Compare.css.map */

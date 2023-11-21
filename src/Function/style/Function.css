@@ -1,11 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.function > img {
+.move01,
+.move02 {
   width: 32%;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.move01:hover,
+.move02:hover {
+  transform: scale(1);
 }
 
 .move01 {
@@ -54,20 +60,20 @@
   transition-duration: 0.5s;
 }
 
-.hexagon01:hover img,
-.hexagon05:hover img,
-.hexagon06:hover img,
-.hexagon07:hover img {
+.hexagon01:hover > img,
+.hexagon05:hover > img,
+.hexagon06:hover > img,
+.hexagon07:hover > img {
   transform: scale(2);
   transition-duration: 0.5s;
 }
 
-.hexagon03:hover img {
+.hexagon03:hover > img {
   transform: scale(2.8);
   transition-duration: 0.5s;
 }
 
-.hexagon02:hover img {
+.hexagon02:hover > img {
   transform: scale(2);
   transition-duration: 0.5s;
 }
