@@ -8,6 +8,7 @@ import Function from '@/Function/Function';
 import Scrollnav from '@/Scrollnav/Scrollnav';
 import Compare from '@/Compare/Compare';
 import Form from '@/Form/Form';
+import Fee from '@/Fee/Fee';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Sub />
       <Function />
       <Compare />
+      <Fee />
       <Form />
     </>
   );

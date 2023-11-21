@@ -14,7 +14,7 @@ export default function Compare() {
         <img
           src="/img/compare.webp"
           alt="comparison about ourly, paper company news and other web company news tools"
-          className="relative w-[55%] my-0 mx-auto mt-[4%] z-2"
+          className="relative w-[50%] my-0 mx-auto mt-[4%] z-2"
         />
       </div>
     </Element>
