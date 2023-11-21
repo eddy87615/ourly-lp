@@ -23,6 +23,7 @@ module.exports = {
       },
       borderColor: {
         'ourly-theme': '#ff4448',
+        'purple-dark': '#3F4066',
       },
       backgroundColor: {
         'ourly-theme': '#ff4448',

@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 //Swiper導入
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Link as ScrollLink } from 'react-scroll';
 //
 //CSS導入
 import '@/Slider/style/Slider.css';
@@ -84,13 +85,22 @@ export default function Slider() {
               className="text-h4 leading-h3"
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
-            <button
-              className={`${obj.button} relative w-[350px] h-[100px]
+            <ScrollLink
+              to="section8"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <button
+                className={`${obj.button} relative w-[350px] h-[100px]
                bg-white border-ourly-theme border-4 rounded-full text-h3 mt-[4%] font-bold shadow-ourly 
                transition-all duration-300`}
-            >
-              お問い合わせ
-            </button>
+                to="section8"
+              >
+                お問い合わせ
+              </button>
+            </ScrollLink>
           </div>
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>

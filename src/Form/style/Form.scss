@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+form {
+  gap: 16px;
+  font-weight: bold;
+}
+label {
+  gap: 8px;
+  position: relative;
+}
+
+label input,
+label textarea {
+  background-color: #f5f5ff;
+  border-radius: 4px;
+  height: 40px;
+  padding: 8px;
+  font-weight: normal;
+}

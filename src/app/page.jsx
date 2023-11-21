@@ -7,6 +7,7 @@ import Sub from '@/Sub/Sub';
 import Function from '@/Function/Function';
 import Scrollnav from '@/Scrollnav/Scrollnav';
 import Compare from '@/Compare/Compare';
+import Form from '@/Form/Form';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Sub />
       <Function />
       <Compare />
+      <Form />
     </>
   );
 }
