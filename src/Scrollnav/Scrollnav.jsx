@@ -131,7 +131,9 @@ export default function Scrollnav() {
     <nav
       className={`scroll-nav fixed top-1/2 translate-y-[-50%] left-[3%]
       flex flex-col justify-center z-20 opcaity-100 duration-500
-    ${showNav ? '' : 'duration-500 flex left-[-10%] opacity-0'}`}
+    ${showNav ? '' : 'duration-500 flex left-[-10%] opacity-0'}
+    hidden lg:block
+    `}
     >
       {scrollnav.map((section, index) => (
         <Link

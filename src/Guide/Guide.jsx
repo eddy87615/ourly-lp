@@ -73,6 +73,23 @@ export default function Guide() {
     });
   };
 
+  const [isHidden, setIsHidden] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const shouldHide = window.innerWidth < 1000;
+      setIsHidden(shouldHide);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+
+    handleResize();
+  }, []);
+
   const guideinfo = [
     {
       id: 'guide01',
@@ -115,13 +132,14 @@ export default function Guide() {
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
-      }`}
+      }${isHidden ? 'hidden' : ''}`}
     >
       <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
         <img
           src="/img/ourly_logo.webp"
           alt="ourly logo"
-          className="w-56 cursor-pointer"
+          className="w-40 md:w-48 lg:w-56 
+          cursor-pointer"
         />
       </div>
       <h1 className="text-h1 font-bold text-center mt-16">

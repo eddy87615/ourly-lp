@@ -9,6 +9,11 @@ module.exports = {
     './Header/**/*.{js,ts,jsx,tsx}', // 要包含的文件
   ],
   theme: {
+    screen: {
+      sm: '400px',
+      md: '768px',
+      lg: '1024px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -50,10 +55,7 @@ module.exports = {
         h4: '40px',
         text: '40px',
       },
-      screen: {
-        md: '768px',
-        lg: '1024px',
-      },
+
       boxShadow: {
         ourly: '4px 4px 8px #3e3e3e',
       },

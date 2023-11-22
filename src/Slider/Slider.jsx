@@ -79,11 +79,14 @@ export default function Slider() {
         <SwiperSlide className={`${obj.bgclass} relative`} key={index}>
           <div className={obj.titleclass}>
             <h1
-              className="text-h1 font-bold mb-6 leading-h1"
+              className="text-[32px] md:text-h1 lg:text-h1 
+              font-bold mb-6 
+              leading-h2 lg:leading-h1"
               dangerouslySetInnerHTML={{ __html: obj.h1text }}
             ></h1>
             <p
-              className="text-h4 leading-h3"
+              className="text-base md:text-[20px] lg:text-h4 
+              leading-h4 lg:leading-h3"
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
             <ScrollLink
@@ -94,8 +97,11 @@ export default function Slider() {
               duration={500}
             >
               <button
-                className={`${obj.button} relative w-[350px] h-[100px]
-               bg-white border-ourly-theme border-4 rounded-full text-h3 mt-[4%] font-bold shadow-ourly 
+                className={`${obj.button} relative 
+                w-[180px] mb:w-[200px] lg:w-[350px] 
+                h-[50px] md:h-[80px] lg:h-[100px]
+               bg-white border-ourly-theme border-4 rounded-full 
+               text-text lg:text-h3 mt-[4%] font-bold shadow-ourly 
                transition-all duration-300`}
                 to="section8"
               >

@@ -194,4 +194,66 @@
   100% {
     transform: scale(1.1);
   }
+}
+@media screen and (max-width: 400px) {
+  .annoyingman01 img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
+  }
+  .solvedman01 {
+    background-size: 80%;
+    background-position: 50% 50%;
+  }
+  .solvedman01 img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(/img/surprise.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30%;
+  }
+  .annoyingman02 img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
+  }
+  .solvedman02 {
+    background-size: 80%;
+    background-position: 50% 68%;
+  }
+  .solvedman02 img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+  .solvedman02::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 48%;
+    width: 50%;
+    height: 50%;
+    background-image: url(/img/illu-04.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  .solvedman02::before {
+    content: none;
+  }
 }/*# sourceMappingURL=Main.css.map */

@@ -71,8 +71,10 @@ function SpeechBubble({ text, className }) {
   return (
     <div
       ref={ref}
-      className={`w-fit h-fit text-center text-h4 leading-h4
-       relative border-[5px] border-[--ourly-theme] rounded-full font-bold  m-12 px-[4%] py-4 ${className}`}
+      className={`w-[95%] lg:w-fit h-fit text-center text-[14px] lg:text-h4 leading-h4
+       relative border-[5px] border-[--ourly-theme] rounded-full font-bold  
+       mb-4 mx-auto lg:m-12 
+       p-1 lg:px-[4%] lg:py-4 ${className}`}
       style={{
         transform: isInView ? 'none' : 'translateX(-100%)',
         opacity: isInView ? 1 : 0,
@@ -80,7 +82,12 @@ function SpeechBubble({ text, className }) {
       }}
     >
       <p>{text}</p>
-      <span className="bubble-triangle w-10 h-10 bg-[--ourly-theme] absolute top-[61%] right-[-33px]"></span>
+      <span
+        className="bubble-triangle w-6 h-6
+       lg:w-10 lg:h-10 bg-[--ourly-theme] absolute 
+       lg:top-[61%] lg:right-[-33px]
+       top-[80%] right-[-4%]"
+      ></span>
     </div>
   );
 }
@@ -95,8 +102,8 @@ export default function Main() {
             key={index}
             id={`section${index + 1}`}
           >
-            <h2 className="text-h2 font-bold pt-[8%] pb-[4%] pl-[8%]">
-              <span className="border-b-[5px] border-solid border-[--ourly-theme]">
+            <h2 className="text-h3 lg:text-h2 font-bold p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%]">
+              <span className="border-none lg:border-b-[5px] lg:border-solid border-[--ourly-theme]">
                 {personal.content}
               </span>
             </h2>
@@ -104,23 +111,27 @@ export default function Main() {
 
             <SpeechBubble
               text={personal.article01}
-              className="left-[16%]  bg-[--ourly-theme] text-white"
+              className="lg:left-[16%]  bg-[--ourly-theme] text-white"
             />
             <SpeechBubble
               text={personal.article02}
-              className="left-[30%] bg-white"
+              className="lg:left-[30%] bg-white"
             />
             <SpeechBubble
               text={personal.article03}
-              className="left-[20%] bg-[--ourly-theme] text-white"
+              className="lg:left-[20%] bg-[--ourly-theme] text-white"
             />
             <SpeechBubble
               text={personal.article04}
-              className="left-[10%] bg-white"
+              className="lg:left-[10%] bg-white"
             />
           </div>
           <div className={personal.classSolved} key={personal}>
-            <h2 className="text-h2 text-center leading-h2 font-bold p-16">
+            <h2
+              className="text-[24px] lg:text-h2 text-center 
+              leading-h4 lg:leading-h2 font-bold 
+            p-4 pt-8 lg:p-16"
+            >
               {personal.solvedTitle}
               <br />
               {personal.solvedSubtitle}
@@ -128,7 +139,9 @@ export default function Main() {
             <img src={personal.imgSolved} alt={personal.solvedImgInfo} />
             <p
               dangerouslySetInnerHTML={{ __html: personal.solvedContent }}
-              className="w-[40%] text-[16px] leading-8 text-center flex justify-center m-auto"
+              className="w-[90%] lg:w-[40%] text-[14px] lg:text-[16px] leading-8 
+              text-left lg:text-center 
+              flex justify-center m-auto"
             ></p>
           </div>
         </Element>

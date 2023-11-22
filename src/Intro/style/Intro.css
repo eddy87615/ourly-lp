@@ -20,4 +20,21 @@
   position: absolute;
   bottom: 0px;
   left: 8%;
+}
+
+@media screen and (max-width: 400px) {
+  .intro::after {
+    background-position: 100% 100%;
+    background-size: 100%;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .intro {
+    background-size: 100%;
+    background-position: 100% 10%;
+  }
 }/*# sourceMappingURL=Intro.css.map */

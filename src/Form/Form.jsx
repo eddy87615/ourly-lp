@@ -30,7 +30,7 @@ function Fee() {
       <h4 className="text-h4 font-bold text-center pt-8">
         登録されるアカウント数に応じた、月額制の料金プラン
       </h4>
-      <div className="fee relative flex my-0 mx-auto py-24 gap-56 w-[90%]">
+      <div className="fee relative flex flex-col lg:flex-row my-0 mx-auto py-24 gap-56 w-[90%]">
         {FeeData.map((obj, index) => (
           <div
             key={index}
@@ -202,7 +202,8 @@ export default function Form() {
         </label>
         <button
           type="submit"
-          className="text-[24px] bg-ourly-theme text-white py-6 px-20 rounded-2xl my-0 mx-auto mt-10 shadow-ourly"
+          className="text-text lg:text-[24px] bg-ourly-theme text-white 
+          py-2 px-10 lg:py-6 lg:px-20 rounded-2xl my-0 mx-auto mt-10 shadow-ourly"
         >
           お問い合わせを送信
         </button>
