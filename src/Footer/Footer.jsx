@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { React, useEffect } from 'react';
 //CSS導入
 import '@/Footer/style/Footer.css';
 import '@/app/globals.css';
@@ -32,6 +32,23 @@ const list = [
 ];
 
 export default function Footer() {
+  useEffect(() => {
+    const backToTop = () => {
+      if (typeof window !== 'undefined') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+
+    const img = document.querySelector('.px-10.py-4.border-r-2');
+    if (list[0].link) {
+      img.addEventListener('click', backToTop);
+    }
+    return () => {
+      if (list[0].link) {
+        img.removeEventListener('click', backToTop);
+      }
+    };
+  }, []);
   return (
     <footer>
       <div className="bg-ourly-theme">
@@ -48,7 +65,7 @@ export default function Footer() {
               className="w-[20%]"
             />
           </li>
-          <li className="text-text py-8">
+          <li className="text-text py-8  cursor-pointer">
             {list.map((item, index) =>
               item.link.startsWith('http') ? (
                 <a
