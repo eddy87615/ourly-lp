@@ -15,7 +15,7 @@ export default function Header() {
       }
     };
 
-    const img = document.querySelector('.cursor-pointer');
+    const img = document.querySelector('.cursor-pointer.h-full');
     if (img) {
       img.addEventListener('click', backToTop);
     }
@@ -53,7 +53,7 @@ export default function Header() {
       <img
         src="/img/ourly_logo.webp"
         alt="ourly logo"
-        className="cursor-pointer"
+        className="cursor-pointer h-full"
       />
       <ScrollLink
         to="section8"
