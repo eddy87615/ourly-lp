@@ -196,8 +196,12 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .annoyingman01 {
+    background-repeat: repeat;
+    background-position: 0 100%;
+  }
   .annoyingman01 img {
-    width: 60%;
+    width: 55%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -220,6 +224,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 30%;
+  }
+  .annoyingman02 {
+    background-repeat: repeat;
+    background-position: 0 100%;
   }
   .annoyingman02 img {
     width: 80%;

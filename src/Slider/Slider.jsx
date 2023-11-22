@@ -54,6 +54,23 @@ export default function Slider() {
     },
   ];
 
+  const [isHidden, setIsHidden] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const shouldHide = window.innerWidth < 1025;
+      setIsHidden(shouldHide);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+
+    handleResize();
+  }, []);
+
   return (
     <Swiper
       style={{
@@ -70,7 +87,7 @@ export default function Slider() {
       pagination={{
         clickable: true,
       }}
-      navigation={true}
+      navigation={`${isHidden ? '' : true}`}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
       id="silder"
