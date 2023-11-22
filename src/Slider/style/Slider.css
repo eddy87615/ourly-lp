@@ -222,7 +222,7 @@ button:hover {
     transform: scale(1);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .page01::before {
     background-position: 20% 100%;
     background-size: 150%;

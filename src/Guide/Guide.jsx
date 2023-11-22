@@ -132,7 +132,7 @@ export default function Guide() {
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
-      }${isHidden ? 'hidden' : ''}`}
+      }${isHidden ? '' : 'hidden'}`}
     >
       <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
         <img
