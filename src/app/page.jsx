@@ -8,8 +8,10 @@ import Sub from '@/Sub/Sub';
 import Function from '@/Function/Function';
 import Scrollnav from '@/Scrollnav/Scrollnav';
 import Compare from '@/Compare/Compare';
+import Question from '@/Question/Question';
 import Form from '@/Form/Form';
 import Footer from '@/Footer/Footer';
+import Qiestion from '@/Question/Question';
 
 export default function App() {
   return (
@@ -23,6 +25,7 @@ export default function App() {
       <Sub />
       <Function />
       <Compare />
+      <Qiestion />
       <Form />
       <Footer />
     </>
