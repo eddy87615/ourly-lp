@@ -107,17 +107,21 @@ export default function Sub() {
   };
 
   const leftVariants = {
-    hidden: { x: 1 * -1000, opacity: 0 },
+    hidden: { x: 1 * -500, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   const rightVariants = {
-    hidden: { x: 1 * 1000, opacity: 0 },
+    hidden: { x: 1 * 500, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
 
   return (
     <div className="w-full h-full bg-[--base-color] relative" id="section4">
-      <h2 className="text-h2 text-center leading-h2 font-bold pt-16 pb-20">
+      <h2
+        className="text-h3 lg:text-h2 text-center 
+        leading-h3 lg:leading-h2 font-bold 
+      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%]"
+      >
         ourlyも…
         <br />
         独自の分析機能で閲覧状況が一目で分かる
@@ -146,7 +150,7 @@ export default function Sub() {
                   }
                   transition={{ delay: index * 0.5, duration: 0.5 }}
                 >
-                  <ul className="title w-full p-[4%]">
+                  <ul className="title w-full p-4 py-8 lg:p-[4%]">
                     <li className="num-grid flex justify-center items-center">
                       <img
                         src={obj.imgNum}
@@ -164,7 +168,9 @@ export default function Sub() {
                     <li>
                       <h3
                         dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className="title-grid leading-h2 text-h3 text-center font-bold pt-10 text-[--ourly-theme] mt-[-32px]"
+                        className="title-grid leading-h4 lg:leading-h2 text-h4 lg:text-h3 
+                        text-center font-bold 
+                        px-16 lg:pt-10 text-[--ourly-theme] mt-[-32px]"
                       ></h3>
                     </li>
                     <li>
@@ -184,7 +190,7 @@ export default function Sub() {
         {subEndDiv.map((item, index) => (
           <Element key={index}>
             <motion.li
-              className={`${item.class} relative flex h-[400px]`}
+              className={`${item.class} relative flex h-[200px] lg:h-[400px]`}
               ref={refs[`ref0${index + 4}`]} // Dynamic ref based on index
               variants={
                 inViews.inView04 &&
@@ -198,7 +204,10 @@ export default function Sub() {
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               <img src={item.img} alt={item.alt} />
-              <p className="text-h2 font-bold flex items-center p-[8%]">
+              <p
+                className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
+              font-bold flex items-center p-[8%]"
+              >
                 {item.text}
               </p>
             </motion.li>

@@ -117,4 +117,57 @@
 }
 .subend03 p {
   color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .title .num-grid {
+    display: none;
+  }
+  .title .pic-grid {
+    margin-top: 40%;
+    margin-bottom: 8%;
+  }
+  .title .title-grid {
+    position: absolute;
+    top: 8%;
+    left: 0;
+  }
+  .title .text-grid {
+    grid-area: txt;
+  }
+  .content-div:hover .pic-grid {
+    transform: scale(1) !important;
+  }
+  .content-div:hover {
+    transform: scale(1) !important;
+  }
+  .subend01 img {
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+    width: 50%;
+  }
+  .subend01 p {
+    color: #fff;
+  }
+  .subend02 img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  .subend03 img {
+    position: absolute;
+    left: 8%;
+    bottom: 0%;
+    width: 35%;
+  }
+  .subend03 p {
+    color: #fff;
+  }
 }/*# sourceMappingURL=Sub.css.map */

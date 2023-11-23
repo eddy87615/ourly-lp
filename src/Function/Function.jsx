@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import Hexagon from './component/Hexagon';
 //CSS導入
 import '@/Function/style/Function.css';
@@ -197,34 +197,57 @@ const data = [
 ];
 
 export default function Function() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className="function bg-white h-screen relative" id="section5">
         <h3 className="text-h3 font-bold text-center pt-16">機能一覧</h3>
-        <div className="hexagon flex flex-col relative top-[8%]">
-          <div className="flex justify-center w-full h-full">
-            {data.slice(0, 2).map(Hexagon)} {/* Render hexagon 01 and 02 */}
-          </div>
-          <div className="flex justify-center mt-[-30px]">
-            {data.slice(2, 5).map(Hexagon)}{' '}
-            {/* Render hexagon 03, 04, and 05 */}
-          </div>
-          <div className="flex justify-center mt-[-30px]">
-            {data.slice(5).map(Hexagon)} {/* Render hexagon 06 and 07 */}
-          </div>
-        </div>
-        <img
-          src="/img/20Yman-05-bgN.webp"
-          alt="young happy man pointing the picture"
-          className="move01"
-          style={{ transition: 'none' }}
-        />
-        <img
-          src="img/20Yman-05-bgN-2.webp"
-          alt="young happy man pointing the picture"
-          className="move02"
-          style={{ transition: 'none' }}
-        />
+        {windowWidth >= 1000 ? (
+          <>
+            <div className="hexagon flex flex-col relative top-[8%]">
+              <div className="flex justify-center w-full h-full">
+                {data.slice(0, 2).map(Hexagon)} {/* Render hexagon 01 and 02 */}
+              </div>
+              <div className="flex justify-center mt-[-30px]">
+                {data.slice(2, 5).map(Hexagon)}{' '}
+                {/* Render hexagon 03, 04, and 05 */}
+              </div>
+              <div className="flex justify-center mt-[-30px]">
+                {data.slice(5).map(Hexagon)} {/* Render hexagon 06 and 07 */}
+              </div>
+            </div>
+            <img
+              src="/img/20Yman-05-bgN.webp"
+              alt="young happy man pointing the picture"
+              className="move01"
+              style={{ transition: 'none' }}
+            />
+            <img
+              src="img/20Yman-05-bgN-2.webp"
+              alt="young happy man pointing the picture"
+              className="move02"
+              style={{ transition: 'none' }}
+            />
+          </>
+        ) : (
+          <img
+            src="/img/function.svg"
+            className="absolute top-1/2 translate-y-[-50%]"
+          />
+        )}
       </div>
     </div>
   );

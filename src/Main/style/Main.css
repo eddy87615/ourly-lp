@@ -201,7 +201,7 @@
     background-position: 0 100%;
   }
   .annoyingman01 img {
-    width: 55%;
+    width: 50%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -230,7 +230,7 @@
     background-position: 0 100%;
   }
   .annoyingman02 img {
-    width: 80%;
+    width: 70%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -248,6 +248,7 @@
     position: absolute;
     bottom: 0px;
     left: 0;
+    z-index: 2;
   }
   .solvedman02::after {
     content: "";
@@ -262,6 +263,49 @@
     background-size: 100%;
   }
   .solvedman02::before {
+    content: none;
+  }
+  .annoyingwoman img {
+    width: 100%;
+    height: auto;
+    animation: none;
+  }
+  .solvedwoman {
+    background-image: url(/img/usability-03.gif);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 60%;
+  }
+  .solvedwoman img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  .solvedwoman::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/KViphone.webp);
+    top: 60%;
+    left: 65%;
+    background-size: 100%;
+    width: 20%;
+    height: 24%;
+    background-repeat: no-repeat;
+  }
+  .solvedwoman::before {
+    content: none;
+  }
+  .annoyingman01::before {
+    content: none;
+    animation: question 2s infinite;
+  }
+  .annoyingman02::before {
+    content: none;
+  }
+  .annoyingwoman::before {
     content: none;
   }
 }/*# sourceMappingURL=Main.css.map */

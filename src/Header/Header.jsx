@@ -46,7 +46,7 @@ export default function Header() {
   return (
     <div
       className="fixed top-0 left-0 z-30 
-    pt-6 pb-4  lg:pt-10 lg:pb-0
+    pt-6 pb-2  lg:pt-10 lg:pb-0
     px-4 md:px-8 lg:px-16 
     w-screen h-20 md:h-24 lg:h-24 flex"
     >
