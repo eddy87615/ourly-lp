@@ -246,7 +246,7 @@ export default function Function() {
           </>
         ) : (
           <img
-            src="/img/function.svg"
+            src="/img/function.png"
             className="absolute top-1/2 translate-y-[-50%]"
           />
         )}

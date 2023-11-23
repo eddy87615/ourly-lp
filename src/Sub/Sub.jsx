@@ -107,11 +107,11 @@ export default function Sub() {
   };
 
   const leftVariants = {
-    hidden: { x: 1 * -500, opacity: 0 },
+    hidden: { x: 1 * -100, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
   const rightVariants = {
-    hidden: { x: 1 * 500, opacity: 0 },
+    hidden: { x: 1 * 100, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
 
