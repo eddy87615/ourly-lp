@@ -119,11 +119,13 @@ export default function Scrollnav() {
   }, 20);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    //Effectを削除
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      //Effectを削除
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
   //
