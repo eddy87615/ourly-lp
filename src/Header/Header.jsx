@@ -31,15 +31,15 @@ export default function Header() {
     const handleScroll = () => {
       if (typeof window !== 'indefined') {
         const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+        const threshold = window.innerHeight;
+        setShowBtn(scrollY > threshold);
       }
 
-      const threshold = window.innerHeight;
-      setShowBtn(scrollY > threshold);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
     };
   }, []);
 
