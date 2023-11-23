@@ -92,7 +92,11 @@ export default function Scrollnav() {
     }
 
     //今のところを検査してactivesectionを設置
-    const scrollPosition = window.scrollY + window.innerHeight;
+    if (typeof window !== 'undefined') {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const scrollPositionTop = window.scrollY;
+      const scrollPositionBottom = window.scrollY + window.innerHeight;
+    }
     const section = [
       'section1',
       'section2',
@@ -103,8 +107,6 @@ export default function Scrollnav() {
       'section7',
       'section8',
     ];
-    const scrollPositionTop = window.scrollY;
-    const scrollPositionBottom = window.scrollY + window.innerHeight;
     for (let i = 0; i < section.length; i++) {
       const element = document.getElementById(section[i]);
       if (
