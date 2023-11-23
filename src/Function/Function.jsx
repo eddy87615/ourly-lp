@@ -197,9 +197,7 @@ const data = [
 ];
 
 export default function Function() {
-  if (typeof window !== 'undefined') {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  }
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
