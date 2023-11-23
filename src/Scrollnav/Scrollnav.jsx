@@ -92,11 +92,11 @@ export default function Scrollnav() {
     }
 
     //今のところを検査してactivesectionを設置
-    if (typeof window !== 'undefined') {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const scrollPositionTop = window.scrollY;
-      const scrollPositionBottom = window.scrollY + window.innerHeight;
-    }
+
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const scrollPositionTop = window.scrollY;
+    const scrollPositionBottom = window.scrollY + window.innerHeight;
+
     const section = [
       'section1',
       'section2',
