@@ -204,6 +204,7 @@ export default function Function() {
       const handleResize = () => {
         setWindowWidth(window.innerWidth);
       };
+      handleResize();
 
       window.addEventListener('resize', handleResize);
 
@@ -212,12 +213,13 @@ export default function Function() {
       };
     }
   }, []);
+  const render = windowWidth >= 1000;
 
   return (
     <div>
       <div className="function bg-white h-screen relative" id="section5">
         <h3 className="text-h3 font-bold text-center pt-16">機能一覧</h3>
-        {windowWidth >= 1000 ? (
+        {render ? (
           <>
             <div className="hexagon flex flex-col relative top-[8%]">
               <div className="flex justify-center w-full h-full">
