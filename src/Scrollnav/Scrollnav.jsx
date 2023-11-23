@@ -85,7 +85,7 @@ export default function Scrollnav() {
   const handleScroll = _debounce(() => {
     //Topから50%になったら表示する
     if (window.scrollY > window.innerHeight / 2) {
-      setShowNav(true);
+      if (typeof window !== 'undefined') setShowNav(true);
     } else {
       setShowNav(false);
     }
