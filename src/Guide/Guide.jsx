@@ -68,9 +68,11 @@ export default function Guide() {
   };
 
   const handleTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+      });
+    }
   };
 
   const [isHidden, setIsHidden] = useState(true);
@@ -81,12 +83,12 @@ export default function Guide() {
         const shouldHide = window.innerWidth < 1025;
         setIsHidden(shouldHide);
       }
-    };
 
-    window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
     };
 
     handleResize();
