@@ -197,19 +197,22 @@ const data = [
 ];
 
 export default function Function() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  if (typeof window !== 'undefined') {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  }
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-    if (typeof window !== 'undefined')
       window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (
