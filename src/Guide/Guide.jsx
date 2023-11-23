@@ -77,12 +77,13 @@ export default function Guide() {
 
   useEffect(() => {
     const handleResize = () => {
-      const shouldHide = window.innerWidth < 1025;
-      setIsHidden(shouldHide);
+      if (typeof window !== 'undefined') {
+        const shouldHide = window.innerWidth < 1025;
+        setIsHidden(shouldHide);
+      }
     };
 
-    if (typeof window !== 'undefined')
-      window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
