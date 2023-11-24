@@ -38,6 +38,6 @@
 }
 .menu-line-active03 {
   transform: translateY(-200%) rotate(-45deg);
-  background-color: white;
   transition: all 0.5s ease-in-out;
+  background-color: white;
 }
