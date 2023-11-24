@@ -11,10 +11,15 @@ export default function Intro() {
       id="section0"
     >
       <p
-        className="text-h3 lg:text-h2 text-center lg:text-left
-      font-bold px-24 lg:p-4 
-      lg:pr-[10%] top-[10%] md:top-[16%] lg:top-[10%] md:left-1/2 md:translate-x-[-50%] md:w-full
-      absolute MD:static lg:static "
+        className="text-h3 lg:text-h2 
+        text-center lg:text-right h-full 
+        lg:flex lg:flex-row-reverse lg:items-center
+      font-bold 
+      px-24 
+      lg:p-4 lg:pr-[10%] 
+      top-[10%] md:top-[16%] lg:top-0
+      md:left-1/2 md:translate-x-[-50%] md:w-full
+      absolute md:absolute"
       >
         <span
           className=" text-[--ourly-theme] absolute opacity-50 

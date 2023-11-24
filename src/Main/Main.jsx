@@ -84,8 +84,10 @@ function SpeechBubble({ text, className }) {
       <p>{text}</p>
       <span
         className="bubble-triangle w-6 h-6
-       lg:w-10 lg:h-10 bg-[--ourly-theme] absolute 
-       lg:top-[61%] lg:right-[-33px]
+       lg:w-10 lg:h-10 
+       bg-[--ourly-theme] absolute 
+       lg:top-[63%] lg:right-[-33px]
+       md:right-[-16px]
        top-[80%] right-[-4%]"
       ></span>
     </div>
@@ -102,7 +104,11 @@ export default function Main() {
             key={index}
             id={`section${index + 1}`}
           >
-            <h2 className="text-h3 lg:text-h2 font-bold p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%]">
+            <h2
+              className="text-h3 md:text-h3 lg:text-h2 
+            font-bold teaxt-left lg:text-left md:text-center
+            p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%]"
+            >
               <span className="border-none lg:border-b-[5px] lg:border-solid border-[--ourly-theme]">
                 {personal.content}
               </span>

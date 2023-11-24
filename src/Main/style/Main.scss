@@ -252,6 +252,143 @@
 
 //RWD//
 
+@media screen and (max-width: 768px) {
+  .annoyingman01 {
+    background-repeat: repeat;
+    background-position: 0 100%;
+    img {
+      width: 50%;
+      height: auto;
+
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      animation: none;
+    }
+  }
+  .solvedman01 {
+    background-size: 80%;
+    background-position: 50% 50%;
+
+    img {
+      width: 60%;
+      height: auto;
+
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-image: url(/img/surprise.webp);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 30%;
+    }
+  }
+
+  .annoyingman02 {
+    background-repeat: repeat;
+    background-position: 0 100%;
+    img {
+      width: 70%;
+      height: auto;
+
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      animation: none;
+    }
+  }
+  .solvedman02 {
+    background-size: 80%;
+    background-position: 50% 68%;
+
+    img {
+      width: 80%;
+      height: auto;
+
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
+  .solvedman02::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 48%;
+    width: 50%;
+    height: 50%;
+    background-image: url(/img/illu-04.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  .solvedman02::before {
+    content: none;
+  }
+
+  .annoyingwoman {
+    img {
+      width: 100%;
+      height: auto;
+
+      animation: none;
+    }
+  }
+
+  .solvedwoman {
+    background-image: url(/img/usability-03.gif);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 60%;
+
+    img {
+      width: 100%;
+      height: auto;
+
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+
+      transform: rotateY(180deg);
+    }
+  }
+
+  .solvedwoman::after {
+    content: '';
+    position: absolute;
+    background-image: url(/img/KViphone.webp);
+    top: 60%;
+    left: 65%;
+    background-size: 100%;
+    width: 20%;
+    height: 24%;
+    background-repeat: no-repeat;
+  }
+  .solvedwoman::before {
+    content: none;
+  }
+
+  .annoyingman01::before {
+    content: none;
+
+    animation: question 2s infinite;
+  }
+  .annoyingman02::before {
+    content: none;
+  }
+  .annoyingwoman::before {
+    content: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .annoyingman01 {
     background-repeat: repeat;
