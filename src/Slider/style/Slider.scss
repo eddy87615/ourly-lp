@@ -257,6 +257,77 @@ button:hover {
 
 //RWD//
 
+@media screen and (max-width: 768px) {
+  .triangle01,
+  .triangle02,
+  .triangle03,
+  .triangle04,
+  .triangle05,
+  .triangle06 {
+    display: none;
+  }
+
+  .page01::before {
+    background-position: 20% 100%;
+    background-size: 100%;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+
+    animation: none;
+  }
+
+  .page02::before {
+    background-position: 0 100%;
+    background-size: 90%;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 56%;
+
+    animation: none;
+  }
+
+  .page03::before {
+    background-position: 0 100%;
+    background-size: 100%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60%;
+
+    animation: none;
+  }
+
+  .title01 {
+    position: absolute;
+    top: 20%;
+    left: 16px;
+    h1 {
+      padding-right: 24%;
+    }
+  }
+  .title02 {
+    position: absolute;
+    top: 20%;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
+  }
+  .title03 {
+    position: absolute;
+    top: 20%;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .page01::before {
     background-position: 20% 100%;
@@ -323,77 +394,6 @@ button:hover {
   .title03 {
     position: absolute;
     top: 14%;
-    right: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: left;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .triangle01,
-  .triangle02,
-  .triangle03,
-  .triangle04,
-  .triangle05,
-  .triangle06 {
-    display: none;
-  }
-
-  .page01::before {
-    background-position: 20% 100%;
-    background-size: 100%;
-    bottom: 0;
-    right: 0;
-    width: 90%;
-    height: 90%;
-
-    animation: none;
-  }
-
-  .page02::before {
-    background-position: 0 100%;
-    background-size: 90%;
-    bottom: 0;
-    right: 0;
-    width: 90%;
-    height: 56%;
-
-    animation: none;
-  }
-
-  .page03::before {
-    background-position: 0 100%;
-    background-size: 100%;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 60%;
-
-    animation: none;
-  }
-
-  .title01 {
-    position: absolute;
-    top: 20%;
-    left: 16px;
-    h1 {
-      padding-right: 24%;
-    }
-  }
-  .title02 {
-    position: absolute;
-    top: 20%;
-    right: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: left;
-  }
-  .title03 {
-    position: absolute;
-    top: 20%;
     right: 16px;
     display: flex;
     flex-direction: column;
