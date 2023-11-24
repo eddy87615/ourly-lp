@@ -10,6 +10,44 @@ import { Link as ScrollLink, Link, Element } from 'react-scroll';
 export default function Hamburger() {
   const [windowWidth, setWindowWidth] = useState(0);
 
+  //menu click//
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = (event) => {
+    if (event) {
+      event.preventDefault();
+    }
+    console.log('Toggling menu');
+    setIsMenuOpen(!isMenuOpen);
+  };
+  //
+
+  const Menudiv = () => {
+    return (
+      <div
+        className={`menu-line-bg  ${
+          isMenuOpen === true ? 'bg-ourly-theme' : ''
+        }`}
+        onClick={toggleMenu}
+      >
+        <div
+          className={`menu-line  ${
+            isMenuOpen === true ? 'menu-line-active01' : ''
+          }`}
+        ></div>
+        <div
+          className={`menu-line  ${
+            isMenuOpen === true ? 'menu-line-active02' : ''
+          }`}
+        ></div>
+        <div
+          className={`menu-line  ${
+            isMenuOpen === true ? 'menu-line-active03' : ''
+          }`}
+        ></div>
+      </div>
+    );
+  };
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
@@ -24,7 +62,7 @@ export default function Hamburger() {
       };
     }
   }, []);
-  const render = windowWidth <= 1000;
+  const rendermenu = windowWidth <= 1000;
 
   const menu = [
     {
@@ -50,31 +88,41 @@ export default function Hamburger() {
   ];
 
   return (
-    <div>
-      {render ? (
-        <>
-          <div>
-            <div className="">
-              <div className="menu-line"></div>
-              <div className="menu-line"></div>
-              <div className="menu-line"></div>
-            </div>
-            <div>
-              <ul>
-                {menu.map((link, index) => (
-                  <li>
-                    <Link alt={link.alt} to={link.link}>
-                      {link.txt}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+    <>
+      {rendermenu ? (
+        <div>
+          <Menudiv />
+          <div
+            className="fixed top-0 right-[-100%] opacity-0 duration-500
+            bg-white w-screen h-screen z-30"
+            style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
+          >
+            <ul
+              className="relative flex flex-col justify-center items-center 
+            top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[60%]"
+            >
+              {menu.map((link, index) => (
+                <li
+                  key={index}
+                  className="w-full flex justify-center items-center text-center font-semibold
+                  border-4 border-ourly-theme bg-white rounded-[100px]
+                  m-4"
+                >
+                  <Link
+                    alt={link.alt}
+                    to={link.link}
+                    className="w-full h-full py-4"
+                  >
+                    {link.txt}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        </>
+        </div>
       ) : (
         ''
       )}
-    </div>
+    </>
   );
 }

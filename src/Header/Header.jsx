@@ -6,6 +6,7 @@ import '@/app/globals.css';
 //
 import { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import Hamburger from '@/Hamburger/Hamburger';
 
 export default function Header() {
   useEffect(() => {
@@ -88,6 +89,7 @@ export default function Header() {
       >
         <button className="font-bold text-button ">お問い合わせ</button>
       </ScrollLink>
+      <Hamburger />
     </div>
   );
 }
