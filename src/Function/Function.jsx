@@ -249,7 +249,7 @@ export default function Function() {
         ) : (
           <img
             src="/img/function.png"
-            className="absolute top-1/2 translate-y-[-50%]"
+            className="absolute top-1/2 translate-y-[-50%] z-[2]"
           />
         )}
       </div>

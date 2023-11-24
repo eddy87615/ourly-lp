@@ -211,7 +211,7 @@
   }
   .solvedman01 {
     background-size: 90%;
-    background-position: 90% 70%;
+    background-position: 100% 80%;
   }
   .solvedman01 img {
     width: 60%;
@@ -238,8 +238,8 @@
     animation: none;
   }
   .solvedman02 {
-    background-size: 80%;
-    background-position: 80% 70%;
+    background-size: 70%;
+    background-position: 80% 72%;
   }
   .solvedman02 img {
     width: 80%;
@@ -252,10 +252,10 @@
   .solvedman02::after {
     content: "";
     position: absolute;
-    bottom: -20%;
-    left: 48%;
-    width: 50%;
-    height: 50%;
+    bottom: -10%;
+    left: 60%;
+    width: 40%;
+    height: 40%;
     background-image: url(/img/illu-04.webp);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -273,10 +273,10 @@
     background-image: url(/img/usability-03.gif);
     background-repeat: no-repeat;
     background-size: 70%;
-    background-position: 50% 60%;
+    background-position: 50% 72%;
   }
   .solvedwoman img {
-    width: 80%;
+    width: 72%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -323,8 +323,8 @@
     animation: none;
   }
   .solvedman01 {
-    background-size: 80%;
-    background-position: 50% 50%;
+    background-size: 90%;
+    background-position: 50% 64%;
   }
   .solvedman01 img {
     width: 60%;
@@ -352,8 +352,8 @@
     animation: none;
   }
   .solvedman02 {
-    background-size: 80%;
-    background-position: 50% 68%;
+    background-size: 100%;
+    background-position: 80% 80%;
   }
   .solvedman02 img {
     width: 80%;
@@ -364,16 +364,7 @@
     z-index: 2;
   }
   .solvedman02::after {
-    content: "";
-    position: absolute;
-    bottom: -20%;
-    left: 48%;
-    width: 50%;
-    height: 50%;
-    background-image: url(/img/illu-04.webp);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
+    content: none;
   }
   .solvedman02::before {
     content: none;
@@ -387,7 +378,7 @@
     background-image: url(/img/usability-03.gif);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: 50% 60%;
+    background-position: 50% 64%;
   }
   .solvedwoman img {
     width: 100%;

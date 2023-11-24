@@ -120,7 +120,7 @@ export default function Sub() {
       <h2
         className="text-h3 md:text-h3 lg:text-h2 text-center 
         leading-h3 lg:leading-h2 font-bold 
-      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-10"
+      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
       >
         ourlyも…
         <br />
@@ -165,19 +165,21 @@ export default function Sub() {
                         className="w-[90%] duration-500"
                       />
                     </li>
-                    <li className="title-grid">
+                    <li className="title-grid w-full flex justify-center items-center">
                       <h3
                         dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className=" leading-h4 lg:leading-h2 text-h4 lg:text-h3 
-                        text-center font-bold 
-                        px-8 lg:py-8 lg: text-[--ourly-theme] mt-[-32px]"
+                        className=" leading-h4 md:leading-h3 lg:leading-h2 
+                        text-h4 md:text-h3 lg:text-h3 
+                         text-center md:text-left lg:text-center font-bold 
+                        px-20 md:px-10 lg:py-8 lg: text-[--ourly-theme] mt-[-32px]
+                        "
                       ></h3>
                     </li>
                     <li className="text-grid">
                       <p
                         dangerouslySetInnerHTML={{ __html: obj.text }}
                         className=" text-text 
-                        md:text-[18px] leading-text px-[4%] mt-[-24px]"
+                        md:text-[18px] leading-text md:leading-h3 px-[4%] mt-[-24px] md:pt-16"
                       ></p>
                     </li>
                   </ul>

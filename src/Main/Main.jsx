@@ -75,7 +75,7 @@ function SpeechBubble({ text, className }) {
       text-[14px] md:text-[20px] lg:text-h4 
       leading-h4
        relative border-[5px] border-[--ourly-theme] rounded-full font-bold  
-       mb-4 mx-auto md:mb-6 lg:m-12 
+       mb-4 mx-auto md:mb-8 lg:m-12 
        p-1 lg:px-[4%] 
        md:py-2 
        lg:py-4 ${className}`}
@@ -111,7 +111,7 @@ export default function Main() {
             <h2
               className="text-h3 md:text-h3 lg:text-h2 
             font-bold teaxt-left lg:text-left md:text-center
-            p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-10"
+            px-8 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
             >
               <span className="border-none lg:border-b-[5px] lg:border-solid border-[--ourly-theme]">
                 {personal.content}
@@ -141,7 +141,7 @@ export default function Main() {
               className="text-h3 md:text-h3 lg:text-h2 
               text-center 
               leading-h3 md:leading-h3 lg:leading-h2 font-bold 
-            p-4 pt-8 md:py-10 lg:p-16"
+            py-10 px-8 md:py-16 lg:p-16"
             >
               {personal.solvedTitle}
               <br />
@@ -151,7 +151,8 @@ export default function Main() {
             <p
               dangerouslySetInnerHTML={{ __html: personal.solvedContent }}
               className="w-[90%] lg:w-[40%] 
-              text-[14px] md:text-text lg:text-text leading-8 
+              text-[14px] md:text-[18px] lg:text-text leading-text 
+              md:px-16
               text-left lg:text-center 
               flex justify-center m-auto"
             ></p>

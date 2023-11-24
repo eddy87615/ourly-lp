@@ -137,16 +137,19 @@
 @media screen and (max-width: 768px) {
   .title {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
     width: 100%;
+    gap: 0;
     grid-template-areas:
       'num title '
       'pic pic '
       'txt txt';
     .num-grid {
       grid-area: num;
+      img {
+        width: 70%;
+      }
     }
     .pic-grid {
       grid-area: pic;
@@ -166,6 +169,52 @@
   .content-div:hover {
     transform: scale(1) !important;
   }
+
+  .subend01 {
+    img {
+      position: absolute;
+      left: 8%;
+      bottom: 0;
+      width: 35%;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .subend02 {
+    img {
+      position: absolute;
+      right: 4%;
+      bottom: 0;
+      width: 35%;
+    }
+    p {
+      padding: 0 14%;
+    }
+  }
+
+  .subend03 {
+    background-color: var(--purple-dark);
+    justify-content: right;
+
+    background-image: url(/img/logo-LP.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+    img {
+      position: absolute;
+      left: 12%;
+      bottom: 0%;
+      width: 24%;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+  //
 }
 @media screen and (max-width: 500px) {
   .title {

@@ -132,18 +132,21 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-30 bg-white ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
       }${isHidden ? 'hidden' : ''}`}
     >
-      <div className="fixed top-0 left-0 z-30 py-8 px-16 w-screen h-28 flex">
+      <div
+        className="fixed top-0 left-0 z-50 flex items-center
+      px-4 lg:px-8 mt-4
+    w-screen h-[100px]"
+      >
         <img
           src="/img/ourly_logo.webp"
           alt="ourly logo"
-          className="w-40 md:w-48 lg:w-56 
-          cursor-pointer"
+          className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
       <h1 className="text-h1 font-bold text-center mt-16">

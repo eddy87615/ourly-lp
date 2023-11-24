@@ -20,11 +20,12 @@ export default function Compare() {
   return (
     <Element name="section6">
       <div className="compare relative w-full h-screen bg-[--base-color]">
-        <h3 className="text-h3 font-bold text-center pt-16">社内報の比較</h3>
+        <h3 className="text-h3 font-bold text-center py-16">社内報の比較</h3>
         <motion.img
           src="/img/compare.webp"
           alt="comparison about ourly, paper company news and other web company news tools"
-          className="relative w-[50%] my-0 mx-auto mt-[4%] z-2 duration-500"
+          className="relative w-[50%] my-0 mx-auto mt-[4%] z-2 duration-500 
+          md:w-[90%] md:mt-[16%]"
           ref={reffunction}
           variants={imgVariants}
           initial="hidden"

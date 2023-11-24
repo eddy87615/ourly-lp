@@ -25,4 +25,53 @@
 #section6 > img:hover {
   transform: scale(1.2);
   transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .compare::before {
+    content: "";
+    background-image: url(/img/logo-Y.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+    background-size: contain;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+  }
+  .compare {
+    background-image: url(/img/logo-DP.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 50%;
+    position: absolute;
+  }
+  #section6 > img:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .compare::before {
+    content: "";
+    background-image: url(/img/logo-Y.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+    background-size: contain;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+  }
+  .compare {
+    background-image: url(/img/logo-DP.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 50%;
+    position: absolute;
+  }
+  #section6 > img:hover {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=Compare.css.map */
