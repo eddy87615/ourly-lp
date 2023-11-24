@@ -201,7 +201,7 @@
     background-position: 0 100%;
   }
   .annoyingman01 img {
-    width: 50%;
+    width: 40%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -210,16 +210,15 @@
     animation: none;
   }
   .solvedman01 {
-    background-size: 80%;
-    background-position: 50% 50%;
+    background-size: 90%;
+    background-position: 90% 70%;
   }
   .solvedman01 img {
     width: 60%;
     height: auto;
     position: absolute;
     bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     background-image: url(/img/surprise.webp);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -230,7 +229,7 @@
     background-position: 0 100%;
   }
   .annoyingman02 img {
-    width: 70%;
+    width: 56%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -240,7 +239,7 @@
   }
   .solvedman02 {
     background-size: 80%;
-    background-position: 50% 68%;
+    background-position: 80% 70%;
   }
   .solvedman02 img {
     width: 80%;
@@ -266,18 +265,18 @@
     content: none;
   }
   .annoyingwoman img {
-    width: 100%;
+    width: 80%;
     height: auto;
     animation: none;
   }
   .solvedwoman {
     background-image: url(/img/usability-03.gif);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 70%;
     background-position: 50% 60%;
   }
   .solvedwoman img {
-    width: 100%;
+    width: 80%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -289,10 +288,10 @@
     position: absolute;
     background-image: url(/img/KViphone.webp);
     top: 60%;
-    left: 65%;
+    left: 72%;
     background-size: 100%;
-    width: 20%;
-    height: 24%;
+    width: 16%;
+    height: 32%;
     background-repeat: no-repeat;
   }
   .solvedwoman::before {

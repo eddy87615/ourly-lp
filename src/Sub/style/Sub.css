@@ -119,6 +119,34 @@
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    grid-template-areas: "num title " "pic pic " "txt txt";
+  }
+  .title .num-grid {
+    grid-area: num;
+  }
+  .title .pic-grid {
+    grid-area: pic;
+  }
+  .title .title-grid {
+    grid-area: title;
+  }
+  .title .text-grid {
+    grid-area: txt;
+  }
+  .content-div:hover .pic-grid {
+    transform: scale(1) !important;
+  }
+  .content-div:hover {
+    transform: scale(1) !important;
+  }
+}
 @media screen and (max-width: 500px) {
   .title {
     display: flex;
@@ -136,9 +164,6 @@
     position: absolute;
     top: 8%;
     left: 0;
-  }
-  .title .text-grid {
-    grid-area: txt;
   }
   .content-div:hover .pic-grid {
     transform: scale(1) !important;

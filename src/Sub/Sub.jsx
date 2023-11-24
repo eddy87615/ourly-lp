@@ -118,9 +118,9 @@ export default function Sub() {
   return (
     <div className="w-full h-full bg-[--base-color] relative" id="section4">
       <h2
-        className="text-h3 lg:text-h2 text-center 
+        className="text-h3 md:text-h3 lg:text-h2 text-center 
         leading-h3 lg:leading-h2 font-bold 
-      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%]"
+      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-10"
       >
         ourlyも…
         <br />
@@ -165,18 +165,19 @@ export default function Sub() {
                         className="w-[90%] duration-500"
                       />
                     </li>
-                    <li>
+                    <li className="title-grid">
                       <h3
                         dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className="title-grid leading-h4 lg:leading-h2 text-h4 lg:text-h3 
+                        className=" leading-h4 lg:leading-h2 text-h4 lg:text-h3 
                         text-center font-bold 
-                        px-16 lg:pt-10 text-[--ourly-theme] mt-[-32px]"
+                        px-8 lg:py-8 lg: text-[--ourly-theme] mt-[-32px]"
                       ></h3>
                     </li>
-                    <li>
+                    <li className="text-grid">
                       <p
                         dangerouslySetInnerHTML={{ __html: obj.text }}
-                        className="text-grid text-text leading-text px-[4%] mt-[-24px]"
+                        className=" text-text 
+                        md:text-[18px] leading-text px-[4%] mt-[-24px]"
                       ></p>
                     </li>
                   </ul>
