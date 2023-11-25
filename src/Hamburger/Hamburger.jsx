@@ -24,8 +24,8 @@ export default function Hamburger() {
   const Menudiv = () => {
     return (
       <div
-        className={`menu-line-bg  ${
-          isMenuOpen === true ? 'bg-ourly-theme' : ''
+        className={`menu-line-bg ${
+          isMenuOpen ? 'menu-line-bg-active' : 'menu-line-bg-unactive'
         }`}
         onClick={toggleMenu}
       >
@@ -94,7 +94,7 @@ export default function Hamburger() {
           <Menudiv />
           <div
             className="fixed top-0 right-[-100%] opacity-0 duration-500
-            bg-white w-screen h-screen z-30"
+            bg-white w-screen h-screen z-30 "
             style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
           >
             <ul

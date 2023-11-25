@@ -9,6 +9,18 @@
   position: relative;
   z-index: 50;
   border-radius: 8px;
+  transition: all 0.5s;
+  /* animation: menuout 0.5s ease-in-out; */
+}
+.menu-line-bg-active {
+  background-color: var(--ourly-theme);
+  transition-duration: all 0.5s;
+  animation: menuin 0.5s ease-in-out;
+}
+.menu-line-bg-unactive {
+  background-color: white;
+  transition-duration: all 0.5s;
+  animation: menuout 0.5s ease-in-out;
 }
 
 .menu-line {
@@ -40,4 +52,23 @@
   transform: translateY(-200%) rotate(-45deg);
   transition: all 0.5s ease-in-out;
   background-color: white;
+}
+
+@keyframes menuin {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: var(--ourly-theme);
+  }
+}
+@keyframes menuout {
+  from {
+    background-color: var(--ourly-theme);
+  }
+
+  to {
+    background-color: white;
+  }
 }
