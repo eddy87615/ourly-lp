@@ -96,14 +96,15 @@ export default function Hamburger() {
           <AnimatePresence>
             {isMenuOpen && (
               <div
-                className={`menu-body  ${
-                  isMenuOpen === true ? ' menu-body-active ' : ''
-                }`}
-                // style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
+                className={`menu-body fixed top-0 right-[-100%] opacity-0 duration-500
+            bg-white w-screen h-screen z-30 ${
+              isMenuOpen === true ? ' menu-body-active ' : ''
+            }`}
+                style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
               >
                 <ul
                   className="relative flex flex-col justify-center items-center 
-            top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[60%]"
+            top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[60%] z-10"
                 >
                   {menu.map((link, index) => (
                     <motion.li

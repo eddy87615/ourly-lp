@@ -120,7 +120,7 @@ export default function Sub() {
       <h2
         className="text-h3 md:text-h3 lg:text-h2 text-center 
         leading-h3 lg:leading-h2 font-bold 
-      p-8 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
+      px-8 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
       >
         ourlyも…
         <br />
@@ -158,6 +158,16 @@ export default function Sub() {
                         className="h-[70%] "
                       />
                     </li>
+                    <li className="title-grid w-full flex justify-center items-center">
+                      <h3
+                        dangerouslySetInnerHTML={{ __html: obj.title }}
+                        className=" leading-h4 md:leading-h3 lg:leading-h2 
+                        text-h4 md:text-h3 lg:text-h3 
+                         text-center md:text-left lg:text-left font-bold 
+                        py-6 px-12 md:px-10 md:py-0 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
+                        "
+                      ></h3>
+                    </li>
                     <li className="pic-grid flex justify-center items-center">
                       <img
                         src={obj.imgContent}
@@ -165,21 +175,13 @@ export default function Sub() {
                         className="w-[90%] duration-500"
                       />
                     </li>
-                    <li className="title-grid w-full flex justify-center items-center">
-                      <h3
-                        dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className=" leading-h4 md:leading-h3 lg:leading-h2 
-                        text-h4 md:text-h3 lg:text-h3 
-                         text-center md:text-left lg:text-left font-bold 
-                        px-12 md:px-10 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
-                        "
-                      ></h3>
-                    </li>
-                    <li className="text-grid">
+                    <li className="text-grid lg:pt-16">
                       <p
                         dangerouslySetInnerHTML={{ __html: obj.text }}
                         className=" text-text 
-                        md:text-[18px] leading-text md:leading-h3 px-[4%] mt-[-24px] md:pt-16"
+                        md:text-[18px] 
+                        leading-text md:leading-h3 px-[4%] 
+                        mt-[-24px]"
                       ></p>
                     </li>
                   </ul>

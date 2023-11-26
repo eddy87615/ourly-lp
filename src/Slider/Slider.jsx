@@ -115,7 +115,7 @@ export default function Slider() {
             >
               <button
                 className={`${obj.button} relative 
-                w-[180px] md:w-[250px] lg:w-[350px] 
+                w-[200px] md:w-[250px] lg:w-[350px] 
                 h-[60px] md:h-[80px] lg:h-[100px]
                bg-white border-ourly-theme border-4 rounded-full 
                text-text md:text-[20px] lg:text-h3 mt-[4%] font-bold shadow-ourly 
