@@ -219,7 +219,7 @@ export default function Guide() {
         ))}
       </div>
       <button
-        className="open text-[18px] font-bold bottom-[10%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[6%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();
