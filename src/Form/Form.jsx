@@ -30,12 +30,12 @@ function Fee() {
       <h4 className="text-h4 font-bold text-center pt-8">
         登録されるアカウント数に応じた、月額制の料金プラン
       </h4>
-      <div className="fee relative flex flex-col lg:flex-row my-0 mx-auto py-24 gap-56 w-[90%]">
+      <div className="fee relative flex flex-col lg:flex-row my-0 mx-auto py-12 gap-56 w-[90%]">
         {FeeData.map((obj, index) => (
           <div
             key={index}
             className="flex flex-col justify-center items-center w-[100%]
-            p-16 border-4 rounded-[16px] border-[--ourly-theme] bg-white"
+            p-12 border-4 rounded-[16px] border-[--ourly-theme] bg-white"
           >
             <img src={obj.img} alt={obj.alt} />
             <h4 className="text-h4 font-bold text-center py-8">{obj.title}</h4>
@@ -43,7 +43,7 @@ function Fee() {
           </div>
         ))}
       </div>
-      <p className="bottomtxt text-h4 leading-h4 text-center relative">
+      <p className="bottomtxt text-h4 leading-h4 text-center relative pt-4">
         お客様ごとに、最適なご提案をいたしますので、
         <br />
         まずは下記お問い合わせフォームよりお問い合わせ下さい。
