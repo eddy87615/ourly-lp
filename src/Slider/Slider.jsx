@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link as ScrollLink } from 'react-scroll';
 //
 //CSS導入
-import '@/Slider/style/Slider.css';
+import './Slider.css';
 import '@/app/globals.css';
 import 'swiper/css';
 import 'swiper/css/navigation';

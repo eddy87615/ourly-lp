@@ -6,6 +6,7 @@ import '@/app/globals.css';
 //
 import { useEffect, useState } from 'react';
 import { Link as ScrollLink, Link, Element } from 'react-scroll';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Hamburger() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -91,34 +92,44 @@ export default function Hamburger() {
     <>
       {rendermenu ? (
         <div>
-          <Menudiv />
-          <div
-            className="fixed top-0 right-[-100%] opacity-0 duration-500
+          <Menudiv toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+          <AnimatePresence>
+            {isMenuOpen && (
+              <motion.div
+                className="menu-body fixed top-0 right-[-100%] opacity-0 duration-500
             bg-white w-screen h-screen z-30 "
-            style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
-          >
-            <ul
-              className="relative flex flex-col justify-center items-center 
+                initial={{ opacity: 0, right: '-100%' }}
+                animate={{ opacity: 1, right: 0 }}
+                exit={{ opacity: 0, right: '-100%' }}
+                // style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
+              >
+                <motion.ul
+                  className="relative flex flex-col justify-center items-center 
             top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[60%]"
-            >
-              {menu.map((link, index) => (
-                <li
-                  key={index}
-                  className="w-full flex justify-center items-center text-center font-semibold
+                >
+                  {menu.map((link, index) => (
+                    <motion.li
+                      key={index}
+                      className="w-full flex justify-center items-center text-center font-semibold
                   border-4 border-ourly-theme bg-white rounded-[100px]
                   m-4"
-                >
-                  <Link
-                    alt={link.alt}
-                    to={link.link}
-                    className="w-full h-full py-4"
-                  >
-                    {link.txt}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+                      initial={{ opacity: 0, y: '100%' }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: '100%' }}
+                    >
+                      <Link
+                        alt={link.alt}
+                        to={link.link}
+                        className="w-full h-full py-4"
+                      >
+                        {link.txt}
+                      </Link>
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ) : (
         ''

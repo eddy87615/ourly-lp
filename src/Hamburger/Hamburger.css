@@ -54,6 +54,26 @@
   background-color: white;
 }
 
+.menu-body {
+  background-image: url(/img/logo-DP.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 94% 94%;
+
+  position: relative;
+}
+.menu-body::after {
+  content: '';
+  background-image: url(/img/logo-P.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+}
+
 @keyframes menuin {
   from {
     background-color: white;

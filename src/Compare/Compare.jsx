@@ -2,7 +2,7 @@
 import React from 'react';
 import { useRef } from 'react';
 //CSS導入
-import '@/Compare/style/Compare.css';
+import './Compare.css';
 import '@/app/globals.css';
 //
 import { Element } from 'react-scroll';
@@ -24,8 +24,8 @@ export default function Compare() {
         <motion.img
           src="/img/compare.webp"
           alt="comparison about ourly, paper company news and other web company news tools"
-          className="relative w-[50%] my-0 mx-auto mt-[4%] z-2 duration-500 
-          md:w-[90%] md:mt-[16%]"
+          className="relative lg:w-[50%]  z-2 duration-500 
+          md:w-[90%] md:mt-[16%] my-0 mx-auto mt-[4%] lg:mt-0"
           ref={reffunction}
           variants={imgVariants}
           initial="hidden"

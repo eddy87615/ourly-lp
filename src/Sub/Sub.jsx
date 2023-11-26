@@ -3,7 +3,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 //CSS導入
-import '@/Sub/style/Sub.css';
+import './Sub.css';
 import '@/app/globals.css';
 //
 import {
@@ -170,8 +170,8 @@ export default function Sub() {
                         dangerouslySetInnerHTML={{ __html: obj.title }}
                         className=" leading-h4 md:leading-h3 lg:leading-h2 
                         text-h4 md:text-h3 lg:text-h3 
-                         text-center md:text-left lg:text-center font-bold 
-                        px-20 md:px-10 lg:py-8 lg: text-[--ourly-theme] mt-[-32px]
+                         text-center md:text-left lg:text-left font-bold 
+                        px-12 md:px-10 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
                         "
                       ></h3>
                     </li>
@@ -209,7 +209,7 @@ export default function Sub() {
               <img src={item.img} alt={item.alt} />
               <p
                 className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
-              font-bold flex items-center p-[8%]"
+              font-bold "
               >
                 {item.text}
               </p>
