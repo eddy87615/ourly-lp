@@ -42,16 +42,16 @@ export default function Compare() {
       <div className="compare relative w-full h-screen bg-[--base-color]">
         <h3 className="text-h3 font-bold text-center py-16">社内報の比較</h3>
         {rendercompare ? (
-          <motion.img
+          <img
             src="/img/compare.webp"
             alt="comparison about ourly, paper company news and other web company news tools"
             className="relative lg:w-[50%]  z-2 duration-500 
           md:w-[90%] md:mt-[16%] my-0 mx-auto mt-[4%] lg:mt-0"
-            ref={reffunction}
-            variants={imgVariants}
-            initial="hidden"
-            animate={isInView ? 'visible' : 'hidden'}
-            transition={{ duration: 0.5 }}
+            // ref={reffunction}
+            // variants={imgVariants}
+            // initial="hidden"
+            // animate={isInView ? 'visible' : 'hidden'}
+            // transition={{ duration: 0.5 }}
           />
         ) : (
           <ComparePhone />

@@ -33,7 +33,6 @@ const Type = () => {
 
 export default function Guide() {
   useEffect(() => {
-    // 在组件加载后，设置一个短暂的延时来启动动画
     const animateElements = () => {
       const elements = document.querySelectorAll(
         ' .container,#guide01, #guide02, #guide03, .open'
@@ -42,7 +41,7 @@ export default function Guide() {
         setTimeout(() => {
           element.style.opacity = '1';
           element.style.transform = 'translateY(0)';
-        }, (index + 1) * 300); // 递增的延迟时间（500ms）
+        }, (index + 1) * 300);
       });
     };
 
@@ -80,7 +79,7 @@ export default function Guide() {
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
-        const shouldHide = window.innerWidth < 1025;
+        const shouldHide = window.innerWidth < 1000;
         setIsHidden(shouldHide);
       }
 
@@ -132,7 +131,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white hidden ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
@@ -149,7 +148,7 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="text-h1 font-bold text-center mt-16">
+      <h1 className="text-h1 font-bold text-center mt-24">
         <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-24">
@@ -168,7 +167,7 @@ export default function Guide() {
           >
             <div
               id={obj.id}
-              className={`list01 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
+              className={`front border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
               shadow-ourly ${
                 obj.id === 'guide01'
                   ? 'left-0'
@@ -194,7 +193,7 @@ export default function Guide() {
             <div
               key={obj.backAlt}
               id={obj.id02}
-              className={`list02 border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
+              className={`back border-4 border-[--ourly-theme] rounded-[16px] w-full h-full absolute bg-white 
               shadow-ourly ${
                 obj.id02 === 'guide01-1'
                   ? 'left-0'

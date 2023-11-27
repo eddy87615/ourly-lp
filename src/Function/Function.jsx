@@ -2,7 +2,7 @@
 import { React, useEffect, useState } from 'react';
 import Hexagon from './component/Hexagon';
 //CSS導入
-import '@/Function/style/Function.css';
+import './Function.css';
 import '@/app/globals.css';
 
 const data = [

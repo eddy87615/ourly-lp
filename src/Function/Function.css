@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .move01,
 .move02 {
   width: 32%;
@@ -9,18 +8,22 @@
   bottom: 0;
   right: 0;
 }
+
 .move01:hover,
 .move02:hover {
   transform: scale(1);
 }
+
 .move01 {
   animation: move01 0.8s infinite;
   transition-delay: 0;
 }
+
 .move02 {
   animation: move02 0.8s infinite;
   transition-delay: 0;
 }
+
 .function::after {
   content: '';
   background-image: url(/img/logo-P.svg);
@@ -32,9 +35,9 @@
   left: 2%;
   width: 30%;
   height: 60%;
-
   z-index: 0;
 }
+
 .function::before {
   content: '';
   background-image: url(/img/logo-B.svg);
@@ -46,11 +49,12 @@
   right: 2%;
   width: 30%;
   height: 60%;
-
   z-index: 0;
 }
 
-//
+.clip > img {
+  clip-path: polygon(50% 0%, 100% 24%, 100% 75%, 50% 100%, 0% 75%, 0% 24%);
+}
 
 .hexagon01:hover,
 .hexagon02:hover,
@@ -69,10 +73,12 @@
   transform: scale(2);
   transition-duration: 0.5s;
 }
+
 .hexagon03:hover > img {
-  transform: scale(2.8);
+  transform: scale(2.5);
   transition-duration: 0.5s;
 }
+
 .hexagon02:hover > img {
   transform: scale(2);
   transition-duration: 0.5s;
@@ -86,49 +92,54 @@
   transition-duration: 0.5s;
   top: 0;
 }
+
 .hexagon07:hover h4 {
   transition-duration: 0.5s;
   top: -10%;
 }
+
 .hexagon03:hover h4 {
   transition-duration: 0.5s;
-  top: -50%;
+  top: -40%;
+}
+
+.hexagon07:hover ul {
+  opacity: 1;
+  top: 20%;
+  display: block;
+  transition-duration: 0.5s;
 }
 
 .hexagon01:hover ul,
 .hexagon05:hover ul,
-.hexagon06:hover ul,
-.hexagon07:hover ul {
+.hexagon06:hover ul {
   opacity: 1;
   top: 30%;
   display: block;
-
   transition-duration: 0.5s;
 }
-.hexagon03:hover ul {
-  opacity: 1;
-  top: -30%;
-  display: block;
 
-  transition-duration: 0.5s;
-}
 .hexagon02:hover ul {
   opacity: 1;
   top: 20%;
   width: 200%;
   display: block;
-
   transition-duration: 0.5s;
 }
+
+.hexagon03:hover ul {
+  opacity: 1;
+  top: -20%;
+  display: block;
+  transition-duration: 0.5s;
+}
+
 .hexagon07:hover ul {
   opacity: 1;
   top: 10%;
   display: block;
-
   transition-duration: 0.5s;
 }
-
-//
 
 .hexagon04::before {
   content: '';
@@ -141,6 +152,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 @keyframes move01 {
@@ -166,4 +178,4 @@
     visibility: visible;
     opacity: 1;
   }
-}
+} /*# sourceMappingURL=Function.css.map */

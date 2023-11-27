@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import './Hexagon.css';
 
 const data = [
   {
@@ -199,8 +200,8 @@ const Hexagon = ({
   list,
   class: hexagonclass,
 }) => (
-  <div className={`${hexagonclass}  h-[12%] w-[12%] relative`} key={color}>
-    <img src={imgsrc} alt={imgalt} className="duration-500" />
+  <div className={` ${hexagonclass}  h-[12%] w-[12%] relative`} key={color}>
+    <img src={imgsrc} alt={imgalt} className="clip duration-500 " />
     {title && (
       <h4
         className={`text-h4 text-center font-semibold
