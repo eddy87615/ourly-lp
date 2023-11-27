@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 //CSS導入
-import '@/Guide/style/Guide.css';
+import './Guide.css';
 import '@/app/globals.css';
 //
 import { Link } from 'react-scroll';

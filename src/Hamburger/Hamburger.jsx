@@ -73,17 +73,17 @@ export default function Hamburger() {
     },
     {
       txt: 'よくある質問',
-      link: 'section6',
+      link: 'section7',
       alt: 'question that often be asked',
     },
     {
       txt: '料金案内',
-      link: 'section7',
+      link: 'section8',
       alt: 'question form',
     },
     {
       txt: 'お問い合わせ',
-      link: 'section8',
+      link: 'section9',
       alt: 'question form',
     },
   ];
@@ -120,6 +120,7 @@ export default function Hamburger() {
                         alt={link.alt}
                         to={link.link}
                         className="w-full h-full py-4"
+                        onClick={toggleMenu}
                       >
                         {link.txt}
                       </Link>

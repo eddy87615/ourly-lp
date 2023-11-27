@@ -84,7 +84,8 @@ export default function Header() {
         transition-all duration-300 "
         style={{
           opacity: showBtn && renderbtn ? 1 : 0,
-          visibility: showBtn && renderbtn ? 'visible' : 'hidden',
+          diaplay: showBtn && renderbtn ? 'block' : 'none',
+          width: showBtn && renderbtn ? 'fit-content' : '0',
         }}
       >
         <button className="font-bold text-button ">お問い合わせ</button>
