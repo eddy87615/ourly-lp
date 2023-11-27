@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import './Hexagon.css';
+import '../Function.css';
 
 const data = [
   {
