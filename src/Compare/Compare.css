@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .compare::before {
-  content: "";
+  content: '';
   background-image: url(/img/logo-Y.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 768px) {
   .compare::before {
-    content: "";
+    content: '';
     background-image: url(/img/logo-Y.svg);
     background-repeat: no-repeat;
     background-position: 10% 0;
@@ -49,11 +49,15 @@
   }
   #section6 > img:hover {
     transform: scale(1);
+  }
+
+  .compare::before {
+    content: none;
   }
 }
 @media screen and (max-width: 500px) {
   .compare::before {
-    content: "";
+    content: '';
     background-image: url(/img/logo-Y.svg);
     background-repeat: no-repeat;
     background-position: 10% 0;
@@ -74,4 +78,8 @@
   #section6 > img:hover {
     transform: scale(1);
   }
-}/*# sourceMappingURL=Compare.css.map */
+
+  .compare::before {
+    content: none;
+  }
+}

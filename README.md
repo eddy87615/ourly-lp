@@ -12,28 +12,29 @@ Download [Node.js](https://nodejs.org/en/download/). Run this followed commands:
 
 ```bash
 # Install dependencies (only the first time)
-yarn install
+npm install
 
 # Run the local server at localhost:3000
-yarn dev
+npm run dev
 
 # Build for production in the dist/ directory
-yarn build
+npm run build
 ```
 
 ## Available Scripts
 
-- `yarn dev` - Next dev
-- `yarn analyze` - Generate bundle-analyzer
-- `yarn lint` - Audit code quality
-- `yarn build` - Next build
-- `yarn start` - Next start
-- `yarn export` - Export to static HTML
+- `npm run dev` - Next dev
+- `npm lint` - Audit code quality
+- `npm run build` - Next build
+- `npm start` - Next start
+- `npm run analyze` - Generate bundle-analyzer
+- `npm run export` - Export to static HTML
 
 ## Stack
 
 - [`Framer Motion`](https://github.com/framer/motion) &ndash; Open source, production-ready animation and gesture library for React.
 - [`Swiper`](https://github.com/nolimits4web/swiper) &ndash; Open source, most modern mobile touch slider with hardware accelerated transitions
+- [`react-type-animation`](https://github.com/maxeth/react-type-animation) &ndash; Open source,a React typewriter animation based on typical with extended functionality and customization.
 
 # License
 
