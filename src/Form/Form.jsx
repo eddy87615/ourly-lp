@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 //CSS導入
-import '@/Form/style/Form.css';
+import './Form.css';
 import '@/app/globals.css';
 //
 import { Element } from 'react-scroll';
@@ -204,7 +204,7 @@ export default function Form() {
           <button
             type="submit"
             className="text-text lg:text-[24px] bg-ourly-theme text-white 
-          py-2 px-10 lg:py-6 lg:px-20 rounded-2xl my-0 mx-auto mt-10 shadow-ourly"
+          py-2 px-10 lg:py-6 lg:px-20 rounded-2xl my-0 mx-auto mt-10 shadow-ourly duration-500"
           >
             お問い合わせを送信
           </button>

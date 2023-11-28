@@ -1,11 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 form {
   gap: 16px;
   font-weight: bold;
 }
+
 label {
   gap: 8px;
   column-gap: 16px;
@@ -31,7 +28,6 @@ label textarea {
   right: -6%;
   width: 32%;
   height: 600%;
-
   z-index: -1;
 }
 
@@ -53,6 +49,7 @@ label textarea {
   transform: translate(-50%, -50%);
   background-color: var(--purple-dark);
 }
+
 .fee::before {
   content: '';
   position: absolute;
@@ -63,4 +60,4 @@ label textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--purple-dark);
-}
+} /*# sourceMappingURL=Form.css.map */

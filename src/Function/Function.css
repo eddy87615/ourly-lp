@@ -50,7 +50,7 @@
 }
 
 .clip {
-  clip-path: polygon(50% 0%, 100% 24%, 100% 75%, 50% 100%, 0% 75%, 0% 24%);
+  clip-path: polygon(50% 0, 95% 24%, 95% 75%, 50% 100%, 5% 75%, 5% 24%);
 }
 
 .hexagon01:hover,
@@ -69,6 +69,11 @@
 .hexagon07:hover > img {
   transform: scale(2);
   transition-duration: 0.5s;
+}
+
+.hexagon04:hover > img {
+  transform: rotate(180deg) scale(1.2);
+  transition-duration: 0.8s;
 }
 
 .hexagon03:hover > img {

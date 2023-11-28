@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .back-img {
   background-image: url(/img/logo-P.svg);
   background-repeat: no-repeat;
@@ -17,7 +14,7 @@
 }
 
 .ul-grid:before {
-  content: "";
+  content: '';
   background-image: url(/img/30Yman-05-bgN.webp);
   background-position: 0 100%;
   background-size: contain;
@@ -51,7 +48,7 @@
 }
 
 .ques-section:hover .ques-ans {
-  top: 50%;
+  top: 48%;
   opacity: 1;
   visibility: visible;
   font-size: 20px;
@@ -64,4 +61,23 @@
 .ques-ans {
   opacity: 0;
   visibility: hidden;
-}/*# sourceMappingURL=Question.css.map */
+}
+
+/*Phone*/
+
+.answer-hidden {
+  display: none;
+  transition-duration: 0.5s;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.phone-list {
+  background-image: url(/img/logo-MP.svg);
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
+  background-size: 50%;
+}

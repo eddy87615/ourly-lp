@@ -92,11 +92,6 @@ export default function Sub() {
   console.log('refs.ref04:', refs.ref04);
   console.log('inViews.inView04:', inViews.inView04);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, x: 1 * -100 },
     visible: { opacity: 1, x: 0 },

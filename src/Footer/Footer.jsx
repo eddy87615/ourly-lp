@@ -1,7 +1,7 @@
 'use client';
 import { React, useEffect } from 'react';
 //CSS導入
-import '@/Footer/style/Footer.css';
+import './Footer.css';
 import '@/app/globals.css';
 //
 import { Link as ScrollLink } from 'react-scroll';
@@ -81,6 +81,8 @@ export default function Footer() {
                 <ScrollLink
                   key={index}
                   to={item.link}
+                  duration={500}
+                  smooth={true}
                   className="px-10  py-4 border-r-2"
                 >
                   {item.listTxt}

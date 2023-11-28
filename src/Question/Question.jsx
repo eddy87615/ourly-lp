@@ -1,12 +1,12 @@
 'use client';
-import React from 'react';
-import { useRef } from 'react';
+import { React, useRef, useState, useEffect } from 'react';
 //CSS導入
-import '@/Question/style/Question.css';
+import './Question.css';
 import '@/app/globals.css';
 //
 import { Element } from 'react-scroll';
 import { useInView, motion } from 'framer-motion';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const ques = [
   {
@@ -41,34 +41,98 @@ const ques = [
   },
 ];
 
+//SMP のレーアウト
+
+const PhoneQuestionList = ({ index, question, answer }) => {
+  const [isPhoneOpen, setIsPhoneOpen] = useState(false);
+  return (
+    <div className="phone-list mb-4 bg-base-color p-8" key={index}>
+      <ul>
+        <li className="text-[20px] leading-text font-bold mb-8">{question}</li>
+        {isPhoneOpen && (
+          <li className="answer text-[14px] leading-text mb-8">{answer}</li>
+        )}
+      </ul>
+      <span
+        className={`flex justify-center items-center duration-500 ${
+          isPhoneOpen ? 'arrow' : ''
+        }`}
+        onClick={() => setIsPhoneOpen(!isPhoneOpen)}
+      >
+        <IoIosArrowDown style={{ width: '20%', height: '20%' }} />
+      </span>
+    </div>
+  );
+};
+
+const QuestionPhone = ({ ques }) => {
+  return (
+    <div className="w-full h-full mx-auto my-0 bg-white px-10">
+      <h3 className="text-h3 font-bold text-center py-16">よくある質問</h3>
+      {ques.map((txtp, index) => (
+        <PhoneQuestionList
+          key={index}
+          index={index}
+          question={txtp.question}
+          answer={txtp.answer}
+        />
+      ))}
+    </div>
+  );
+};
+
+//SMP
+
 export default function Question() {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      handleResize();
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+  const render = windowWidth >= 1000;
+
   return (
     <Element name="section7">
-      <div className="back-img w-full px-[10%] pb-16 h-fit">
-        <h3 className="text-h3 font-bold text-center pt-16">よくある質問</h3>
-        <ul className="ul-grid relative w-full pt-[8%]">
-          {ques.map((txt, index) => (
-            <div
-              key={index}
-              className="ques-section bg-[--base-color] h-[400px]
+      {render ? (
+        <div className="back-img w-full px-[10%] pb-16 h-fit">
+          <h3 className="text-h3 font-bold text-center pt-16">よくある質問</h3>
+          <ul className="ul-grid relative w-full pt-[8%]">
+            {ques.map((txt, index) => (
+              <div
+                key={index}
+                className="ques-section bg-[--base-color] h-[400px]
               flex flex-col justify-center items-left relative duration-500"
-            >
-              <li
-                className="ques-title absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[90%]
+              >
+                <li
+                  className="ques-title absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[90%]
               text-h4 leading-h4 font-bold duration-500"
-              >
-                {txt.question}
-              </li>
-              <li
-                className="ques-ans ques-title absolute top-[100%] left-1/2  translate-x-[-50%] w-[90%]
+                >
+                  {txt.question}
+                </li>
+                <li
+                  className="ques-ans ques-title absolute top-[100%] left-1/2  translate-x-[-50%] w-[90%]
               text-text leading-text duration-500"
-              >
-                {txt.answer}
-              </li>
-            </div>
-          ))}
-        </ul>
-      </div>
+                >
+                  {txt.answer}
+                </li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <QuestionPhone ques={ques} />
+      )}
     </Element>
   );
 }
