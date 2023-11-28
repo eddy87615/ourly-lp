@@ -180,4 +180,34 @@
     visibility: visible;
     opacity: 1;
   }
-} /*# sourceMappingURL=Function.css.map */
+}
+
+@media (max-width: 500px) {
+  .function::after {
+    content: '';
+    background-image: url(/img/logo-P.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    position: absolute;
+    /* bottom: 2%;
+    left: 2%; */
+    width: 50%;
+    height: 30%;
+    z-index: 0;
+  }
+
+  .function::before {
+    content: '';
+    background-image: url(/img/logo-B.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 50%;
+    height: 50%;
+    z-index: 0;
+  }
+}

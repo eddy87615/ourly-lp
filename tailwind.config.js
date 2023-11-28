@@ -58,6 +58,7 @@ module.exports = {
 
       boxShadow: {
         ourly: '4px 4px 8px #3e3e3e',
+        'ourly-small': '1px 1px 2px #3e3e3e',
       },
     },
   },

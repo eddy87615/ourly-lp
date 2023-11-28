@@ -25,7 +25,7 @@ export default function Hamburger() {
   const Menudiv = () => {
     return (
       <div
-        className={`menu-line-bg ${
+        className={`menu-line-bg shadow-ourly-small ${
           isMenuOpen ? 'menu-line-bg-active' : 'menu-line-bg-unactive'
         }`}
         onClick={toggleMenu}

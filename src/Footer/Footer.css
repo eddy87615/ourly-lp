@@ -27,7 +27,7 @@
     background-image: url(/img/logo-LP.svg);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: 100% 0;
+    background-position: 100% 40%;
 
     display: flex;
     flex-direction: column;
@@ -41,5 +41,6 @@
   .link a {
     border: none;
     font-size: 14px;
+    padding-left: 0;
   }
 }
