@@ -50,7 +50,7 @@ const PhoneQuestionList = ({ index, question, answer }) => {
       <ul>
         <li className="text-[20px] leading-text font-bold mb-8">{question}</li>
         {isPhoneOpen && (
-          <li className="answer text-[14px] leading-text mb-8">{answer}</li>
+          <li className="answer text-[16px] leading-text">{answer}</li>
         )}
       </ul>
       <span
@@ -68,7 +68,7 @@ const PhoneQuestionList = ({ index, question, answer }) => {
 const QuestionPhone = ({ ques }) => {
   return (
     <div className="w-full h-full mx-auto my-0 bg-white px-10">
-      <h3 className="text-h3 font-bold text-center py-16">よくある質問</h3>
+      <h3 className="text-h4 font-bold text-center py-16">よくある質問</h3>
       {ques.map((txtp, index) => (
         <PhoneQuestionList
           key={index}

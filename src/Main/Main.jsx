@@ -109,9 +109,10 @@ export default function Main() {
             id={`section${index + 1}`}
           >
             <h2
-              className="text-h3 md:text-h3 lg:text-h2 
+              className="text-h4 md:text-h3 lg:text-h2 
             font-bold teaxt-left lg:text-left md:text-center
-            px-8 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
+            pl-8 pr-10 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16
+            leading-h3"
             >
               <span className="border-none lg:border-b-[5px] lg:border-solid border-[--ourly-theme]">
                 {personal.content}
@@ -138,10 +139,10 @@ export default function Main() {
           </div>
           <div className={personal.classSolved} key={personal}>
             <h2
-              className="text-h3 md:text-h3 lg:text-h2 
+              className="text-h4 md:text-h3 lg:text-h2 
               text-center 
               leading-h3 md:leading-h3 lg:leading-h2 font-bold 
-            py-10 px-8 md:py-16 lg:p-16"
+            py-10 px-10 md:py-16 lg:p-16"
             >
               {personal.solvedTitle}
               <br />

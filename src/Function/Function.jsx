@@ -218,7 +218,9 @@ export default function Function() {
   return (
     <div>
       <div className="function bg-white h-screen relative" id="section5">
-        <h3 className="text-h3 font-bold text-center pt-16">機能一覧</h3>
+        <h3 className="text-[24px] lg:text-h3 font-bold text-center py-16">
+          機能一覧
+        </h3>
         {render ? (
           <>
             <div className="hexagon flex flex-col relative top-[8%]">

@@ -53,7 +53,7 @@ module.exports = {
         h2: '60px',
         h3: '50px',
         h4: '40px',
-        text: '40px',
+        text: '30px',
       },
 
       boxShadow: {

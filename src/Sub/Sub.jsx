@@ -113,7 +113,7 @@ export default function Sub() {
   return (
     <div className="w-full h-full bg-[--base-color] relative" id="section4">
       <h2
-        className="text-h3 md:text-h3 lg:text-h2 text-center 
+        className="text-h4 md:text-h3 lg:text-h2 text-center 
         leading-h3 lg:leading-h2 font-bold 
       px-8 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
       >
@@ -159,7 +159,7 @@ export default function Sub() {
                         className=" leading-h4 md:leading-h3 lg:leading-h2 
                         text-h4 md:text-h3 lg:text-h3 
                          text-center md:text-left lg:text-left font-bold 
-                        py-6 px-12 md:px-10 md:py-0 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
+                        py-6 px-4 md:px-10 md:py-0 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
                         "
                       ></h3>
                     </li>

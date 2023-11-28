@@ -40,7 +40,9 @@ export default function Compare() {
   return (
     <Element name="section6">
       <div className="compare relative w-full h-screen bg-[--base-color]">
-        <h3 className="text-h3 font-bold text-center py-16">社内報の比較</h3>
+        <h3 className="text-[24px] lg:text-h3 font-bold text-center py-16">
+          社内報の比較
+        </h3>
         {rendercompare ? (
           <img
             src="/img/compare.webp"

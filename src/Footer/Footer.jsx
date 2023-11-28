@@ -52,7 +52,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-ourly-theme">
-        <p className="text-h2 text-center p-8 text-white font-bold">
+        <p className="text-h2 text-center p-8 text-white font-bold hidden">
           私たちの悩み全部ourlyで解決しました！
         </p>
       </div>
@@ -62,10 +62,10 @@ export default function Footer() {
             <img
               src="/img/ourly_logo_W.webp"
               alt="white ourly"
-              className="w-[20%]"
+              className="w-1/2 lg:w-[20%]"
             />
           </li>
-          <li className="text-text py-8  cursor-pointer">
+          <li className="link text-text py-0 lg:py-8  cursor-pointer">
             {list.map((item, index) =>
               item.link.startsWith('http') ? (
                 <a
@@ -90,7 +90,7 @@ export default function Footer() {
               )
             )}
           </li>
-          <li className="py-8">
+          <li className="text-center py-8">
             <small>Copyright © ourly.jp. All Rights Reserved.</small>
           </li>
         </ul>

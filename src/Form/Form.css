@@ -44,7 +44,7 @@ label textarea {
   width: 60px;
   height: 8px;
   border-radius: 20px;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--purple-dark);
@@ -56,8 +56,23 @@ label textarea {
   width: 8px;
   height: 60px;
   border-radius: 20px;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--purple-dark);
-} /*# sourceMappingURL=Form.css.map */
+}
+
+@media screen and (max-width: 500px) {
+  .bottomtxt::after {
+    content: '';
+    background-image: url(/img/logo-B.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -330%;
+    right: 0;
+    width: 50%;
+    height: 80%;
+    z-index: -1;
+  }
+}
