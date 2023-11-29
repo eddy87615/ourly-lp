@@ -4,6 +4,7 @@
 .annoyingman01 {
   background-image: url(/img/question.svg);
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .annoyingman01 img {
   width: 26%;
@@ -35,6 +36,7 @@
 .annoyingman02 {
   background-image: url(/img/question.svg);
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .annoyingman02 img {
   width: 35%;
@@ -89,6 +91,7 @@
 .annoyingwoman {
   background-image: url(/img/question.svg);
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .annoyingwoman img {
   width: 50%;
@@ -133,7 +136,7 @@
   position: absolute;
   top: 10%;
   left: 0;
-  width: 100%;
+  width: 20%;
   height: 50%;
 }
 
@@ -149,6 +152,7 @@
   background-repeat: no-repeat;
   z-index: 2;
   animation: question 2s infinite;
+  z-index: -1;
 }
 
 .annoyingman02::before {
@@ -164,6 +168,7 @@
   z-index: 2;
   transform: rotate(45deg);
   animation: question 2s infinite;
+  z-index: -1;
 }
 
 .annoyingwoman::before {
@@ -177,6 +182,7 @@
   background-size: 80%;
   background-repeat: no-repeat;
   animation: question 2s infinite;
+  z-index: -1;
 }
 
 .bubble-triangle {
@@ -195,6 +201,82 @@
     transform: scale(1.1);
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .solvedwoman img {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 8%;
+    transform: rotateY(180deg);
+  }
+
+  .solvedwoman {
+    background-image: url(/img/usability-03.gif);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 90% 80%;
+  }
+
+  .solvedwoman::after {
+    content: '';
+    position: absolute;
+    background-image: url(/img/KViphone.webp);
+    top: 50%;
+    right: 50%;
+    background-size: 100%;
+    width: 10%;
+    height: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .annoyingman01::before {
+    content: '';
+    background-image: url(/img/question-on-people.webp);
+    background-size: contain;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 20%;
+    right: 5%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: question 2s infinite;
+    z-index: -1;
+  }
+
+  .annoyingman02::before {
+    content: '';
+    background-image: url(/img/question-on-people.webp);
+    background-size: contain;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 10%;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: question 2s infinite;
+    z-index: -1;
+  }
+
+  .annoyingwoman::before {
+    content: '';
+    background-image: url(/img/question-on-people.webp);
+    background-size: contain;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 20%;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: question 2s infinite;
+    z-index: -1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .annoyingman01 {
     background-repeat: repeat;

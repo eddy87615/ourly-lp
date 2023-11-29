@@ -151,9 +151,9 @@ export default function Main() {
             <img src={personal.imgSolved} alt={personal.solvedImgInfo} />
             <p
               dangerouslySetInnerHTML={{ __html: personal.solvedContent }}
-              className="w-[90%] lg:w-[40%] 
+              className="w-[90%] lg:w-[40%] xl:w-[64%]
               text-[14px] md:text-[18px] lg:text-text leading-text 
-              md:px-16
+              md:px-16 xl:p-0
               text-left lg:text-center 
               flex justify-center m-auto"
             ></p>

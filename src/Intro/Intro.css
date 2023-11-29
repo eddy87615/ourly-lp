@@ -1,8 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .intro {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/img/mess.gif);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(/img/mess.gif);
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -10,7 +11,7 @@
 }
 
 .intro::after {
-  content: "";
+  content: '';
   background-image: url(/img/personal-05-bgN.webp);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -20,6 +21,13 @@
   position: absolute;
   bottom: 0px;
   left: 8%;
+}
+
+@media screen and (max-width: 1440px) {
+  .intro::after {
+    bottom: 0px;
+    left: 4%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -53,4 +61,4 @@
     background-size: 100%;
     background-position: 100% 10%;
   }
-}/*# sourceMappingURL=Intro.css.map */
+} /*# sourceMappingURL=Intro.css.map */

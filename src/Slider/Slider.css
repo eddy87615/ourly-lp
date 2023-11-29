@@ -225,75 +225,52 @@ button:hover {
 
 @media screen and (max-width: 1600px) {
   .triangle01 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 0 30px 400px;
-    border-color: transparent transparent transparent var(--ourly-theme);
-    position: absolute;
     right: 32%;
     top: 20%;
-    transform: rotate(30deg);
   }
 
   .triangle02 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 0 30px 200px;
-    border-color: transparent transparent transparent var(--ourly-theme);
-    position: absolute;
     right: 32%;
     top: 60%;
-    transform: rotate(-30deg);
   }
 
   .triangle03 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 400px 30px 0;
-    border-color: transparent var(--ourly-theme) transparent transparent;
-    position: absolute;
     left: 35%;
     top: 30%;
-    transform: rotate(-30deg);
   }
 
   .triangle04 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 200px 30px 0;
-    border-color: transparent var(--ourly-theme) transparent transparent;
-    position: absolute;
     left: 35%;
     top: 60%;
-    transform: rotate(30deg);
   }
 
   .triangle05 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 400px 30px 0;
-    border-color: transparent var(--ourly-theme) transparent transparent;
-    position: absolute;
     left: 45%;
     top: 30%;
-    transform: rotate(-30deg);
   }
 
   .triangle06 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 200px 30px 0;
-    border-color: transparent var(--ourly-theme) transparent transparent;
-    position: absolute;
     left: 45%;
     top: 60%;
-    transform: rotate(30deg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .title01 {
+    left: 48px;
+  }
+  .title02,
+  .title03 {
+    right: 48px;
+  }
+
+  .triangle05 {
+    left: 45%;
+    top: 40%;
+  }
+
+  .triangle06 {
+    left: 45%;
+    top: 70%;
   }
 }
 

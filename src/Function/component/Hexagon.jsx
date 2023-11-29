@@ -200,7 +200,10 @@ const Hexagon = ({
   list,
   class: hexagonclass,
 }) => (
-  <div className={` ${hexagonclass}  h-[12%] w-[12%] relative`} key={color}>
+  <div
+    className={` ${hexagonclass}  h-full w-[12%] xl:w-[15%] relative`}
+    key={color}
+  >
     <img src={imgsrc} alt={imgalt} className="clip duration-500 " />
     {title && (
       <h4

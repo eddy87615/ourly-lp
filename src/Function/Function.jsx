@@ -226,7 +226,7 @@ export default function Function() {
         </h3>
         {render ? (
           <>
-            <div className="hexagon flex flex-col relative top-[8%]">
+            <div className="hexagon w-full h-fit flex flex-col relative top-[5%] xl:top-0 z-[1]">
               <div className="flex justify-center w-full h-full">
                 {data.slice(0, 2).map(Hexagon)} {/* Render hexagon 01 and 02 */}
               </div>

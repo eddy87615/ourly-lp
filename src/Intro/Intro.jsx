@@ -1,6 +1,6 @@
 import React from 'react';
 //CSS導入
-import '@/Intro/style/Intro.css';
+import './Intro.css';
 import '@/app/globals.css';
 //
 
@@ -31,7 +31,7 @@ export default function Intro() {
         <span
           className=" text-[--ourly-theme] absolute opacity-50 
           top-[30%] left-[10%] 
-          lg:left-[60%] 
+          lg:left-[60%] xl:left-1/2
       text-h3 
       hidden md:hidden lg:block
         font-semibold"
