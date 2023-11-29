@@ -83,7 +83,7 @@ export default function Header() {
         duration={500}
         className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
         px-14 py-2 rounded-full bg-white 
-        transition-all duration-300 "
+        transition-all duration-500 "
         style={{
           display: showBtn && renderbtn ? 'block' : 'none',
         }}

@@ -21,7 +21,8 @@
   background-color: var(--ourly-theme);
   width: 50%;
   height: 10%;
-  bottom: 25%;
+  top: 70%;
+  transform: translateY(-50%);
   border-radius: 20px;
   position: absolute;
   transition-duration: 0.8s;
