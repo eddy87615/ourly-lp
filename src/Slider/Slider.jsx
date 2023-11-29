@@ -54,22 +54,24 @@ export default function Slider() {
     },
   ];
 
-  const [isHidden, setIsHidden] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
-    const handleResize = () => {
-      const shouldHide = window.innerWidth < 1025;
-      setIsHidden(shouldHide);
-    };
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      handleResize();
 
-    window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-
-    handleResize();
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
+
+  const rendernav = windowWidth >= 1000;
 
   return (
     <Swiper
@@ -87,10 +89,11 @@ export default function Slider() {
       pagination={{
         clickable: true,
       }}
-      navigation={`${isHidden ? '' : true}`}
+      // navigation={`${rendernav ? true : false}`}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
       id="silder"
+      navigation={rendernav ? true : false}
     >
       {slider.map((obj, index) => (
         <SwiperSlide className={`${obj.bgclass} relative`} key={index}>
