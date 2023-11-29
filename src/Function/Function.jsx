@@ -217,7 +217,10 @@ export default function Function() {
 
   return (
     <div>
-      <div className="function bg-white h-screen relative" id="section5">
+      <div
+        className="function bg-white h-screen relative flex items-center flex-col"
+        id="section5"
+      >
         <h3 className="text-[24px] lg:text-h3 font-bold text-center py-16">
           機能一覧
         </h3>
@@ -251,7 +254,7 @@ export default function Function() {
         ) : (
           <img
             src="/img/function.png"
-            className="absolute top-1/2 translate-y-[-50%] z-[2]"
+            className="absolute top-1/2 translate-y-[-50%] z-[2] w-full md:w-[80%]"
           />
         )}
       </div>

@@ -99,8 +99,8 @@ export default function Form() {
             <label className="flex flex-col w-full lg:w-1/2 mb-4">
               姓
               <span
-                className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+                className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[6%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -110,8 +110,8 @@ export default function Form() {
             <label className="flex flex-col  w-full lg:w-1/2 mb-4">
               名
               <span
-                className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+                className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[6%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -124,8 +124,8 @@ export default function Form() {
             <label className="flex flex-col w-full lg:w-1/2 mb-4">
               会社名
               <span
-                className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+                className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[12%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -140,8 +140,8 @@ export default function Form() {
             <label className="flex flex-col w-full lg:w-1/2 mb-4">
               部属名
               <span
-                className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+                className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[12%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -157,8 +157,8 @@ export default function Form() {
           <label className="email w-full mb-4">
             E-mail
             <span
-              className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+              className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[8%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
             >
               必須
@@ -176,8 +176,8 @@ export default function Form() {
           <label className="phone w-full flex flex-col">
             電話番号
             <span
-              className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-[5%] 
+              className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[8%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
             >
               必須
@@ -227,8 +227,8 @@ export default function Form() {
               </a>
               に同意する
               <span
-                className="absolute text-[10px] lg:text-[4px] 
-                right-0 lg:left-[4%] top-1/2 translate-y-[-50%] 
+                className="absolute text-[10px] lg:text-[10px] 
+                w-fit right-0 lg:left-[30%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -237,8 +237,8 @@ export default function Form() {
           </label>
           <button
             type="submit"
-            className="text-text lg:text-[24px] bg-ourly-theme text-white w-[200px] h-[50px]
-           lg:py-6 lg:px-20 rounded-lg lg:rounded-2xl my-0 mx-auto lg:mt-10 lg:shadow-ourly duration-500"
+            className="text-text lg:text-[24px] bg-ourly-theme text-white w-[200px] h-[50px] lg:w-[370px] lg:h-[70px]
+            rounded-lg lg:rounded-2xl my-0 mx-auto lg:mt-10 lg:shadow-ourly duration-500"
           >
             お問い合わせを送信
           </button>
