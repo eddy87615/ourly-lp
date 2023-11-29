@@ -222,6 +222,81 @@ button:hover {
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 1450px) {
+  .triangle01 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 400px;
+    border-color: transparent transparent transparent var(--ourly-theme);
+    position: absolute;
+    right: 30%;
+    top: 20%;
+    transform: rotate(30deg);
+  }
+
+  .triangle02 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 200px;
+    border-color: transparent transparent transparent var(--ourly-theme);
+    position: absolute;
+    right: 30%;
+    top: 60%;
+    transform: rotate(-30deg);
+  }
+
+  .triangle03 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 400px 30px 0;
+    border-color: transparent var(--ourly-theme) transparent transparent;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    transform: rotate(-30deg);
+  }
+
+  .triangle04 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 200px 30px 0;
+    border-color: transparent var(--ourly-theme) transparent transparent;
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    transform: rotate(30deg);
+  }
+
+  .triangle05 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 400px 30px 0;
+    border-color: transparent var(--ourly-theme) transparent transparent;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    transform: rotate(-30deg);
+  }
+
+  .triangle06 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 200px 30px 0;
+    border-color: transparent var(--ourly-theme) transparent transparent;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+    transform: rotate(30deg);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .triangle01,
   .triangle02,
