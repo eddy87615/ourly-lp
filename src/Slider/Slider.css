@@ -223,7 +223,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1600px) {
   .triangle01 {
     width: 0;
     height: 0;
@@ -231,7 +231,7 @@ button:hover {
     border-width: 30px 0 30px 400px;
     border-color: transparent transparent transparent var(--ourly-theme);
     position: absolute;
-    right: 30%;
+    right: 32%;
     top: 20%;
     transform: rotate(30deg);
   }
@@ -243,7 +243,7 @@ button:hover {
     border-width: 30px 0 30px 200px;
     border-color: transparent transparent transparent var(--ourly-theme);
     position: absolute;
-    right: 30%;
+    right: 32%;
     top: 60%;
     transform: rotate(-30deg);
   }
@@ -280,7 +280,7 @@ button:hover {
     border-color: transparent var(--ourly-theme) transparent transparent;
     position: absolute;
     left: 45%;
-    top: 40%;
+    top: 30%;
     transform: rotate(-30deg);
   }
 
@@ -292,7 +292,7 @@ button:hover {
     border-color: transparent var(--ourly-theme) transparent transparent;
     position: absolute;
     left: 45%;
-    top: 70%;
+    top: 60%;
     transform: rotate(30deg);
   }
 }
