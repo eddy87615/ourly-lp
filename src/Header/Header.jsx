@@ -9,6 +9,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Hamburger from '@/Hamburger/Hamburger';
 
 export default function Header() {
+  //logo back to top//
   useEffect(() => {
     const backToTop = () => {
       if (typeof window !== 'undefined') {
@@ -26,6 +27,7 @@ export default function Header() {
       }
     };
   }, []);
+  //logo back to top//
 
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
@@ -64,7 +66,7 @@ export default function Header() {
 
   return (
     <div
-      className="fixed top-0 left-0 z-50 flex items-center justify-between
+      className="fixed top-0 left-0 z-[60] flex items-center justify-between
       px-4 lg:px-16 mt-4
     w-screen h-[100px]"
     >
@@ -83,9 +85,7 @@ export default function Header() {
         px-14 py-2 rounded-full bg-white 
         transition-all duration-300 "
         style={{
-          opacity: showBtn && renderbtn ? 1 : 0,
-          diaplay: showBtn && renderbtn ? 'block' : 'none',
-          width: showBtn && renderbtn ? 'fit-content' : '0',
+          display: showBtn && renderbtn ? 'block' : 'none',
         }}
       >
         <button className="font-bold text-button ">お問い合わせ</button>
