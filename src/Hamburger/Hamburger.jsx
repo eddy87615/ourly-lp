@@ -102,6 +102,12 @@ export default function Hamburger() {
             }`}
                 style={isMenuOpen === true ? { opacity: 1, right: 0 } : {}}
               >
+                <a href="https://service.ourly.jp/">
+                  <img
+                    src="img/ourly_logo.webp"
+                    className="w-1/2 h-auto pt-12 pl-4"
+                  />
+                </a>
                 <ul
                   className="relative flex flex-col justify-center items-center 
             top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[60%] z-10"
