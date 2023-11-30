@@ -25,7 +25,7 @@ const FeeData = [
 
 function Fee() {
   return (
-    <Element className="w-full h-full">
+    <Element className="w-full h-full overflow-hidden">
       <h3 className="text-h4 lg:text-h3 font-bold text-center py-10 lg:pt-16">
         料金案内
       </h3>
@@ -228,7 +228,7 @@ export default function Form() {
               に同意する
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[30%] top-1/2 translate-y-[-50%] 
+                w-fit right-0 md:left-[42%] lg:left-[36%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須

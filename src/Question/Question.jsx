@@ -43,20 +43,27 @@ const ques = [
 
 //SMP のレーアウト
 
-const PhoneQuestionList = ({ index, question, answer }) => {
+const PhoneQuestionList = ({
+  index,
+  question,
+  answer,
+  flatsection,
+  renderPC,
+  renderphone,
+}) => {
   const [isPhoneOpen, setIsPhoneOpen] = useState(false);
   return (
     <div className="phone-list mb-4 bg-base-color p-8" key={index}>
       <ul>
         <li className="text-[20px] leading-text font-bold mb-8">{question}</li>
-        {isPhoneOpen && (
+        {(isPhoneOpen || flatsection) && (
           <li className="answer text-[16px] leading-text">{answer}</li>
         )}
       </ul>
       <span
         className={`flex justify-center items-center duration-500 ${
           isPhoneOpen ? 'arrow' : ''
-        }`}
+        } ${flatsection ? 'hidden' : renderphone ? 'hidden' : ''}`}
         onClick={() => setIsPhoneOpen(!isPhoneOpen)}
       >
         <IoIosArrowDown style={{ width: '20%', height: '20%' }} />
@@ -65,7 +72,7 @@ const PhoneQuestionList = ({ index, question, answer }) => {
   );
 };
 
-const QuestionPhone = ({ ques }) => {
+const QuestionPhone = ({ ques, flatsection }) => {
   return (
     <div className="w-full h-full mx-auto my-0 bg-white px-10">
       <h3 className="text-h4 font-bold text-center py-16">よくある質問</h3>
@@ -75,6 +82,7 @@ const QuestionPhone = ({ ques }) => {
           index={index}
           question={txtp.question}
           answer={txtp.answer}
+          flatsection={flatsection}
         />
       ))}
     </div>
@@ -100,11 +108,13 @@ export default function Question() {
       };
     }
   }, []);
-  const render = windowWidth >= 1000;
+  const renderPC = windowWidth >= 1000;
+  const flatsection = 500 < windowWidth && windowWidth <= 1000;
+  const renderphone = windowWidth <= 500;
 
   return (
     <Element name="section7">
-      {render ? (
+      {renderPC ? (
         <div className="back-img w-full px-[10%] pb-16 h-fit">
           <h3 className="text-h3 font-bold text-center pt-16">よくある質問</h3>
           <ul className="ul-grid relative w-full pt-[8%]">
@@ -130,9 +140,22 @@ export default function Question() {
             ))}
           </ul>
         </div>
-      ) : (
-        <QuestionPhone ques={ques} />
-      )}
+      ) : null}
+      {flatsection ? (
+        <div className="w-full h-full mx-auto my-0 bg-white px-10">
+          <h3 className="text-h4 font-bold text-center py-16">よくある質問</h3>
+          {ques.map((txtp, index) => (
+            <PhoneQuestionList
+              key={index}
+              index={index}
+              question={txtp.question}
+              answer={txtp.answer}
+              flatsection={flatsection}
+            />
+          ))}
+        </div>
+      ) : null}
+      {renderphone ? <QuestionPhone ques={ques} /> : null}
     </Element>
   );
 }

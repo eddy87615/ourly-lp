@@ -121,7 +121,11 @@ export default function Hamburger({ isVisible }) {
                 // key="modal"
               >
                 <li>
-                  <a className="flex justify-center items-center">
+                  <a
+                    className="flex justify-center items-center"
+                    href="https://service.ourly.jp/"
+                    target="blank"
+                  >
                     <img
                       src="/img/ourly_logo.webp"
                       alt="ourly logo"

@@ -18,7 +18,39 @@
   height: 180%;
 }
 
-@media (max-width: 500px) {
+.pinksection {
+  height: fit-content;
+  top: -100%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .purplesection::after {
+    content: none;
+  }
+  .purplesection {
+    background-image: url(/img/logo-LP.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 100% 40%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .purplesection ul {
+    width: 100%;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link a {
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
   .purplesection::after {
     content: none;
   }
@@ -33,14 +65,31 @@
     flex-direction: column;
   }
 
+  .purplesection ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .link {
     display: flex;
     flex-direction: column;
+    align-items: start;
     flex-wrap: wrap;
+    width: 80%;
+    height: 120px;
   }
   .link a {
     border: none;
     font-size: 14px;
     padding-left: 0;
+  }
+
+  .innerlink {
+    width: 50%;
+  }
+  .outerlink {
+    width: 50%;
   }
 }

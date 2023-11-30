@@ -131,7 +131,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white  hidden ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white hidden  ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''

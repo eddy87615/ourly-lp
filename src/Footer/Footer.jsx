@@ -51,8 +51,8 @@ export default function Footer() {
   }, []);
   return (
     <footer>
-      <div className="bg-ourly-theme">
-        <p className="text-h2 text-center p-8 text-white font-bold hidden">
+      <div className=" pinksection bg-ourly-theme">
+        <p className="text-h2 md:text-h3 text-center p-8 text-white font-bold hidden md:block lg:block">
           私たちの悩み全部ourlyで解決しました！
         </p>
       </div>
@@ -62,7 +62,7 @@ export default function Footer() {
             <img
               src="/img/ourly_logo_W.webp"
               alt="white ourly"
-              className="w-1/2 lg:w-[20%]"
+              className="w-1/2 lg:w-[24%] md:w-1/3"
             />
           </li>
           <li className="link text-text py-0 lg:py-8  cursor-pointer">
@@ -73,7 +73,7 @@ export default function Footer() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-10 py-4 border-r-2 last:border-0"
+                  className="outerlink px-10 py-4 border-r-2 last:border-0"
                 >
                   {item.listTxt}
                 </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                   to={item.link}
                   duration={500}
                   smooth={true}
-                  className="px-10  py-4 border-r-2"
+                  className="innerlink px-10  py-4 border-r-2"
                 >
                   {item.listTxt}
                 </ScrollLink>

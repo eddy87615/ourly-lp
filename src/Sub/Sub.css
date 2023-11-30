@@ -136,6 +136,48 @@
   text-align: right;
   padding-right: 8%;
 }
+@media screen and (max-width: 1440px) {
+  .title {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    grid-template-areas:
+      'num title pic'
+      'txt txt pic';
+  }
+
+  .title .title-grid {
+    padding-right: 30px;
+  }
+  .title .text-grid {
+    padding-top: 24px;
+    grid-area: txt;
+  }
+
+  .subend03 p {
+    padding-right: 2%;
+  }
+  .subend03 img {
+    left: 0;
+    width: 30%;
+  }
+  .subend02 p {
+    padding-left: 2%;
+  }
+  .subend02 img {
+    right: 0;
+    width: 40%;
+  }
+  .subend01 p {
+    padding-right: 4%;
+  }
+  .subend01 img {
+    left: 4%;
+    width: 44%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .title {
@@ -178,19 +220,20 @@
     position: absolute;
     left: 8%;
     bottom: 0;
-    width: 35%;
+    width: 40%;
   }
   .subend01 p {
     color: #fff;
+    padding-right: 8%;
   }
   .subend02 {
     justify-content: start;
   }
   .subend02 img {
     position: absolute;
-    right: 4%;
+    right: 0;
     bottom: 0;
-    width: 35%;
+    width: 40%;
   }
   .subend02 p {
     padding-left: 4%;
@@ -204,13 +247,14 @@
   }
   .subend03 img {
     position: absolute;
-    left: 12%;
+    left: 4%;
     bottom: 0%;
-    width: 24%;
+    width: 28%;
   }
   .subend03 p {
     color: #fff;
-    padding-right: 10%;
+    padding-right: 4%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
