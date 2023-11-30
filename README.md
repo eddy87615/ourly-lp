@@ -27,8 +27,6 @@ npm run build
 - `npm lint` - Audit code quality
 - `npm run build` - Next build
 - `npm start` - Next start
-- `npm run analyze` - Generate bundle-analyzer
-- `npm run export` - Export to static HTML
 
 ## Stack
 

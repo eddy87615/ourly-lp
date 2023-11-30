@@ -256,11 +256,11 @@ button:hover {
 }
 @media screen and (max-width: 1440px) {
   .title01 {
-    left: 48px;
+    left: 4%;
   }
   .title02,
   .title03 {
-    right: 48px;
+    right: 4%;
   }
 
   .triangle05 {
@@ -313,7 +313,7 @@ button:hover {
   .title01 {
     position: absolute;
     top: 20%;
-    left: 16px;
+    left: 4%;
   }
   .title01 h1 {
     padding-right: 24%;
@@ -321,7 +321,7 @@ button:hover {
   .title02 {
     position: absolute;
     top: 20%;
-    right: 16px;
+    right: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -330,7 +330,7 @@ button:hover {
   .title03 {
     position: absolute;
     top: 20%;
-    right: 16px;
+    right: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -376,7 +376,7 @@ button:hover {
   .title01 {
     position: absolute;
     top: 14%;
-    left: 16px;
+    left: 2%;
   }
   .title01 h1 {
     padding-right: 14%;
@@ -384,14 +384,14 @@ button:hover {
   .title02 {
     position: absolute;
     top: 14%;
-    right: 16px;
+    right: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: left;
   }
   .title02 h1 {
-    padding-left: 24%;
+    padding-left: 20%;
   }
   .title03 {
     position: absolute;

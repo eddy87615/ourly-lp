@@ -131,7 +131,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white  ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white  hidden ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
@@ -156,11 +156,13 @@ export default function Guide() {
           <Link
             to={`section${index + 1}`}
             key={index}
-            className={`container list01 w-[20%] h-[500px] absolute cursor-pointer  ${
+            className={`container list01 
+            w-[20%] h-[500px] lg:w-[24%] xl:w-[24%] 2xl:w-[20%]
+            absolute cursor-pointer  ${
               obj.id === 'guide01'
-                ? 'left-[16%]'
+                ? 'lg:left-[10%] xl:left-[10%] 2xl:left-[16%]'
                 : obj.id === 'guide03'
-                ? 'right-[16%]'
+                ? 'lg:right-[10%] xl:right-[10%] 2xl:right-[16%]'
                 : ''
             }`}
             onClick={() => handleGuide(`${index + 1}`)}

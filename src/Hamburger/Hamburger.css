@@ -15,6 +15,7 @@
   transform: translateY(-50%);
   border-radius: 20px;
   position: absolute;
+
   transition-duration: 0.5s;
 }
 .menu-line03 {
@@ -25,6 +26,7 @@
   transform: translateY(-50%);
   border-radius: 20px;
   position: absolute;
+
   transition-duration: 0.8s;
 }
 
@@ -40,4 +42,60 @@
   top: 50%;
   background-color: white;
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-bg::before {
+  content: '';
+  background-image: url(/img/logo-P.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  z-index: 0;
+}
+.menu-bg::after {
+  content: '';
+  background-image: url(/img/logo-MP.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 30%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .menu-bg::before {
+    content: '';
+    background-image: url(/img/logo-P.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 40%;
+    z-index: 0;
+  }
+  .menu-bg::after {
+    content: '';
+    background-image: url(/img/logo-MP.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 20%;
+    z-index: 0;
+  }
 }

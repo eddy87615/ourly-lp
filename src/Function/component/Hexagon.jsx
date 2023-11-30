@@ -201,7 +201,7 @@ const Hexagon = ({
   class: hexagonclass,
 }) => (
   <div
-    className={` ${hexagonclass}  h-full w-[12%] xl:w-[15%] relative`}
+    className={` ${hexagonclass}  lg:h-full lg:w-[12%] xl:w-[13%] relative`}
     key={color}
   >
     <img src={imgsrc} alt={imgalt} className="clip duration-500 " />
