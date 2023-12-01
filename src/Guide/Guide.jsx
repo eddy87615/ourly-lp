@@ -131,7 +131,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white hidden  ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white   ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
@@ -151,7 +151,7 @@ export default function Guide() {
       <h1 className="text-h1 font-bold text-center mt-24">
         <Type />
       </h1>
-      <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-24">
+      <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">
         {guideinfo.map((obj, index) => (
           <Link
             to={`section${index + 1}`}
@@ -220,7 +220,7 @@ export default function Guide() {
         ))}
       </div>
       <button
-        className="open text-[18px] font-bold bottom-[6%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[4%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();

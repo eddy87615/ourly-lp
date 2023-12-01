@@ -17,12 +17,12 @@ export default function Slider() {
   const slider = [
     {
       titleclass: 'title01',
-      // h1text: 'ourlyを導入してから<br />会社に関する悩みが全部解決できました！',
-      h1text: [
-        'ourlyを導入してから',
-        '会社に関する悩みが全部',
-        '解決できました！',
-      ],
+      h1text: 'ourlyを導入してから<br />会社に関する悩みが全部解決できました！',
+      // h1text: [
+      //   'ourlyを導入してから',
+      //   '会社に関する悩みが全部',
+      //   '解決できました！',
+      // ],
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page01',
@@ -34,13 +34,13 @@ export default function Slider() {
     },
     {
       titleclass: 'title02',
-      h1text: [
-        'ourlyを導入してから',
-        '読みさすい社内報を',
-        '簡単に作れるようになりました！',
-      ],
-      // h1text:
-      //   'ourlyを導入してから<br />読みやすい社内報を<br />簡単に作れるようになりました！',
+      // h1text: [
+      //   'ourlyを導入してから',
+      //   '読みやすい社内報を',
+      //   '簡単に作れるようになりました！',
+      // ],
+      h1text:
+        'ourlyを導入してから<br />読みやすい社内報を<br />簡単に作れるようになりました！',
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page02',
@@ -52,8 +52,8 @@ export default function Slider() {
     },
     {
       titleclass: 'title03',
-      h1text: ['ourlyを導入してから', '一体感が生まれました！'],
-      // h1text: 'ourlyを導入してから<br />一体感が生まれました！',
+      // h1text: ['ourlyを導入してから', '一体感が生まれました！'],
+      h1text: 'ourlyを導入してから<br />一体感が生まれました！',
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page03',
@@ -93,10 +93,10 @@ export default function Slider() {
       spaceBetween={30}
       loop={true}
       centeredSlides={true}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
@@ -120,24 +120,23 @@ export default function Slider() {
               </h1>
             ))} */}
 
-            {obj.h1text.map((txt, index) => (
+            {/* {obj.h1text.map((txt, index) => (
               <React.Fragment key={index}>
                 <h1
                   className="text-[32px] md:text-h2 lg:text-h1 2xl:text-h1
               font-bold "
                 >
-                  {obj.h1text[index]}
+                  {txt}
                 </h1>
-                <br />
               </React.Fragment>
-            ))}
+            ))} */}
 
-            {/* <h1
+            <h1
               className="text-[32px] md:text-h2 lg:text-h1 
               font-bold mb-2 lg:mb-6 
-              leading-h2 lg:leading-h1"
+              leading-h2 lg:leading-h1 2xl:leading-[100px]"
               dangerouslySetInnerHTML={{ __html: obj.h1text }}
-            ></h1> */}
+            ></h1>
             {/* {obj.ourlytext.split('<br />').map((ourly, index) => (
               <p
                 key={index}
