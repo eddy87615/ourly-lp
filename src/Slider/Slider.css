@@ -337,7 +337,7 @@ button:hover {
     left: 4%;
   }
   .title01 h1 {
-    padding-right: 24%;
+    padding-right: 0;
   }
   .title02 {
     position: absolute;

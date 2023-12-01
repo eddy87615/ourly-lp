@@ -115,7 +115,7 @@ export default function Sub() {
       <h2
         className="text-h4 md:text-h3 lg:text-h2 text-center 
         leading-h3 lg:leading-h2 font-bold 
-      px-8 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16"
+      px-8 py-10 lg:pt-[8%] lg:pb-[4%] md:py-16 lg:pl-[8%] 2xl:p-16 "
       >
         ourlyも…
         <br />

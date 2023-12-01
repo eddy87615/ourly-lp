@@ -47,15 +47,15 @@ module.exports = {
         h2: '40px',
         h3: '32px',
         h4: '24px',
-        text: '16px',
+        text: '18px',
         button: '18px',
       },
       lineHeight: {
         h1: '80px',
-        h2: '60px',
-        h3: '50px',
-        h4: '40px',
-        text: '30px',
+        h2: '70px',
+        h3: '60px',
+        h4: '50px',
+        text: '40px',
       },
 
       boxShadow: {

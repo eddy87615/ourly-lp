@@ -3,7 +3,7 @@ import React from 'react';
 import { useRef, useState, useEffect } from 'react';
 import { useInView, motion } from 'framer-motion';
 //CSS導入
-import '@/Scrollnav/style/Scrollnav.css';
+import './Scrollnav.css';
 import '@/app/globals.css';
 //
 //

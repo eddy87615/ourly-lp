@@ -17,7 +17,12 @@ export default function Slider() {
   const slider = [
     {
       titleclass: 'title01',
-      h1text: 'ourlyを導入してから<br />会社に関する悩みが全部解決できました！',
+      // h1text: 'ourlyを導入してから<br />会社に関する悩みが全部解決できました！',
+      h1text: [
+        'ourlyを導入してから',
+        '会社に関する悩みが全部',
+        '解決できました！',
+      ],
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page01',
@@ -29,8 +34,13 @@ export default function Slider() {
     },
     {
       titleclass: 'title02',
-      h1text:
-        'ourlyを導入してから<br />読みさすい社内報を<br />簡単に作れるようになりました！',
+      h1text: [
+        'ourlyを導入してから',
+        '読みさすい社内報を',
+        '簡単に作れるようになりました！',
+      ],
+      // h1text:
+      //   'ourlyを導入してから<br />読みやすい社内報を<br />簡単に作れるようになりました！',
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page02',
@@ -42,7 +52,8 @@ export default function Slider() {
     },
     {
       titleclass: 'title03',
-      h1text: 'ourlyを導入してから<br />一体感が生まれました！',
+      h1text: ['ourlyを導入してから', '一体感が生まれました！'],
+      // h1text: 'ourlyを導入してから<br />一体感が生まれました！',
       ourlytext:
         'ourlyは、社員のエンゲージメントを向上させる、<br />web社内報ツールです。',
       bgclass: 'page03',
@@ -98,12 +109,44 @@ export default function Slider() {
       {slider.map((obj, index) => (
         <SwiperSlide className={`${obj.bgclass} relative`} key={index}>
           <div className={obj.titleclass}>
-            <h1
+            {/* {obj.h1text.split('<br />').map((txt, index) => (
+              <h1
+                key={index}
+                className="text-[32px] md:text-h2 lg:text-h1 2xl:text-h1 
+              font-bold 
+              leading-h2 lg:leading-h1"
+              >
+                {txt}
+              </h1>
+            ))} */}
+
+            {obj.h1text.map((txt, index) => (
+              <React.Fragment key={index}>
+                <h1
+                  className="text-[32px] md:text-h2 lg:text-h1 2xl:text-h1
+              font-bold "
+                >
+                  {obj.h1text[index]}
+                </h1>
+                <br />
+              </React.Fragment>
+            ))}
+
+            {/* <h1
               className="text-[32px] md:text-h2 lg:text-h1 
               font-bold mb-2 lg:mb-6 
               leading-h2 lg:leading-h1"
               dangerouslySetInnerHTML={{ __html: obj.h1text }}
-            ></h1>
+            ></h1> */}
+            {/* {obj.ourlytext.split('<br />').map((ourly, index) => (
+              <p
+                key={index}
+                className="text-[18px] md:text-[20px] lg:text-h4 
+                leading-h4 lg:leading-h3"
+              >
+                {ourly}
+              </p>
+            ))} */}
             <p
               className="text-[18px] md:text-[20px] lg:text-h4 
               leading-h4 lg:leading-h3"

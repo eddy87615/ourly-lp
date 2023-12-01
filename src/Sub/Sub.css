@@ -36,6 +36,7 @@
 }
 .title .text-grid {
   grid-area: txt;
+  padding: 0;
 }
 
 .detail-content img {
@@ -288,18 +289,20 @@
   .subend01 p {
     color: #fff;
     padding-left: 6%;
+    width: 70%;
   }
   .subend02 {
     justify-content: start;
   }
   .subend02 p {
-    padding: 0 4%;
+    padding-left: 8%;
+    width: 50%;
   }
   .subend02 img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 50%;
+    width: 54%;
   }
   .subend03 img {
     position: absolute;
@@ -310,5 +313,6 @@
   .subend03 p {
     color: #fff;
     padding-right: 2%;
+    width: 70%;
   }
 } /*# sourceMappingURL=Sub.css.map */
