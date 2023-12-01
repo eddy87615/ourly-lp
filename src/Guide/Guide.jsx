@@ -157,7 +157,7 @@ export default function Guide() {
             to={`section${index + 1}`}
             key={index}
             className={`container list01 
-            w-[20%] h-[500px] lg:w-[24%] xl:w-[24%] 2xl:w-[20%]
+            w-[20%] h-[510px] lg:w-[24%] xl:w-[24%] 2xl:w-[21%]
             absolute cursor-pointer  ${
               obj.id === 'guide01'
                 ? 'lg:left-[10%] xl:left-[10%] 2xl:left-[16%]'
@@ -220,7 +220,7 @@ export default function Guide() {
         ))}
       </div>
       <button
-        className="open text-[18px] font-bold bottom-[4%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[4%] lg:bottom-[2%] xl:bottom-[4%] 2xl:bottom-[8%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();
