@@ -127,7 +127,7 @@ export default function Slider() {
               {obj.h1text[0]}
               <br />
               {obj.h1text[1]}
-              <br className={`${obj[0] || obj.h1text[1] ? 'hidden' : ''}`} />
+              <br />
               {obj.h1text[2]}
             </h1>
 

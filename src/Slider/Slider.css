@@ -295,6 +295,17 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .triangle01,
+  .triangle02,
+  .triangle03,
+  .triangle04,
+  .triangle05,
+  .triangle06 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .triangle01,
   .triangle02,
@@ -399,9 +410,9 @@ button:hover {
     top: 14%;
     left: 2%;
   }
-  .title01 h1 {
+  /* .title01 h1 {
     padding-right: 14%;
-  }
+  } */
   .title02 {
     position: absolute;
     top: 14%;
@@ -411,9 +422,9 @@ button:hover {
     align-items: flex-end;
     justify-content: left;
   }
-  .title02 h1 {
+  /* .title02 h1 {
     padding-left: 20%;
-  }
+  } */
   .title03 {
     position: absolute;
     top: 14%;

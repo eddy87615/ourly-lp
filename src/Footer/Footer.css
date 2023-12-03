@@ -24,6 +24,15 @@
   position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+  .purplesection::after {
+    content: none;
+  }
+  .link a {
+    padding: 2% 4%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .purplesection::after {
     content: none;
