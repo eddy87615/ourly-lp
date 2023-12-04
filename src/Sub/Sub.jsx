@@ -27,7 +27,7 @@ const content = [
   },
   {
     imgNum: '/img/02.svg',
-    imgAlt: 'number 2',
+    imgNumAlt: 'number 2',
     title: 'どのグループに読まれているのか<br />わかる',
     imgContent: '/img/analyze02.webp',
     imgimgContentAlt:
@@ -38,7 +38,7 @@ const content = [
   },
   {
     imgNum: '/img/03.svg',
-    imgAlt: 'number 3',
+    imgNumAlt: 'number 3',
     title: 'どれほど読まれるようになったのか<br />わかる',
     imgContent: '/img/analyze03.webp',
     imgimgContentAlt:
@@ -150,7 +150,7 @@ export default function Sub() {
                       <img
                         src={obj.imgNum}
                         alt={obj.imgNumAlt}
-                        className="h-[70%] "
+                        className="h-[70%]"
                       />
                     </li>
                     <li className="title-grid w-full flex justify-center items-center">

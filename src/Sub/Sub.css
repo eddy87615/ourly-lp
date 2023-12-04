@@ -137,6 +137,7 @@
   text-align: right;
   padding-right: 8%;
 }
+
 @media screen and (max-width: 1440px) {
   .title {
     display: grid;
@@ -271,6 +272,10 @@
   .title .text-grid {
     padding-top: 16%;
   }
+  .title .title-grid {
+    padding: 0;
+  }
+
   .content-div:hover .pic-grid {
     transform: scale(1) !important;
   }
