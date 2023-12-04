@@ -152,7 +152,7 @@ export default function Main() {
             <p
               dangerouslySetInnerHTML={{ __html: personal.solvedContent }}
               className="w-[90%] lg:w-[40%] xl:w-[64%]
-              text-[16px] md:text-[18px] lg:text-text leading-text 
+              text-[14px] md:text-[18px] lg:text-text leading-text 
               md:px-16 xl:p-0
               text-left lg:text-center 
               flex justify-center m-auto"
