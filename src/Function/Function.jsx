@@ -254,6 +254,7 @@ export default function Function() {
         ) : (
           <img
             src="/img/function.png"
+            alt="function introduction picture"
             className="absolute top-1/2 translate-y-[-50%] z-[2] w-full md:w-[80%]"
           />
         )}

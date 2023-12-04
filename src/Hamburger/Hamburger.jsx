@@ -79,7 +79,7 @@ export default function Hamburger({ isVisible }) {
   return (
     <>
       {rendermenu ? (
-        <div>
+        <nav>
           <div
             className={`w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-lg 
         flex flex-col justify-center items-center shadow-ourly-small
@@ -165,7 +165,7 @@ export default function Hamburger({ isVisible }) {
               </motion.ul>
             }
           </div>
-        </div>
+        </nav>
       ) : (
         ''
       )}

@@ -32,6 +32,22 @@ const Type = () => {
 //
 
 export default function Guide() {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      handleResize();
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
   useEffect(() => {
     const animateElements = () => {
       const elements = document.querySelectorAll(
@@ -131,7 +147,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white   ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white  ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
@@ -148,7 +164,7 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="text-h1 font-bold text-center mt-24">
+      <h1 className="text-h1 font-bold text-center mt-16">
         <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">

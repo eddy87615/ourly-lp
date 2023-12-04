@@ -75,7 +75,7 @@ function SpeechBubble({ text, className }) {
       text-[14px] md:text-[20px] lg:text-h4 
       leading-h4
        relative border-[5px] border-[--ourly-theme] rounded-full font-bold  
-       mb-4 mx-auto md:mb-4 lg:m-12 
+       mb-4 mx-auto md:mb-4 lg:m-8 
        p-1 lg:px-[4%] 
        md:py-2 
        lg:py-4 ${className}`}

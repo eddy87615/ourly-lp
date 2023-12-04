@@ -100,7 +100,7 @@ export default function Form() {
               姓
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[6%] top-[5%] 
+                w-fit right-0 lg:left-[10%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -111,7 +111,7 @@ export default function Form() {
               名
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[6%] top-[5%] 
+                w-fit right-0 lg:left-[10%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -125,7 +125,7 @@ export default function Form() {
               会社名
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[12%] top-[5%] 
+                w-fit right-0 lg:left-[24%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -141,7 +141,7 @@ export default function Form() {
               部属名
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[12%] top-[5%] 
+                w-fit right-0 lg:left-[24%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須
@@ -158,7 +158,7 @@ export default function Form() {
             E-mail
             <span
               className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[8%] top-[5%] 
+                w-fit right-0 lg:left-[12%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
             >
               必須
@@ -177,7 +177,7 @@ export default function Form() {
             電話番号
             <span
               className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 lg:left-[8%] top-[5%] 
+                w-fit right-0 lg:left-[14%] top-[5%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
             >
               必須
@@ -228,7 +228,7 @@ export default function Form() {
               に同意する
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 md:left-[42%] lg:left-[36%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
+                w-fit right-0 md:left-[42%] lg:left-[56%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須

@@ -65,7 +65,7 @@ export default function Footer() {
               className="w-1/2 lg:w-[24%] md:w-1/3"
             />
           </li>
-          <li className="link text-text py-0 lg:py-8  cursor-pointer">
+          <li className="link text-text py-0 lg:py-0  cursor-pointer">
             {list.map((item, index) =>
               item.link.startsWith('http') ? (
                 <a
@@ -91,7 +91,7 @@ export default function Footer() {
             )}
           </li>
           <li className="text-center py-8">
-            <small>Copyright © ourly.jp. All Rights Reserved.</small>
+            <small>Copyright &copy; ourly.jp. All Rights Reserved.</small>
           </li>
         </ul>
       </div>

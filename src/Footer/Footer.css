@@ -28,6 +28,12 @@
   .purplesection::after {
     content: none;
   }
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
   .link a {
     padding: 2% 4%;
   }
