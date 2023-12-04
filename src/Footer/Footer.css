@@ -93,7 +93,7 @@
     align-items: start;
     flex-wrap: wrap;
     width: 80%;
-    height: 120px;
+    height: 130px;
   }
   .link a {
     border: none;
@@ -106,5 +106,7 @@
   }
   .outerlink {
     width: 50%;
+    display: flex;
+    justify-content: end;
   }
 }
