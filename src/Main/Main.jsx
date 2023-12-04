@@ -77,7 +77,7 @@ function SpeechBubble({ text, className }) {
        relative border-[5px] border-[--ourly-theme] rounded-full font-bold  
        mb-4 mx-auto md:mb-4 lg:m-8 
        p-1 lg:px-[4%] 
-       md:py-2 
+       md:py-1 
        lg:py-4 ${className}`}
       style={{
         transform: isInView ? 'none' : 'translateX(-100%)',
