@@ -43,6 +43,7 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      handleScroll();
     };
   }, []);
 
@@ -79,20 +80,22 @@ export default function Header() {
         className="cursor-pointer w-1/2 lg:w-1/5 h-auto"
         id="logo"
       />
-      <ScrollLink
-        to="section8"
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
+      <button className="font-bold text-button">
+        <ScrollLink
+          to="section9"
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
         px-14 py-2 rounded-full bg-white 
         transition-all duration-500 "
-        style={{
-          display: showBtn && renderbtn ? 'block' : 'none',
-        }}
-      >
-        <button className="font-bold text-button ">お問い合わせ</button>
-      </ScrollLink>
+          style={{
+            display: showBtn && renderbtn ? 'block' : 'none',
+          }}
+        >
+          お問い合わせ
+        </ScrollLink>
+      </button>
       <Hamburger />
     </div>
   );
