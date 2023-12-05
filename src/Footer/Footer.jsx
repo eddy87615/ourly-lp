@@ -82,6 +82,7 @@ export default function Footer() {
                 </a>
               ) : (
                 <ScrollLink
+                  href="javascript:void(0);"
                   key={index}
                   to={item.link}
                   duration={500}

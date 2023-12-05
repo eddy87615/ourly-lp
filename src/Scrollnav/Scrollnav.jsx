@@ -142,6 +142,7 @@ export default function Scrollnav() {
     >
       {scrollnav.map((section, index) => (
         <Link
+          href="javascript:void(0);"
           to={section.id}
           spy={true}
           smooth={true}
