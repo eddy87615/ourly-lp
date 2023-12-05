@@ -142,6 +142,7 @@ export default function Scrollnav() {
     >
       {scrollnav.map((section, index) => (
         <Link
+          aria-label={section.text}
           href="javascript:void(0);"
           to={section.id}
           spy={true}
