@@ -164,7 +164,9 @@ export default function Sub() {
                     ></h3>
                   </li>
                   <li className="pic-grid flex justify-center items-center">
-                    <img
+                    <Image
+                      width={400}
+                      height={400}
                       src={obj.imgContent}
                       alt={obj.imgimgContentAlt}
                       className="w-[90%] duration-500"

@@ -32,12 +32,13 @@
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 8%, 8%;
+  transition: all 0.5s;
 }
 
 .ques-section:hover {
   transform: scale(1.1);
   background-color: var(--purple-light);
-  transition-duration: 0.5s;
+  transition: all 0.5s;
 }
 
 .ques-section:hover .ques-title {

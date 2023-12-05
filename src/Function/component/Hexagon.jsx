@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import Image from 'next/image';
 import '../Function.css';
 
 const data = [
@@ -204,7 +205,13 @@ const Hexagon = ({
     className={` ${hexagonclass}  lg:h-full lg:w-[12%] xl:w-[13%] relative`}
     key={color}
   >
-    <img src={imgsrc} alt={imgalt} className="clip duration-500 " />
+    <Image
+      width={300}
+      height={300}
+      src={imgsrc}
+      alt={imgalt}
+      className="clip duration-500 "
+    />
     {title && (
       <h4
         className={`text-h4 text-center font-semibold

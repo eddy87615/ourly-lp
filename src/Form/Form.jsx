@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 //CSS導入
 import './Form.css';
 import '@/app/globals.css';
@@ -39,7 +40,7 @@ function Fee() {
             className="flex flex-col justify-center items-center w-[100%]
             p-6 lg:p-12 border-4 rounded-[16px] border-[--ourly-theme] bg-white"
           >
-            <img src={obj.img} alt={obj.alt} />
+            <Image width={120} height={120} src={obj.img} alt={obj.alt} />
             <h4 className="text-[20px] lg:text-h4 font-bold text-center py-8">
               {obj.title}
             </h4>
