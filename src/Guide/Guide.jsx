@@ -236,6 +236,7 @@ export default function Guide() {
         ))}
       </div>
       <button
+        aria-label="read the page from the top"
         className="open text-[18px] font-bold bottom-[4%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[8%] right-[10%] absolute"
         onClick={() => {
           handleOpen();

@@ -237,6 +237,7 @@ export default function Form() {
             </label>
           </label>
           <button
+            aria-label="submit button"
             type="submit"
             className="text-text lg:text-[24px] bg-ourly-theme text-white w-[200px] h-[50px] lg:w-[370px] lg:h-[70px]
             rounded-lg lg:rounded-2xl my-0 mx-auto lg:mt-10 lg:shadow-ourly duration-500"

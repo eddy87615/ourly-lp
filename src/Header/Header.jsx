@@ -80,7 +80,7 @@ export default function Header() {
         className="cursor-pointer w-1/2 lg:w-1/5 h-auto"
         id="logo"
       />
-      <button className="font-bold text-button">
+      <button className="font-bold text-button" aria-label="otoiawase button">
         <ScrollLink
           to="section9"
           smooth={true}
