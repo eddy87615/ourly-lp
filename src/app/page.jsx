@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Header from '@/Header/Header';
 import Guide from '@/Guide/Guide';
 import Slider from '@/Slider/Slider';
@@ -12,22 +11,25 @@ import Question from '@/Question/Question';
 import Form from '@/Form/Form';
 import Footer from '@/Footer/Footer';
 import Qiestion from '@/Question/Question';
+import { Suspense } from 'react';
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Guide />
-      <Slider />
-      <Scrollnav />
-      <Intro />
-      <Main />
-      <Sub />
-      <Function />
-      <Compare />
-      <Qiestion />
-      <Form />
-      <Footer />
+      <Suspense>
+        <Header />
+        <Guide />
+        <Slider />
+        <Scrollnav />
+        <Intro />
+        <Main />
+        <Sub />
+        <Function />
+        <Compare />
+        <Qiestion />
+        <Form />
+        <Footer />
+      </Suspense>
     </>
   );
 }

@@ -188,30 +188,29 @@ export default function Sub() {
       </div>
       <ul className="h-full ">
         {subEndDiv.map((item, index) => (
-          <Element key={index}>
-            <motion.li
-              className={`${item.class} relative flex h-[200px] lg:h-[400px]`}
-              ref={refs[`ref0${index + 4}`]} // Dynamic ref based on index
-              variants={
-                inViews.inView04 &&
-                refs.ref04 &&
-                refs[`ref0${index + 4}`] === refs.ref05
-                  ? rightVariants
-                  : leftVariants
-              } // Check inView to determine variants
-              initial="hidden"
-              animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >
-              <img src={item.img} alt={item.alt} />
-              <p
-                className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
+          <motion.li
+            key={index}
+            className={`${item.class} relative flex h-[200px] lg:h-[400px]`}
+            ref={refs[`ref0${index + 4}`]} // Dynamic ref based on index
+            variants={
+              inViews.inView04 &&
+              refs.ref04 &&
+              refs[`ref0${index + 4}`] === refs.ref05
+                ? rightVariants
+                : leftVariants
+            } // Check inView to determine variants
+            initial="hidden"
+            animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <img src={item.img} alt={item.alt} />
+            <p
+              className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
               font-bold"
-              >
-                {item.text}
-              </p>
-            </motion.li>
-          </Element>
+            >
+              {item.text}
+            </p>
+          </motion.li>
         ))}
       </ul>
     </div>

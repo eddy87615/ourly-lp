@@ -119,7 +119,7 @@ export default function Question() {
           <h3 className="text-h3 font-bold text-center pt-16">よくある質問</h3>
           <ul className="ul-grid relative w-full pt-[8%]">
             {ques.map((txt, index) => (
-              <div
+              <li
                 key={index}
                 className="ques-section bg-[--base-color] h-[400px]
               flex flex-col justify-center items-left relative duration-500"
@@ -136,7 +136,7 @@ export default function Question() {
                 >
                   {txt.answer}
                 </li>
-              </div>
+              </li>
             ))}
           </ul>
         </div>
