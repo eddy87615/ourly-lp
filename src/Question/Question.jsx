@@ -117,9 +117,9 @@ export default function Question() {
       {renderPC ? (
         <div className="back-img w-full px-[10%] pb-16 h-fit">
           <h3 className="text-h3 font-bold text-center pt-16">よくある質問</h3>
-          <ul className="ul-grid relative w-full pt-[8%]">
+          <div className="ul-grid relative w-full pt-[8%]">
             {ques.map((txt, index) => (
-              <li
+              <ul
                 key={index}
                 className="ques-section bg-[--base-color] h-[400px]
               flex flex-col justify-center items-left relative overflow-hidden"
@@ -136,9 +136,9 @@ export default function Question() {
                 >
                   {txt.answer}
                 </li>
-              </li>
+              </ul>
             ))}
-          </ul>
+          </div>
         </div>
       ) : null}
       {flatsection ? (
