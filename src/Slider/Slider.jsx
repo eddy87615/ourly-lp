@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 //Swiper導入
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -159,7 +160,7 @@ export default function Slider() {
             ))} */}
             <p
               className="text-[18px] md:text-[20px] lg:text-h4 
-              leading-h4 lg:leading-h3"
+              leading-h4 lg:leading-h4"
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
             <ScrollLink
@@ -184,7 +185,13 @@ export default function Slider() {
           </div>
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
-          <img src={obj.imgsrc} alt={obj.imgalt} className="w-full h-screen " />
+          <Image
+            width={1500}
+            height={1200}
+            src={obj.imgsrc}
+            alt={obj.imgalt}
+            className="w-full h-screen "
+          />
         </SwiperSlide>
       ))}
     </Swiper>

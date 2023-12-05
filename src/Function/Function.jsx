@@ -1,5 +1,6 @@
 'use client';
 import { React, useEffect, useState } from 'react';
+import Image from 'next/image';
 import Hexagon from './component/Hexagon';
 //CSS導入
 import './Function.css';
@@ -238,21 +239,27 @@ export default function Function() {
                 {data.slice(5).map(Hexagon)} {/* Render hexagon 06 and 07 */}
               </div>
             </div>
-            <img
+            <Image
+              width={400}
+              height={400}
               src="/img/20Yman-05-bgN.webp"
               alt="young happy man pointing the picture"
               className="move01"
               style={{ transition: 'none' }}
             />
-            <img
-              src="img/20Yman-05-bgN-2.webp"
+            <Image
+              width={400}
+              height={400}
+              src="/img/20Yman-05-bgN-2.webp"
               alt="young happy man pointing the picture"
               className="move02"
               style={{ transition: 'none' }}
             />
           </>
         ) : (
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/img/function.png"
             alt="function introduction picture"
             className="absolute top-1/2 translate-y-[-50%] z-[2] w-full md:w-[80%]"

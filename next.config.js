@@ -5,5 +5,8 @@ const nextConfig = {
     ppr: true,
   },
 };
-
-module.exports = nextConfig;
+module.exports = {
+  images: {
+    unoptimized: false,
+  },
+};

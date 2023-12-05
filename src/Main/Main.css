@@ -51,10 +51,10 @@
   background-image: url(/img/report.webp);
   background-repeat: no-repeat;
   background-size: 40%;
-  background-position: 90% 90%;
+  background-position: 90% 100%;
 }
 .solvedman02 img {
-  width: 40%;
+  width: 35%;
   height: auto;
   position: absolute;
   bottom: 0px;
@@ -94,7 +94,7 @@
   overflow: hidden;
 }
 .annoyingwoman img {
-  width: 50%;
+  width: 48%;
   height: auto;
   position: absolute;
   bottom: 0px;

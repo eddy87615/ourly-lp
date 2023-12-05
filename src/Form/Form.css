@@ -24,8 +24,8 @@ label textarea {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -100%;
-  right: -6%;
+  top: -50%;
+  right: 0;
   width: 32%;
   height: 600%;
   z-index: -1;

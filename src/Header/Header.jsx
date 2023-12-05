@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 //CSS導入
 import './Header.css';
 import '@/app/globals.css';
@@ -70,7 +71,9 @@ export default function Header() {
       px-4 lg:px-16 mt-4
     w-screen h-[100px]"
     >
-      <img
+      <Image
+        width={300}
+        height={100}
         src="/img/ourly_logo.webp"
         alt="ourly logo"
         className="cursor-pointer w-1/2 lg:w-1/5 h-auto"

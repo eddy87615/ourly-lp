@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 //CSS導入
@@ -134,55 +135,53 @@ export default function Sub() {
             animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
             transition={{ delay: index * 0.5 }}
           >
-            <Element>
-              <div>
-                <motion.div
-                  ref={refs[`ref0${index + 1}`]}
-                  variants={titleVariants}
-                  initial="hidden"
-                  animate={
-                    inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'
-                  }
-                  transition={{ delay: index * 0.5, duration: 0.5 }}
-                >
-                  <ul className="title w-full p-4 py-8 lg:p-[4%]">
-                    <li className="num-grid flex justify-center items-center">
-                      <img
-                        src={obj.imgNum}
-                        alt={obj.imgNumAlt}
-                        className="h-[70%]"
-                      />
-                    </li>
-                    <li className="title-grid w-full flex justify-center items-center">
-                      <h3
-                        dangerouslySetInnerHTML={{ __html: obj.title }}
-                        className=" leading-h4 md:leading-h3 lg:leading-h2 
+            <div>
+              <motion.div
+                ref={refs[`ref0${index + 1}`]}
+                variants={titleVariants}
+                initial="hidden"
+                animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
+                transition={{ delay: index * 0.5, duration: 0.5 }}
+              >
+                <ul className="title w-full p-4 py-8 lg:p-[4%]">
+                  <li className="num-grid flex justify-center items-center">
+                    <Image
+                      width={100}
+                      height={100}
+                      src={obj.imgNum}
+                      alt={obj.imgNumAlt}
+                      className="h-[70%]"
+                    />
+                  </li>
+                  <li className="title-grid w-full flex justify-center items-center">
+                    <h3
+                      dangerouslySetInnerHTML={{ __html: obj.title }}
+                      className=" leading-h4 md:leading-h3 lg:leading-h2 
                         text-h4 md:text-h3 lg:text-h3 
                          text-center md:text-left lg:text-left font-bold 
                         py-6 px-4 md:px-10 md:py-0 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
                         "
-                      ></h3>
-                    </li>
-                    <li className="pic-grid flex justify-center items-center">
-                      <img
-                        src={obj.imgContent}
-                        alt={obj.imgimgContentAlt}
-                        className="w-[90%] duration-500"
-                      />
-                    </li>
-                    <li className="text-grid lg:pt-16">
-                      <p
-                        dangerouslySetInnerHTML={{ __html: obj.text }}
-                        className=" text-text 
+                    ></h3>
+                  </li>
+                  <li className="pic-grid flex justify-center items-center">
+                    <img
+                      src={obj.imgContent}
+                      alt={obj.imgimgContentAlt}
+                      className="w-[90%] duration-500"
+                    />
+                  </li>
+                  <li className="text-grid lg:pt-16">
+                    <p
+                      dangerouslySetInnerHTML={{ __html: obj.text }}
+                      className=" text-text 
                         md:text-[18px] 
                         leading-text md:leading-h3 px-[4%] 
                         mt-[-24px]"
-                      ></p>
-                    </li>
-                  </ul>
-                </motion.div>
-              </div>
-            </Element>
+                    ></p>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
           </motion.div>
         ))}
       </div>
@@ -203,7 +202,7 @@ export default function Sub() {
             animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <img src={item.img} alt={item.alt} />
+            <Image width={400} height={400} src={item.img} alt={item.alt} />
             <p
               className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
               font-bold"

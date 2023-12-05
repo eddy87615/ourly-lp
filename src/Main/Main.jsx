@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 //CSS導入
@@ -118,7 +119,13 @@ export default function Main() {
                 {personal.content}
               </span>
             </h2>
-            <img src={personal.imgAnnoying} alt={personal.annoyingImgInfo} />
+            <Image
+              width={800}
+              height={800}
+              quality={90}
+              src={personal.imgAnnoying}
+              alt={personal.annoyingImgInfo}
+            />
 
             <SpeechBubble
               text={personal.article01}
@@ -148,7 +155,12 @@ export default function Main() {
               <br />
               {personal.solvedSubtitle}
             </h2>
-            <img src={personal.imgSolved} alt={personal.solvedImgInfo} />
+            <Image
+              width={500}
+              height={500}
+              src={personal.imgSolved}
+              alt={personal.solvedImgInfo}
+            />
             <p
               dangerouslySetInnerHTML={{ __html: personal.solvedContent }}
               className="w-[90%] lg:w-[40%] xl:w-[64%]

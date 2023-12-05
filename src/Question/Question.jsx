@@ -122,7 +122,7 @@ export default function Question() {
               <li
                 key={index}
                 className="ques-section bg-[--base-color] h-[400px]
-              flex flex-col justify-center items-left relative duration-500"
+              flex flex-col justify-center items-left relative duration-50 overflow-hidden"
               >
                 <li
                   className="ques-title absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[90%]

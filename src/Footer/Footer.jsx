@@ -1,5 +1,6 @@
 'use client';
 import { React, useEffect } from 'react';
+import Image from 'next/image';
 //CSS導入
 import './Footer.css';
 import '@/app/globals.css';
@@ -59,10 +60,12 @@ export default function Footer() {
       <div className="purplesection relative bg-[--purple-light] text-white pt-16 px-8">
         <ul>
           <li className="pb-8">
-            <img
+            <Image
+              width={300}
+              height={200}
               src="/img/ourly_logo_W.webp"
               alt="white ourly"
-              className="w-1/2 lg:w-[24%] md:w-1/3"
+              className="w-1/2 lg:w-[24%] xl:w-[20%] md:w-1/3 pb-8"
             />
           </li>
           <li className="link text-text py-0 lg:py-0  cursor-pointer">

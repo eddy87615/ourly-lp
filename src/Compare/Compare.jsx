@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
 //CSS導入
 import './Compare.css';
@@ -44,7 +45,9 @@ export default function Compare() {
           社内報の比較
         </h3>
         {rendercompare ? (
-          <img
+          <Image
+            width={900}
+            height={900}
             src="/img/compare.webp"
             alt="comparison about ourly, paper company news and other web company news tools"
             className="relative lg:w-[50%]  z-2 duration-500 
