@@ -228,7 +228,7 @@ export default function Form() {
               に同意する
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-0 md:left-[42%] lg:left-[56%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
+                w-fit right-[-6%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme text-[--ourly-theme] px-1"
               >
                 必須

@@ -434,4 +434,20 @@ button:hover {
     align-items: flex-end;
     justify-content: left;
   }
-} /*# sourceMappingURL=Slider.css.map */
+}
+
+@media screen and (max-width: 390px) {
+  br {
+    display: none;
+  }
+  .title01 {
+    top: 16%;
+    left: 0;
+  }
+
+  .title02,
+  .title03 {
+    top: 16%;
+    right: 0;
+  }
+}

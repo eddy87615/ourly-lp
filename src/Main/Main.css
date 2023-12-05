@@ -519,4 +519,106 @@
   .annoyingwoman::before {
     content: none;
   }
-} /*# sourceMappingURL=Main.css.map */
+}
+@media screen and (max-width: 390px) {
+  .annoyingman01 {
+    background-repeat: repeat;
+    background-position: 0 100%;
+  }
+  .annoyingman01 img {
+    width: 56%;
+  }
+  .solvedman01 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url(/img/communication.webp);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 50% 64%;
+  }
+  .solvedman01 img {
+    width: 88%;
+  }
+  .annoyingman02 {
+    background-repeat: repeat;
+    background-position: 0 100%;
+  }
+  .annoyingman02 img {
+    width: 72%;
+  }
+  .solvedman02 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(/img/report.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 80% 80%;
+  }
+  .solvedman02 img {
+    width: 100%;
+  }
+  .solvedman02::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    width: 50%;
+    height: 10%;
+    background-image: url(/img/illu-04.webp);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  .solvedman02::before {
+    content: none;
+  }
+  .annoyingwoman img {
+    width: 100%;
+  }
+  .solvedwoman {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      url(/img/usability-03.gif);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 64%;
+  }
+  .solvedwoman img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  .solvedwoman::after {
+    content: '';
+    position: absolute;
+    background-image: url(/img/KViphone.webp);
+    top: 60%;
+    left: 65%;
+    background-size: 100%;
+    width: 24%;
+    height: 30%;
+    background-repeat: no-repeat;
+  }
+  .solvedwoman::before {
+    content: none;
+  }
+  .annoyingman01::before {
+    content: none;
+    animation: question 2s infinite;
+  }
+  .annoyingman02::before {
+    content: none;
+  }
+  .annoyingwoman::before {
+    content: none;
+  }
+}
