@@ -74,7 +74,7 @@ const PhoneQuestionList = ({
 
 const QuestionPhone = ({ ques, flatsection }) => {
   return (
-    <div className="w-full h-full mx-auto my-0 bg-white px-10">
+    <div className="w-full h-full mx-auto my-0 bg-white px-8 md:px-10 xs:px-8">
       <h3 className="text-h4 font-bold text-center py-16">よくある質問</h3>
       {ques.map((txtp, index) => (
         <PhoneQuestionList

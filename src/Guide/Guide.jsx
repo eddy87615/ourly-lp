@@ -164,7 +164,7 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="text-h1 font-bold text-center lg:mt-20 xl:mt-24">
+      <h1 className="text-h1 font-bold text-center lg:mt-20 xl:mt-32">
         <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">
@@ -236,7 +236,7 @@ export default function Guide() {
         ))}
       </div>
       <button
-        className="open text-[18px] font-bold bottom-[4%] lg:bottom-[2%] xl:bottom-[4%] 2xl:bottom-[8%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[4%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[8%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();

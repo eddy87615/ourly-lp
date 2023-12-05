@@ -125,6 +125,7 @@ export default function Hamburger({ isVisible }) {
                     className="flex justify-center items-center"
                     href="https://service.ourly.jp/"
                     target="blank"
+                    onClick={handleToggle}
                   >
                     <img
                       src="/img/ourly_logo.webp"
