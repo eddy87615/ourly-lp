@@ -102,7 +102,7 @@ export default function Form() {
               <span
                 className="absolute text-[10px] lg:text-[10px]
                 w-fit right-0 lg:left-[10%] xl:left-[6%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
               </span>
@@ -113,7 +113,7 @@ export default function Form() {
               <span
                 className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-0 lg:left-[10%] xl:left-[6%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
               </span>
@@ -127,7 +127,7 @@ export default function Form() {
               <span
                 className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-0 lg:left-[24%] xl:left-[12%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
               </span>
@@ -143,7 +143,7 @@ export default function Form() {
               <span
                 className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-0 lg:left-[24%] xl:left-[12%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
               </span>
@@ -160,7 +160,7 @@ export default function Form() {
             <span
               className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-0 lg:left-[12%] xl:left-[6%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
             >
               必須
             </span>
@@ -179,7 +179,7 @@ export default function Form() {
             <span
               className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-0 lg:left-[14%] xl:left-[7%] top-[5%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
             >
               必須
             </span>
@@ -230,7 +230,7 @@ export default function Form() {
               <span
                 className="absolute text-[10px] lg:text-[10px] 
                 w-fit right-[-6%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
-            border border-1 border-ourly-theme text-[--ourly-theme] px-1"
+            border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
               </span>
