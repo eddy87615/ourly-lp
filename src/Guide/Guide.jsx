@@ -170,6 +170,7 @@ export default function Guide() {
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">
         {guideinfo.map((obj, index) => (
           <Link
+            href={`section${index + 1}`}
             to={`section${index + 1}`}
             key={index}
             className={`container list01 
@@ -236,7 +237,7 @@ export default function Guide() {
         ))}
       </div>
       <button
-        aria-label="read the page from the top"
+        aria-label="最初からourlyを知る read the page from the top"
         className="open text-[18px] font-bold bottom-[4%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[6%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
