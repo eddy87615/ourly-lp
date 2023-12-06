@@ -123,7 +123,7 @@ export default function Slider() {
             <h1
               className="text-[32px] md:text-h2 lg:text-h1 2xl:text-h1 
               font-bold 
-              leading-h2 lg:leading-h1"
+              leading-h2 lg:leading-h1 m-0"
             >
               {obj.h1text[0]}
               <br />

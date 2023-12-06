@@ -164,7 +164,7 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="text-h1 font-bold text-center lg:mt-20 xl:mt-32 2xl:my-20 max:mt-40">
+      <h1 className="guideh1 text-h1 font-bold text-center lg:mt-20 xl:mt-32 2xl:my-20 max:mt-40">
         <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">

@@ -94,7 +94,7 @@ export default function Footer() {
               )
             )}
           </li>
-          <li className="text-center py-8">
+          <li className="text-center pt-10 pb-8">
             <small>Copyright &copy; ourly.jp. All Rights Reserved.</small>
           </li>
         </ul>

@@ -138,6 +138,34 @@
   padding-right: 8%;
 }
 
+@media screen and (max-width: 1920px) {
+  .title {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    grid-template-areas:
+      'num title pic'
+      'txt txt pic';
+  }
+
+  .title .title-grid {
+    padding: 0;
+    justify-content: start;
+  }
+  .title .text-grid {
+    padding-top: 24px;
+    grid-area: txt;
+    display: grid;
+    place-items: center;
+  }
+
+  .title .num-grid img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .title {
     display: grid;

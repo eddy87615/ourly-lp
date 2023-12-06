@@ -163,7 +163,7 @@ export default function Sub() {
                         "
                     >
                       {obj.title[0]}
-                      <br />
+                      <br className="hidden" />
                       {obj.title[1]}
                       <br />
                       {obj.title[2]}
