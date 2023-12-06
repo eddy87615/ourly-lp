@@ -164,6 +164,7 @@ export default function Slider() {
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
             <ScrollLink
+              href="section8"
               to="section8"
               spy={true}
               smooth={true}
