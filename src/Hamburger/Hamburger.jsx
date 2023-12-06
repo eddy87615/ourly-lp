@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import Image from 'next/image';
 //
 import './Hamburger.css';
 //
@@ -127,7 +128,9 @@ export default function Hamburger({ isVisible }) {
                     target="blank"
                     onClick={handleToggle}
                   >
-                    <img
+                    <Image
+                      width={3000}
+                      height={1000}
                       src="/img/ourly_logo.webp"
                       alt="ourly logo"
                       className="w-1/2 h-auto "
