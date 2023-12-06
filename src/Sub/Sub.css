@@ -141,7 +141,7 @@
 @media screen and (max-width: 1440px) {
   .title {
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr 1fr;
+    grid-template-columns: 0.3fr 0.8fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 8px;
     width: 100%;
@@ -156,6 +156,9 @@
   .title .text-grid {
     padding-top: 24px;
     grid-area: txt;
+  }
+  .title .num-grid img {
+    width: 80%;
   }
 
   .subend03 p {
@@ -184,7 +187,7 @@
 @media screen and (max-width: 768px) {
   .title {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.8fr 2fr;
     grid-template-rows: 0.5fr 1fr 0.8fr;
     width: 100%;
     gap: 24px;
@@ -197,7 +200,7 @@
     grid-area: num;
   }
   .title .num-grid img {
-    width: 50%;
+    width: 80%;
   }
   .title .pic-grid {
     grid-area: pic;

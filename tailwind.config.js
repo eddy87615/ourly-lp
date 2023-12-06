@@ -9,14 +9,17 @@ module.exports = {
     './Header/**/*.{js,ts,jsx,tsx}', // 要包含的文件
   ],
   theme: {
+    screen: {
+      xs: '390px',
+      sm: '500px',
+      md: '768px',
+      lg: '1200px',
+      xl: '1440px',
+      '2xl': '1600px',
+      max: '1920px',
+    },
     extend: {
       screen: {
-        xs: '390px',
-        sm: '500px',
-        md: '768px',
-        lg: '1200px',
-        xl: '1440px',
-        '2xl': '1600px',
         max: '1920px',
       },
       backgroundImage: {

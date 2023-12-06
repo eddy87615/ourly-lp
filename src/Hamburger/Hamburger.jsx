@@ -153,6 +153,7 @@ export default function Hamburger({ isVisible }) {
                   w-[56%] h-[8%]"
                   >
                     <Link
+                      href={link.link}
                       to={link.link}
                       offset={-50}
                       alt={link.alt}

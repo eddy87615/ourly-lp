@@ -19,7 +19,7 @@ const content = [
   {
     imgNum: '/img/01.svg',
     imgNumAlt: 'number 1',
-    title: 'どの記事がどのくらい読まれているか<br />わかる',
+    title: ['どの記事がどのくらい', '読まれているか', 'わかる'],
     imgContent: '/img/analyze01.webp',
     imgimgContentAlt: 'ourly analysis function part one, about read condition',
     text: '記事ごとに算出された閲覧状況を、管理画面で一括確認できます。数値ベースの改善で「伝えたつもり」をなくします。PV数などの基本指標はもちろん、記事ごとに閲覧率・読了率・リアクション率などourly独自の指標でも分析できるのでより詳細に閲覧状況を把握できます。',
@@ -29,7 +29,7 @@ const content = [
   {
     imgNum: '/img/02.svg',
     imgNumAlt: 'number 2',
-    title: 'どのグループに読まれているのか<br />わかる',
+    title: ['どのグループに', '読まれているのか', 'わかる'],
     imgContent: '/img/analyze02.webp',
     imgimgContentAlt:
       'ourly analysis function part two, about which grop read the article',
@@ -40,7 +40,7 @@ const content = [
   {
     imgNum: '/img/03.svg',
     imgNumAlt: 'number 3',
-    title: 'どれほど読まれるようになったのか<br />わかる',
+    title: ['どれほど読まれるように', 'なったのか', 'わかる'],
     imgContent: '/img/analyze03.webp',
     imgimgContentAlt:
       'ourly analysis function part three, the chart for the total codition to make you improve the articles',
@@ -153,15 +153,21 @@ export default function Sub() {
                       className="h-[70%]"
                     />
                   </li>
-                  <li className="title-grid w-full flex justify-center items-center">
+                  <li className="title-grid w-full flex justify-center items-center xl:p-0">
                     <h3
-                      dangerouslySetInnerHTML={{ __html: obj.title }}
+                      // dangerouslySetInnerHTML={{ __html: obj.title }}
                       className=" leading-h4 md:leading-h3 lg:leading-h2 
                         text-h4 md:text-h3 lg:text-h3 
                          text-center md:text-left lg:text-left font-bold 
-                        py-6 px-4 md:px-10 md:py-0 lg:p-0 lg: text-[--ourly-theme] mt-[-32px]
+                        py-6 px-4 md:px-0 md:pt-10 lg:p-0 text-[--ourly-theme] mt-[-32px]
                         "
-                    ></h3>
+                    >
+                      {obj.title[0]}
+                      <br />
+                      {obj.title[1]}
+                      <br />
+                      {obj.title[2]}
+                    </h3>
                   </li>
                   <li className="pic-grid flex justify-center items-center">
                     <Image
