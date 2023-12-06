@@ -186,8 +186,8 @@ export default function Slider() {
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
           <Image
-            width={1500}
-            height={1200}
+            width={1350}
+            height={940}
             src={obj.imgsrc}
             alt={obj.imgalt}
             className="w-full h-screen "
