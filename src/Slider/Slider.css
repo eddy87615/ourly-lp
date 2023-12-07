@@ -495,7 +495,7 @@ button:hover {
     justify-content: left;
   }
 }
-@media screen and (max-width: 414px) {
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .title02 h1 {
     padding-left: 22%;
   }
