@@ -15,11 +15,24 @@
 .solvedman01 {
   background-image: url(/img/communication.webp);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 32%;
   background-position: 80% 90%;
 }
+.solvedman01::after {
+  content: '';
+  background-image: url(/img/logo-Y.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 70%;
+  height: 60%;
+  top: 40%;
+  left: 24%;
+  z-index: 0;
+}
 .solvedman01 img {
-  width: 32%;
+  z-index: 1;
+  width: 28%;
   height: auto;
   position: absolute;
   bottom: 0px;
@@ -47,11 +60,11 @@
 .solvedman02 {
   background-image: url(/img/report.webp);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 36%;
   background-position: 90% 100%;
 }
 .solvedman02 img {
-  width: 35%;
+  width: 32%;
   height: auto;
   position: absolute;
   bottom: 0px;
@@ -61,7 +74,7 @@
 .solvedman02::after {
   content: '';
   position: absolute;
-  bottom: 20%;
+  bottom: 16%;
   left: 48%;
   width: 30%;
   height: 30%;
@@ -271,6 +284,41 @@
     z-index: 2;
     animation: question 2s infinite;
     z-index: -1;
+  }
+
+  .solvedman02::before {
+    width: 40%;
+    height: 20%;
+    top: 40%;
+  }
+  .solvedman02 {
+    background-size: 45%;
+  }
+  .solvedman02::after {
+    width: 24%;
+    height: 24%;
+    background-size: contain;
+    top: 60%;
+    left: 32%;
+  }
+
+  .solvedman01::after {
+    content: '';
+    background-image: url(/img/logo-Y.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 20%;
+    height: 60%;
+    top: 60%;
+    left: 24%;
+    z-index: 0;
+  }
+  .solvedman01 {
+    background-size: 44%;
+  }
+  .solvedman01 img {
+    width: 30%;
   }
 }
 @media screen and (max-width: 850px) {
