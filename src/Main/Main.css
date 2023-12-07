@@ -620,6 +620,16 @@
     content: none;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .annoyingman01 h2,
+  .annoyingman02 h2,
+  .annoyingwoman h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .annoyingman01 {
     background-repeat: repeat;
