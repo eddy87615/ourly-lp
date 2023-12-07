@@ -245,7 +245,7 @@ export default function Form() {
             お問い合わせを送信
           </button>
         </form>
-        <p className="note text-center text-button pt-16 px-10">
+        <p className="note text-center text-[14px] lg:text-button pt-16 px-10">
           ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
         </p>
       </Element>

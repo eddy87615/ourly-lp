@@ -497,9 +497,19 @@ button:hover {
 }
 
 @media screen and (max-width: 390px) {
-  br {
+  .title01 p br,
+  .title02 p br,
+  .title03 p br {
     display: none;
   }
+  .title01 p {
+    padding-right: 20%;
+  }
+  .title02 p,
+  .title03 p {
+    padding-left: 20%;
+  }
+
   .title01 {
     top: 16%;
     left: 0;
@@ -509,5 +519,9 @@ button:hover {
   .title03 {
     top: 16%;
     right: 0;
+  }
+
+  .title02 h1 {
+    padding-left: 20%;
   }
 }

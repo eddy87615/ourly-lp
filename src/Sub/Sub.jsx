@@ -181,8 +181,8 @@ export default function Sub() {
                   <li className="text-grid lg:pt-16">
                     <p
                       dangerouslySetInnerHTML={{ __html: obj.text }}
-                      className=" text-text 
-                        md:text-[18px] 
+                      className=" lg:text-text 
+                        text-[14px] md:text-[18px] 
                         leading-text md:leading-h3 px-[4%] 
                         mt-[-24px]"
                     ></p>

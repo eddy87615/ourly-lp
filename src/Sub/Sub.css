@@ -401,4 +401,63 @@
     padding-right: 2%;
     width: 70%;
   }
-} /*# sourceMappingURL=Sub.css.map */
+}
+@media screen and (max-width: 390px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .title .num-grid {
+    display: none;
+  }
+  .title .text-grid {
+    padding-top: 16%;
+  }
+  .title .title-grid {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .subend01 {
+    justify-content: end;
+  }
+  .subend01 img {
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+    width: 50%;
+  }
+  .subend01 p {
+    font-size: 18px;
+    color: #fff;
+    right: 0;
+    width: 62%;
+  }
+  .subend02 {
+    justify-content: start;
+  }
+  .subend02 p {
+    left: 0;
+    font-size: 18px;
+    width: 50%;
+  }
+  .subend02 img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 54%;
+  }
+  .subend03 img {
+    position: absolute;
+    left: 4%;
+    bottom: 0%;
+    width: 35%;
+  }
+  .subend03 p {
+    color: #fff;
+    font-size: 18px;
+    right: 0;
+    width: 70%;
+  }
+}
