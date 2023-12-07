@@ -495,7 +495,7 @@ button:hover {
     justify-content: left;
   }
 }
-@media screen and (max-width: 414px) and (min-height: 690px) {
+@media screen and (min-height: 690px) and (max-width: 414px) {
   .page01::before {
     background-position: 20% 100%;
     background-size: 120%;
