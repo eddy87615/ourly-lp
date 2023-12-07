@@ -628,6 +628,12 @@
   .annoyingman01 img {
     width: 45%;
   }
+  .annoyingman01 h2,
+  .annoyingman02 h2,
+  .annoyingwoman h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
   .solvedman01 {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
