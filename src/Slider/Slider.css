@@ -495,15 +495,8 @@ button:hover {
     justify-content: left;
   }
 }
-@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  .title02 h1 {
-    padding-left: 22%;
-  }
-  .title03 {
-    right: 0;
-  }
-}
-@media only screen and (min-device-width: 414px) and (min-device-height: 690px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2),
+  (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 2) {
   .page01::before {
     background-position: 20% 100%;
     background-size: 120%;
@@ -524,6 +517,16 @@ button:hover {
     animation: none;
   }
 }
+@media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .title02 h1 {
+    padding-left: 22%;
+  }
+  .title03 {
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .page01::before {
     width: 100%;
