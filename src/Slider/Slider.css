@@ -496,6 +496,15 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .title02 h1 {
+    padding-left: 22%;
+  }
+  .title03 {
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .page01::before {
     width: 100%;

@@ -459,6 +459,12 @@
     width: 70%;
   }
 }
+@media screen and (max-width: 414px) {
+  h2 {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
 @media screen and (max-width: 390px) {
   .title {
     display: flex;
