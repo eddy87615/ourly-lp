@@ -680,7 +680,7 @@
     background-position: 0 100%;
   }
   .annoyingman01 img {
-    width: 54%;
+    width: 40%;
   }
   .annoyingman01 h2,
   .annoyingman02 h2,
@@ -699,7 +699,7 @@
     background-position: 50% 64%;
   }
   .solvedman01 img {
-    width: 80%;
+    width: 60%;
   }
   .solvedman01 h2 {
     padding-right: 4%;
@@ -710,7 +710,7 @@
     background-position: 0 100%;
   }
   .annoyingman02 img {
-    width: 72%;
+    width: 50%;
   }
   .solvedman02 {
     background-image: linear-gradient(
@@ -723,7 +723,7 @@
     background-position: 80% 80%;
   }
   .solvedman02 img {
-    width: 80%;
+    width: 50%;
   }
   .solvedman02 h2 {
     padding-right: 4%;
@@ -732,7 +732,7 @@
   .solvedman02::after {
     content: '';
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 48%;
     width: 50%;
     height: 10%;
@@ -745,7 +745,7 @@
     content: none;
   }
   .annoyingwoman img {
-    width: 100%;
+    width: 80%;
   }
   .solvedwoman {
     background-image: linear-gradient(
@@ -755,7 +755,7 @@
       url(/img/usability-03.gif);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: 50% 72%;
+    background-position: 50% 80%;
   }
 
   .solvedwoman h2 {

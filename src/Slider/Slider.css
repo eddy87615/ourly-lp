@@ -497,6 +497,14 @@ button:hover {
 }
 
 @media screen and (max-width: 390px) {
+  .page01::before {
+    width: 100%;
+    bottom: -10%;
+  }
+  .page02::before {
+    width: 80%;
+    /* bottom: -10%; */
+  }
   .title01 p br,
   .title02 p br,
   .title03 p br {
