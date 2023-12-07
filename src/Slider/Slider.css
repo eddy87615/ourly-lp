@@ -504,6 +504,27 @@ button:hover {
     right: 0;
   }
 }
+@media screen and (min-height: 691px) {
+  .page01::before {
+    background-position: 20% 100%;
+    background-size: 120%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: none;
+  }
+
+  .page02::before {
+    background-position: 100% 100%;
+    background-size: 90%;
+    bottom: 0;
+    left: -15%;
+    width: 100%;
+    height: 56%;
+    animation: none;
+  }
+}
 
 @media screen and (max-width: 390px) {
   .page01::before {

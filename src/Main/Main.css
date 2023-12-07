@@ -687,6 +687,39 @@
     width: 70%;
   }
 }
+@media screen and (min-height: 691px) {
+  .annoyingman01 img {
+    width: 28%;
+  }
+  .solvedman01 img {
+    width: 50%;
+  }
+
+  .annoyingman02 img {
+    width: 35%;
+  }
+  .solvedman02 img {
+    width: 35%;
+    left: 10%;
+  }
+  .solvedman02::after {
+    height: 20%;
+    /* background-position: 100% 100%; */
+    top: 72%;
+  }
+
+  .annoyingwoman img {
+    width: 60%;
+    right: 10%;
+  }
+  .solvedwoman img {
+    width: 80%;
+  }
+  .solvedwoman::after {
+    width: 20%;
+    top: 64%;
+  }
+}
 @media screen and (max-width: 390px) {
   .annoyingman01 {
     background-repeat: repeat;
