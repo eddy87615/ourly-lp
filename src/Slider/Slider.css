@@ -151,6 +151,31 @@ button:hover {
   transform: rotate(30deg);
 }
 
+.slide-hint {
+  animation: arrow 1s ease infinite;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  60% {
+    bottom: 70px;
+  }
+  70% {
+    bottom: 60px;
+  }
+  80% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+
 @keyframes KV01 {
   0% {
     transform: translateX(0px);
@@ -303,6 +328,41 @@ button:hover {
   .triangle05,
   .triangle06 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .triangle01,
+  .triangle02,
+  .triangle03,
+  .triangle04,
+  .triangle05,
+  .triangle06 {
+    display: none;
+  }
+
+  .title01,
+  .title02,
+  .title03 {
+    top: 24%;
+  }
+
+  .page01::before {
+    width: 100%;
+    height: 80%;
+  }
+  .page02::before {
+    width: 100%;
+    height: 80%;
+  }
+  .page03::before {
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/happypeople-bgN.webp');
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    animation: KV03 2s ease infinite;
   }
 }
 

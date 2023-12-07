@@ -133,10 +133,10 @@ export default function Sub() {
             variants={itemVariants}
             initial="hidden"
             animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
-            transition={{ delay: index * 0.5 }}
+            transition={{ delay: index * 0.2 }}
           >
             <div>
-              <motion.div
+              <div
                 ref={refs[`ref0${index + 1}`]}
                 variants={titleVariants}
                 initial="hidden"
@@ -188,7 +188,7 @@ export default function Sub() {
                     ></p>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         ))}

@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { SlArrowDown } from 'react-icons/sl';
 //Swiper導入
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -94,10 +95,10 @@ export default function Slider() {
       spaceBetween={30}
       loop={true}
       centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // }}
       pagination={{
         clickable: true,
       }}
@@ -195,6 +196,9 @@ export default function Slider() {
           />
         </SwiperSlide>
       ))}
+      <span className="slide-hint absolute bottom-[4%] left-1/2 translate-x-[-50%] z-10 w-[5%] h-auto">
+        <SlArrowDown style={{ color: 'white' }} className="w-full h-full" />
+      </span>
     </Swiper>
   );
 }

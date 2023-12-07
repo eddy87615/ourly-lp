@@ -39,6 +39,30 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .purplesection ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .purplesection {
+    background-image: url(/img/logo-LP.svg);
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    background-position: 100% 40%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link a {
+    padding: 2% 3%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .purplesection::after {
     content: none;

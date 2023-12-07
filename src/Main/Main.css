@@ -274,6 +274,109 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .annoyingman01::before {
+    top: 56%;
+    left: 0;
+    width: 60%;
+  }
+
+  .annoyingman01 h2 {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .annoyingman01 img {
+    width: 48%;
+  }
+
+  .solvedman01 img {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .solvedman01 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url(/img/communication.webp);
+    background-size: 90%;
+    background-position: 50% 70%;
+  }
+
+  .annoyingman02 img {
+    width: 60%;
+  }
+  .annoyingman02::before {
+    top: 56%;
+    left: 0;
+    width: 60%;
+  }
+  .solvedman02 img {
+    width: 80%;
+    left: 0;
+  }
+  .solvedman02::before {
+    top: 42%;
+    left: 10%;
+    background-size: 100%;
+    width: 20%;
+    height: 20%;
+  }
+  .solvedman02::after {
+    width: 40%;
+    height: 16%;
+    background-size: 100%;
+    top: 60%;
+    left: 56%;
+  }
+  .solvedman02 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url(/img/report.webp);
+    background-size: 90%;
+    background-position: 50% 80%;
+  }
+
+  .annoyingwoman img {
+    width: 100%;
+  }
+  .annoyingwoman::before {
+    top: 56%;
+    left: 0;
+    width: 50%;
+  }
+
+  .solvedwoman img {
+    width: 100%;
+    left: 0;
+  }
+  .solvedwoman {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(/img/usability-03.gif);
+    background-size: 90%;
+    background-position: 50% 70%;
+  }
+  .solvedwoman::after {
+    width: 20%;
+    height: 30%;
+    top: 40%;
+    right: 16%;
+  }
+  .solvedwoman::before {
+    width: 40%;
+    height: 30%;
+    top: 40%;
+    background-size: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .annoyingman01 {
     background-repeat: repeat;
