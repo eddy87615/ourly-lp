@@ -273,7 +273,6 @@
     z-index: -1;
   }
 }
-
 @media screen and (max-width: 850px) {
   .annoyingman01::before {
     top: 56%;
@@ -318,7 +317,7 @@
     left: 0;
   }
   .solvedman02::before {
-    top: 42%;
+    top: 45%;
     left: 10%;
     background-size: 100%;
     width: 20%;
@@ -376,7 +375,6 @@
     background-size: 100%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .annoyingman01 {
     background-repeat: repeat;
@@ -620,7 +618,6 @@
     content: none;
   }
 }
-
 @media screen and (max-width: 430px) {
   .annoyingman01 h2,
   .annoyingman02 h2,
@@ -629,14 +626,13 @@
     padding-right: 4%;
   }
 }
-
 @media screen and (max-width: 390px) {
   .annoyingman01 {
     background-repeat: repeat;
     background-position: 0 100%;
   }
   .annoyingman01 img {
-    width: 45%;
+    width: 54%;
   }
   .annoyingman01 h2,
   .annoyingman02 h2,
@@ -655,7 +651,11 @@
     background-position: 50% 64%;
   }
   .solvedman01 img {
-    width: 88%;
+    width: 80%;
+  }
+  .solvedman01 h2 {
+    padding-right: 4%;
+    padding-left: 4%;
   }
   .annoyingman02 {
     background-repeat: repeat;
@@ -675,12 +675,16 @@
     background-position: 80% 80%;
   }
   .solvedman02 img {
-    width: 100%;
+    width: 80%;
+  }
+  .solvedman02 h2 {
+    padding-right: 4%;
+    padding-left: 4%;
   }
   .solvedman02::after {
     content: '';
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 48%;
     width: 50%;
     height: 10%;
@@ -697,16 +701,22 @@
   }
   .solvedwoman {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2)
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
       ),
       url(/img/usability-03.gif);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: 50% 64%;
+    background-position: 50% 72%;
   }
+
+  .solvedwoman h2 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
   .solvedwoman img {
-    width: 100%;
+    width: 80%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -717,7 +727,7 @@
     content: '';
     position: absolute;
     background-image: url(/img/KViphone.webp);
-    top: 60%;
+    top: 64%;
     left: 65%;
     background-size: 100%;
     width: 24%;

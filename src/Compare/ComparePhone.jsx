@@ -17,7 +17,7 @@ export default function ComparePhone() {
         />
       </div>
       <div className="w-[50%] md:w-[60%] h-full overflow-x-auto">
-        <div className="w-[360%] md:w-[190%] h-full">
+        <div className="w-[380%] md:w-[190%] h-full">
           <Image
             width={800}
             height={500}
