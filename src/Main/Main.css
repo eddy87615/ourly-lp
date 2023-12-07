@@ -674,7 +674,7 @@
     padding-right: 4%;
   }
 }
-@media screen and (min-height: 691px) {
+@media screen and (max-width: 414px) and (min-height: 691px) {
   .annoyingman01 img {
     width: 28%;
   }
