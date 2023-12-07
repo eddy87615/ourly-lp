@@ -495,6 +495,14 @@ button:hover {
     justify-content: left;
   }
 }
+@media screen and (max-width: 414px) {
+  .title02 h1 {
+    padding-left: 22%;
+  }
+  .title03 {
+    right: 0;
+  }
+}
 @media only screen and (min-device-width: 414px) and (min-device-height: 690px) and (-webkit-min-device-pixel-ratio: 2) {
   .page01::before {
     background-position: 20% 100%;
@@ -514,14 +522,6 @@ button:hover {
     width: 100%;
     height: 56%;
     animation: none;
-  }
-}
-@media screen and (max-width: 414px) {
-  .title02 h1 {
-    padding-left: 22%;
-  }
-  .title03 {
-    right: 0;
   }
 }
 @media screen and (max-width: 390px) {
