@@ -674,19 +674,6 @@
     padding-right: 4%;
   }
 }
-@media screen and (max-width: 414px) {
-  .annoyingman01 img {
-    width: 46%;
-  }
-
-  .annoyingman02 h2 {
-    padding-left: 14%;
-    padding-right: 14%;
-  }
-  .solvedman02 img {
-    width: 70%;
-  }
-}
 @media screen and (min-height: 691px) {
   .annoyingman01 img {
     width: 28%;
@@ -718,6 +705,19 @@
   .solvedwoman::after {
     width: 20%;
     top: 64%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .annoyingman01 img {
+    width: 46%;
+  }
+
+  .annoyingman02 h2 {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  .solvedman02 img {
+    width: 70%;
   }
 }
 @media screen and (max-width: 390px) {
