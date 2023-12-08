@@ -674,8 +674,7 @@
     padding-right: 4%;
   }
 }
-@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2),
-  (device-width: 414px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2) {
   .annoyingman01 img {
     width: 28%;
   }

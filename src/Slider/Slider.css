@@ -495,8 +495,7 @@ button:hover {
     justify-content: left;
   }
 }
-@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2),
-  (device-width: 414px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2) {
   .page01::before {
     background-position: 20% 100%;
     background-size: 120%;
@@ -515,6 +514,10 @@ button:hover {
     width: 100%;
     height: 56%;
     animation: none;
+  }
+
+  .title03 {
+    right: 0;
   }
 }
 @media only screen and (device-height: 800px) and (-webkit-device-pixel-ratio: 3),
