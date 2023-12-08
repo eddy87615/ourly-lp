@@ -365,7 +365,6 @@ button:hover {
     animation: KV03 2s ease infinite;
   }
 }
-
 @media screen and (max-width: 768px) {
   .triangle01,
   .triangle02,
