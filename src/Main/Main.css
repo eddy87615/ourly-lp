@@ -674,7 +674,7 @@
     padding-right: 4%;
   }
 }
-@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 2) {
   .annoyingman01 img {
     width: 28%;
   }
@@ -707,8 +707,7 @@
     top: 64%;
   }
 }
-@media only screen and (device-height: 800px) and (-webkit-device-pixel-ratio: 3),
-  (device-width: 414px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 3) {
   .annoyingman01 img {
     width: 46%;
   }
