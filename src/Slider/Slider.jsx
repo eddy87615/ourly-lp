@@ -95,14 +95,13 @@ export default function Slider() {
       spaceBetween={30}
       loop={true}
       centeredSlides={true}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
-      // navigation={`${rendernav ? true : false}`}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
       id="silder"

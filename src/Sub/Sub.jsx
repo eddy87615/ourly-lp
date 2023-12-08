@@ -208,7 +208,7 @@ export default function Sub() {
             } // Check inView to determine variants
             initial="hidden"
             animate={inViews[`inView0${index + 4}`] ? 'visible' : 'hidden'} // Dynamic inView based on index
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.3 }}
           >
             <Image width={400} height={400} src={item.img} alt={item.alt} />
             <p

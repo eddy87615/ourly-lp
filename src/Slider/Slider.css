@@ -3,7 +3,9 @@
   top: 30%;
   left: 100px;
 }
-
+.title01 br:nth-child(2) {
+  display: none;
+}
 .title02 {
   position: absolute;
   top: 30%;
@@ -328,6 +330,9 @@ button:hover {
   .triangle05,
   .triangle06 {
     display: none;
+  }
+  .title01 br:nth-child(2) {
+    display: block;
   }
 }
 

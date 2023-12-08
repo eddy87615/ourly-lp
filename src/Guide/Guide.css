@@ -91,6 +91,9 @@
   .guideh1 {
     margin: 5% !important;
   }
+  .guide {
+    padding-top: 2%;
+  }
 }
 
 @keyframes openanimation {

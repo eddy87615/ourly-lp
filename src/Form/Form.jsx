@@ -27,7 +27,7 @@ const FeeData = [
 function Fee() {
   return (
     <Element className="w-full h-full overflow-hidden">
-      <h3 className="text-h4 lg:text-h3 font-bold text-center py-10 lg:pt-16">
+      <h3 className="text-h4 lg:text-h3 font-bold text-center pt-10 pb-4 lg:pt-16">
         料金案内
       </h3>
       <h4 className="text-[18px] font-semibold text-center lg:pt-8 px-12">

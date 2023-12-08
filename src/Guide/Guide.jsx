@@ -18,6 +18,8 @@ const Type = () => {
         2000,
         '社内報に関するお悩みありませんか？',
         1000,
+        '社内報nikannsuru...',
+        2000,
         () => {
           console.log('Sequence completed');
         },
@@ -116,7 +118,7 @@ export default function Guide() {
       frontTitle: '私はリモートワーカーです。<br />私は…',
       frontImg: '/img/20Yman-06-bgN.webp',
       frontImgAlt: '20 years old man.',
-      backTxt01: 'ずっとリモートだから会社に何が起きたのか全然わからないね...',
+      backTxt01: 'ずっとリモートだから会社に何が起きたのか全然わからない...',
       backTxt02: '会社との交流が少なくなった…',
       backImg: '/img/20Yman-02-bgN.webp',
       backAlt: '20 years old man annoying about his work and company.',
@@ -127,7 +129,7 @@ export default function Guide() {
       frontTitle: '私は会社の役員です。<br />私は…',
       frontImg: '/img/30Yman-07-bgN.webp',
       frontImgAlt: '30 years old man.',
-      backTxt01: 'どうやって自分の声がちゃんと届けるのか？',
+      backTxt01: 'どうやって自分の声がちゃんと届けるのかな？',
       backTxt02: '職場をさらによくしたいな…',
       backImg: '/img/30Yman-06.webp',
       backAlt: '30 years old man annoying about how to improve the company.',
@@ -174,7 +176,7 @@ export default function Guide() {
             to={`section${index + 1}`}
             key={index}
             className={`container list01 
-            w-[20%] h-[510px] lg:w-[24%] xl:w-[24%] 2xl:w-[21%]
+            w-[20%] h-[55%] lg:w-[24%] xl:w-[24%] 2xl:w-[21%]
             absolute cursor-pointer  ${
               obj.id === 'guide01'
                 ? 'lg:left-[10%] xl:left-[10%] 2xl:left-[16%]'
