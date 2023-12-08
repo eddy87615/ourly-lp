@@ -677,6 +677,12 @@
 @media only screen and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 2) {
   .annoyingman01 img {
     width: 28%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
   }
   .solvedman01 img {
     width: 50%;
@@ -685,10 +691,16 @@
   .annoyingman02 img {
     width: 35%;
   }
+
   .solvedman02 img {
     width: 35%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
     left: 10%;
+    z-index: 2;
   }
+
   .solvedman02::after {
     height: 20%;
     /* background-position: 100% 100%; */
