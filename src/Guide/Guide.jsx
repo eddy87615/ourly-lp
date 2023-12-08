@@ -166,10 +166,10 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="guideh1 text-h1 font-bold text-center lg:mt-20 xl:mt-32 2xl:my-20 max:mt-40">
+      <h1 className="guideh1 text-h1 font-bold text-center lg:py-20 xl:pt-24 xl:pb-20 2xl:py-20">
         <Type />
       </h1>
-      <div className="guide flex justify-center items-center w-full h-[500px] gap-16 mt-16">
+      <div className="guide flex justify-center items-center w-full h-[500px] gap-16 ">
         {guideinfo.map((obj, index) => (
           <Link
             href={`section${index + 1}`}
