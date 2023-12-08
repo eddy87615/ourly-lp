@@ -495,8 +495,8 @@ button:hover {
     justify-content: left;
   }
 }
-@media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2),
-  (device-width: 414px) and (device-height: 690px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-height: 690px) and (-webkit-device-pixel-ratio: 2),
+  (device-width: 414px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2) {
   .page01::before {
     background-position: 20% 100%;
     background-size: 120%;
@@ -517,8 +517,8 @@ button:hover {
     animation: none;
   }
 }
-@media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3),
-  (device-width: 414px) and (device-height: 800px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-height: 800px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 414px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 3) {
   .title02 h1 {
     padding-left: 22%;
   }
