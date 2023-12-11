@@ -82,6 +82,7 @@ export default function Guide() {
       [`guide0${guideNum}`]: true,
     }));
     setIsOpen(true);
+    document.body.style.overflow = 'auto';
   };
 
   const handleTop = () => {
@@ -97,7 +98,9 @@ export default function Guide() {
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
-        const shouldHide = window.innerWidth < 1000;
+        const shouldHide = window.innerWidth < 1440;
+
+        document.body.style.overflow = 'hidden';
         setIsHidden(shouldHide);
       }
 

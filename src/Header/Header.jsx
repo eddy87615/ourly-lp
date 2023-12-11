@@ -82,8 +82,8 @@ export default function Header() {
       />
       <button className="font-bold text-button" aria-label="otoiawase button">
         <ScrollLink
-          href="section9"
-          to="section9"
+          href="section8"
+          to="section8"
           smooth={true}
           offset={0}
           duration={500}
