@@ -143,7 +143,7 @@ export default function Sub() {
                 animate={inViews[`inView0${index + 1}`] ? 'visible' : 'hidden'}
                 transition={{ delay: index * 0.5, duration: 0.5 }}
               >
-                <ul className="title w-full p-4 py-8 lg:p-[4%]">
+                <ol className="title w-full p-4 py-8 lg:p-[4%]">
                   <li className="num-grid flex justify-center items-center">
                     <Image
                       width={100}
@@ -158,7 +158,7 @@ export default function Sub() {
                       // dangerouslySetInnerHTML={{ __html: obj.title }}
                       className=" leading-h4 md:leading-h3 lg:leading-h2 
                         text-h4 md:text-h3 lg:text-h3 
-                         text-center md:text-left lg:text-left font-bold 
+                         text-left font-bold 
                         py-6 px-4 md:px-0 md:pt-10 lg:p-0 text-[--ourly-theme] mt-[-32px]
                         "
                     >
@@ -187,7 +187,7 @@ export default function Sub() {
                         mt-[-24px]"
                     ></p>
                   </li>
-                </ul>
+                </ol>
               </div>
             </div>
           </motion.div>

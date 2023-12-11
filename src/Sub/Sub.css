@@ -234,7 +234,7 @@
     padding: 0;
     font-size: 22px;
     position: relative;
-    right: -10%;
+    /* right: -10%; */
   }
 
   .subend02 img {
@@ -245,7 +245,7 @@
     padding: 0;
     font-size: 22px;
     position: relative;
-    left: -10%;
+    /* left: -10%; */
   }
 
   .subend03 img {
@@ -257,7 +257,7 @@
     width: 70%;
     padding: 0;
     position: relative;
-    right: -10%;
+    /* right: -10%; */
   }
 }
 @media screen and (max-width: 768px) {
@@ -305,7 +305,7 @@
   }
   .subend01 p {
     color: #fff;
-    padding-right: 8%;
+    /* padding-right: 8%; */
   }
   .subend02 {
     justify-content: start;
@@ -316,9 +316,9 @@
     bottom: 0;
     width: 40%;
   }
-  .subend02 p {
+  /* .subend02 p {
     padding-left: 4%;
-  }
+  } */
   .subend03 {
     background-color: var(--purple-dark);
     justify-content: right;
@@ -334,7 +334,7 @@
   }
   .subend03 p {
     color: #fff;
-    padding-right: 4%;
+    /* padding-right: 4%; */
     width: 100%;
   }
 }
@@ -437,6 +437,7 @@
     color: #fff;
     right: 0;
     width: 62%;
+    padding-right: 4%;
   }
   .subend02 {
     justify-content: start;
@@ -445,6 +446,7 @@
     left: 0;
     font-size: 18px;
     width: 50%;
+    padding-left: 4%;
   }
   .subend02 img {
     position: absolute;
@@ -463,6 +465,7 @@
     font-size: 18px;
     right: 0;
     width: 70%;
+    padding-right: 4%;
   }
 }
 @media screen and (max-width: 390px) {

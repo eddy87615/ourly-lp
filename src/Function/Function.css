@@ -184,7 +184,73 @@
 
 @media screen and(max-width:1440px) {
 }
+@media screen and(max-width:768px) {
+  .hexagon01:hover,
+  .hexagon02:hover,
+  .hexagon03:hover,
+  .hexagon05:hover,
+  .hexagon06:hover,
+  .hexagon07:hover {
+    z-index: 5;
+  }
 
+  .hexagon01:hover > img,
+  .hexagon05:hover > img,
+  .hexagon06:hover > img,
+  .hexagon07:hover > img {
+    transform: scale(1);
+  }
+
+  .hexagon04:hover > img {
+    transform: rotate(0) scale(1);
+  }
+
+  .hexagon03:hover > img {
+    transform: scale(1);
+  }
+
+  .hexagon02:hover > img {
+    transform: scale(1);
+  }
+
+  .hexagon01:hover h4,
+  .hexagon02:hover h4,
+  .hexagon03:hover h4,
+  .hexagon05:hover h4,
+  .hexagon06:hover h4 {
+    transition: none;
+  }
+
+  .hexagon07:hover h4 {
+    transition: none;
+  }
+
+  .hexagon03:hover h4 {
+    transition: none;
+  }
+
+  .hexagon07:hover ul {
+    transition: none;
+  }
+
+  .hexagon01:hover ul,
+  .hexagon05:hover ul,
+  .hexagon06:hover ul {
+    transition: none;
+  }
+
+  .hexagon02:hover ul {
+    transition: none;
+  }
+
+  .hexagon03:hover ul {
+    transition: none;
+  }
+
+  .hexagon07:hover ul {
+    transition: none;
+  }
+}
 @media screen and (max-width: 500px) {
   .function::after {
     content: '';

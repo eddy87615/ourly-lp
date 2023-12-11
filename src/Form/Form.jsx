@@ -106,7 +106,7 @@ export default function Form() {
               >
                 必須
               </span>
-              <input id="lastname" placeholder="電子" required />
+              <input type="text" id="lastname" placeholder="電子" required />
             </label>
             <label className="flex flex-col  w-full lg:w-1/2 mb-4">
               名
@@ -117,7 +117,7 @@ export default function Form() {
               >
                 必須
               </span>
-              <input id="firstname" placeholder="太郎" required />
+              <input type="text" id="firstname" placeholder="太郎" required />
             </label>
           </label>
 
@@ -135,6 +135,7 @@ export default function Form() {
                 id="company"
                 className="w-full"
                 placeholder="ourly株式会社"
+                type="text"
                 required
               />
             </label>
@@ -150,6 +151,7 @@ export default function Form() {
               <input
                 id="department"
                 placeholder="部属名"
+                type="text"
                 className="w-full"
                 required
               />
@@ -169,6 +171,7 @@ export default function Form() {
             </p>
             <input
               id="email"
+              type="text"
               placeholder="ourly@example.co.jp"
               className="w-full"
               required
@@ -185,6 +188,7 @@ export default function Form() {
             </span>
             <input
               id="phone"
+              type="text"
               placeholder="080-1234-5678"
               className="w-full"
               required

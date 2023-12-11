@@ -1,17 +1,21 @@
-import { Inter } from 'next/font/google';
+import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Noto_Sans_JP({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin'],
+  variable: '--font-noto-sans-jp',
+});
 
 export const metadata = {
-  title: 'ourly：従業員の目線が揃うインナーねディア・プラットフォーム',
+  title: 'ourly：従業員の目線が揃うインナーメディア・プラットフォーム',
   description:
     'ourlyは、社員のエンゲージメントを向上させる、web社内報ツールです。',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta
           name="viewport"
