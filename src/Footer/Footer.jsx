@@ -76,7 +76,7 @@ export default function Footer() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="outerlink px-10 py-4 border-r-2 last:border-0"
+                  className="outerlink px-10 py-4 border-r-2 last:border-0 cursor-pointer"
                 >
                   {item.listTxt}
                 </a>
@@ -87,7 +87,7 @@ export default function Footer() {
                   to={item.link}
                   duration={500}
                   smooth={true}
-                  className="innerlink px-10  py-4 border-r-2"
+                  className="innerlink px-10  py-4 border-r-2 cursor-pointer"
                 >
                   {item.listTxt}
                 </ScrollLink>
