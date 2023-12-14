@@ -123,7 +123,7 @@ export default function Sub() {
         独自の分析機能で閲覧状況が一目で分かる
       </h2>
 
-      <div className="sub-container w-[80%] flex flex-col my-0 mx-auto pb-[10%] gap-10">
+      <div className="sub-container w-[88%] flex flex-col my-0 mx-auto pb-[10%] gap-10">
         {content.map((obj, index) => (
           <motion.div
             className="content-div z-[1] w-full h-[30%] bg-white rounded-2xl 

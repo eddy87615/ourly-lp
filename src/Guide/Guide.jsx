@@ -152,7 +152,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[60] bg-white ${
+      className={`back fixed top-0 left-0 w-full h-screen z-[90] bg-white ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''
@@ -169,7 +169,7 @@ export default function Guide() {
           className="w-1/2 lg:w-1/5 h-auto"
         />
       </div>
-      <h1 className="guideh1 text-h1 font-bold text-center lg:py-20 xl:pt-20 xl:pb-10 2xl:py-20">
+      <h1 className="guideh1 text-h1 font-bold text-center lg:py-20 xl:pt-20 xl:pb-10 2xl:py-20 px-0">
         <Type />
       </h1>
       <div className="guide flex justify-center items-center w-full h-[500px] gap-16 ">
@@ -243,7 +243,7 @@ export default function Guide() {
       </div>
       <button
         aria-label="最初からourlyを知る read the page from the top"
-        className="open text-[18px] font-bold bottom-[10%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[6%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[10%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[10%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();

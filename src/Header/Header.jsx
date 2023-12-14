@@ -68,9 +68,9 @@ export default function Header() {
 
   return (
     <div
-      className="fixed top-0 left-0 z-[60] flex items-center justify-between
-      px-4 lg:px-16 mt-4
-    w-screen h-[100px]"
+      className={`fixed top-0 left-0 z-[60] flex items-center justify-between
+      px-4 lg:px-16
+    w-screen h-[100px] ${showBtn ? 'header' : ''}`}
     >
       <Image
         width={300}

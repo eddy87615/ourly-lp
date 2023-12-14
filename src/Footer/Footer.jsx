@@ -98,6 +98,18 @@ export default function Footer() {
             <small>Copyright &copy; ourly.jp. All Rights Reserved.</small>
           </li>
         </ul>
+        <Image
+          width={450}
+          height={500}
+          src="/img/personal-06-bgN.webp"
+          className="footermove01 absolute bottom-0 right-[4%] xl:right-0"
+        />
+        <Image
+          width={450}
+          height={500}
+          src="/img/personal-06-bgN-2.webp"
+          className="footermove02 absolute bottom-0 right-[4%] xl:right-0"
+        />
       </div>
     </footer>
   );
