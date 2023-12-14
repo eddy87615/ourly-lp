@@ -506,7 +506,7 @@ main {
     content: none;
   }
   .annoyingwoman img {
-    width: 80%;
+    width: 100%;
     height: auto;
     animation: none;
   }
@@ -885,7 +885,7 @@ main {
   .solvedman01 h2,
   .solvedman02 h2,
   .solvedwoman h2 {
-    padding: 2% 4%;
+    padding: 3% !important;
   }
 
   .bubble375 {

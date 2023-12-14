@@ -79,7 +79,7 @@ export default function Form() {
         <form
           className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto 
         flex flex-col 
-        px-6 pb-8 lg:px-32 lg:py-20 w-[90%]"
+        px-4 pb-8 lg:px-32 lg:py-20 w-[90%]"
         >
           <div className="mb-8">
             {explain.map((txt, index) => (
@@ -233,7 +233,7 @@ export default function Form() {
               に同意する
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-[-6%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[32%] top-1/2 translate-y-[-50%] 
+                w-fit right-[-2%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[32%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須

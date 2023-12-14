@@ -88,7 +88,7 @@ export default function Header() {
           href="section8"
           to="section8"
           smooth={true}
-          offset={0}
+          offset={-100}
           duration={500}
           className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
         px-14 py-2 rounded-full bg-white 

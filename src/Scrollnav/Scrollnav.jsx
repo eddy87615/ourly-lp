@@ -147,7 +147,13 @@ export default function Scrollnav() {
           to={section.id}
           spy={true}
           smooth={true}
-          offset={0}
+          offset={
+            section.id === 'section1' ||
+            section.id === 'section2' ||
+            section.id === 'section3'
+              ? 0
+              : -100
+          }
           duration={500}
           key={section.link}
           activeClass="active"
