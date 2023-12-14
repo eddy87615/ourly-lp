@@ -211,10 +211,7 @@ export default function Sub() {
             transition={{ delay: 0.3, duration: 0.3 }}
           >
             <Image width={400} height={400} src={item.img} alt={item.alt} />
-            <p
-              className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4
-              font-bold"
-            >
+            <p className="text-[20px] lg:text-h2 w-[64%] lg:w-full leading-h4 font-bold">
               {item.text}
             </p>
           </motion.li>

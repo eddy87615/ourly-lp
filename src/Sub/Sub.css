@@ -94,6 +94,7 @@
   text-align: right;
   color: #fff;
   padding-right: 8%;
+  animation: zoomin 2s ease infinite;
 }
 
 .subend02 {
@@ -114,6 +115,7 @@
 }
 .subend02 p {
   padding-left: 8%;
+  animation: zoomin 2s ease infinite;
 }
 
 .subend03 {
@@ -136,7 +138,20 @@
   color: #fff;
   text-align: right;
   padding-right: 8%;
+  animation: zoomin 2s ease infinite;
 }
+
+/* @keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
 
 @media screen and (max-width: 1920px) {
   .title {

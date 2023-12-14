@@ -80,7 +80,10 @@ export default function Header() {
         className="cursor-pointer w-1/2 lg:w-1/5 h-auto"
         id="logo"
       />
-      <button className="font-bold text-button" aria-label="otoiawase button">
+      <button
+        className="font-bold text-button cursor-default"
+        aria-label="otoiawase button"
+      >
         <ScrollLink
           href="section8"
           to="section8"
@@ -91,7 +94,12 @@ export default function Header() {
         px-14 py-2 rounded-full bg-white 
         transition-all duration-500 "
           style={{
-            display: showBtn && renderbtn ? 'block' : 'none',
+            opacity: showBtn && renderbtn ? '1' : '0',
+            pointerEvents: showBtn && renderbtn ? 'auto' : 'none',
+            cursor: showBtn && renderbtn ? 'pointer' : '',
+            // transform:
+            //   showBtn && renderbtn ? 'translateY(0)' : 'translateY(-100%)',
+            // display: showBtn && renderbtn ? 'block' : 'none',
           }}
         >
           お問い合わせ

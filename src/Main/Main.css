@@ -61,7 +61,7 @@
   background-image: url(/img/report.webp);
   background-repeat: no-repeat;
   background-size: 40%;
-  background-position: 90% 90%;
+  background-position: 90% 100%;
 }
 .solvedman02 img {
   width: 32%;
@@ -292,7 +292,10 @@
     top: 40%;
   }
   .solvedman02 {
-    background-size: 45%;
+    background-size: 40%;
+  }
+  .solvedman02 p {
+    width: 80%;
   }
   .solvedman02::after {
     width: 24%;
