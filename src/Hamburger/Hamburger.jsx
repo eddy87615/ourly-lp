@@ -158,7 +158,7 @@ export default function Hamburger({ isVisible }) {
                     <Link
                       href={link.link}
                       to={link.link}
-                      offset={0}
+                      offset={100}
                       alt={link.alt}
                       className="w-full h-full text-center flex justify-center items-center text-button font-bold cursor-pointer"
                       onClick={handleToggle}

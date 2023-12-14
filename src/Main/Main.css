@@ -74,9 +74,9 @@ main {
   bottom: 0px;
   left: 8%;
 }
-.solvedman02 p {
+/* .solvedman02 p {
   width: 80%;
-}
+} */
 
 .solvedman02::after {
   content: '';
@@ -133,9 +133,9 @@ main {
   left: 0;
   transform: rotateY(180deg);
 }
-.solvedwoman p {
+/* .solvedwoman p {
   width: 50%;
-}
+} */
 
 .solvedwoman::after {
   content: '';
@@ -304,9 +304,9 @@ main {
   .solvedman02 {
     background-size: 40%;
   }
-  .solvedman02 p {
+  /* .solvedman02 p {
     width: 80%;
-  }
+  } */
   .solvedman02::after {
     width: 24%;
     height: 24%;
@@ -866,5 +866,10 @@ main {
   }
   .annoyingwoman::before {
     content: none;
+  }
+
+  .solvedman01 p,
+  .solvedman02 p.solvedwoman p {
+    width: 90%;
   }
 }
