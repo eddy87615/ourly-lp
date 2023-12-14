@@ -1,6 +1,6 @@
 .header {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   /* box-shadow: 5px 8px 8px rgba(255, 255, 255, 0.6); */
   transition: all 0.5s;
   border-bottom: 5px solid var(--ourly-theme);

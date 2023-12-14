@@ -167,7 +167,7 @@ main {
   position: absolute;
   width: 30%;
   height: 30%;
-  top: 0;
+  top: 10%;
   right: 2%;
   background-repeat: no-repeat;
   z-index: 2;
@@ -180,10 +180,10 @@ main {
   background-image: url(/img/question-on-people.webp);
   background-size: 80%;
   position: absolute;
-  width: 24%;
-  height: 24%;
-  top: 0;
-  right: 8%;
+  width: 40%;
+  height: 30%;
+  top: 3%;
+  right: 0%;
   background-repeat: no-repeat;
   z-index: 2;
   transform: rotate(45deg);
@@ -194,10 +194,10 @@ main {
 .annoyingwoman::before {
   content: '';
   background-image: url(/img/question-on-people.webp);
-  top: 8%;
-  right: 4%;
-  width: 30%;
-  height: 100%;
+  top: 10%;
+  right: 0%;
+  width: 35%;
+  height: 30%;
   position: absolute;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -875,5 +875,22 @@ main {
   .solvedman01 p,
   .solvedman02 p.solvedwoman p {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .annoyingman01 h2,
+  .annoyingman02 h2,
+  .annoyingwoman h2,
+  .solvedman01 h2,
+  .solvedman02 h2,
+  .solvedwoman h2 {
+    padding: 2% 4%;
+  }
+
+  .bubble375 {
+    padding: 0;
+    margin: 4% 0 !important;
+    width: 98% !important;
   }
 }

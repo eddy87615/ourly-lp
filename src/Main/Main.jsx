@@ -72,7 +72,7 @@ function SpeechBubble({ text, className }) {
   return (
     <div
       ref={ref}
-      className={`w-[95%] lg:w-fit h-fit text-center 
+      className={`bubble375 w-[98%] lg:w-fit h-fit text-center 
       text-[14px] md:text-[20px] lg:text-h4 
       leading-h4
        relative border-[5px] border-[--ourly-theme] rounded-full font-bold  
@@ -112,7 +112,7 @@ export default function Main() {
             <h2
               className="text-h4 md:text-h3 lg:text-h2 
             font-bold teaxt-left lg:text-left md:text-center
-            pl-8 pr-10 py-10 lg:pt-[8%] lg:pb-[4%] lg:pl-[8%] md:py-16
+            pl-8 pr-10 py-10 lg:pt-[10%] lg:pb-[4%] lg:pl-[8%] md:py-16
             leading-h3"
             >
               <span className="border-none lg:border-b-[5px] lg:border-solid border-[--ourly-theme]">

@@ -570,3 +570,23 @@ button:hover {
     padding-left: 20%;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .title02 {
+    padding-left: 0;
+  }
+  .title02 h1 {
+    padding-left: 0;
+  }
+  .title02 p {
+    padding-left: 0;
+  }
+  .title01 h1,
+  .title03 h1 {
+    padding-right: 0;
+  }
+  .title01 p,
+  .title03 p {
+    padding-left: 0;
+  }
+}

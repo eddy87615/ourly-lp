@@ -50,7 +50,7 @@ function Fee() {
           </div>
         ))}
       </div>
-      <p className="bottomtxt text-[16px] lg:text-h4 leading-h4 text-center relative bottom-0 px-4 py-[8%]">
+      <p className="bottomtxt text-[16px] lg:text-h4 leading-h4 text-center relative bottom-0 sm:px-4 px-0 py-[8%]">
         お客様ごとに、最適なご提案をいたしますので、
         <br />
         まずは下記お問い合わせフォームよりお問い合わせ下さい。
@@ -233,7 +233,7 @@ export default function Form() {
               に同意する
               <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-[-6%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[28%] top-1/2 translate-y-[-50%] 
+                w-fit right-[-6%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[32%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
@@ -249,7 +249,7 @@ export default function Form() {
             お問い合わせを送信
           </button>
         </form>
-        <p className="note text-center text-[14px] lg:text-button pt-16 px-10">
+        <p className="note text-center text-[14px] lg:text-button pt-16 px-10 leading-text">
           ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
         </p>
       </Element>
