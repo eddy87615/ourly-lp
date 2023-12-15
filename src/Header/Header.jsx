@@ -70,7 +70,7 @@ export default function Header() {
     <div
       className={`fixed top-0 left-0 z-[60] flex items-center justify-between
       px-4 lg:px-16 duration-500
-    w-screen h-[100px] ${showBtn ? 'header' : ''}`}
+    w-screen h-[100px] ${renderbtn ? '' : 'header'}`}
     >
       <Image
         width={300}
@@ -88,7 +88,7 @@ export default function Header() {
           href="section8"
           to="section8"
           smooth={true}
-          offset={-100}
+          offset={0}
           duration={500}
           className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
         px-14 py-2 rounded-full bg-white 

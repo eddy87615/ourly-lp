@@ -10,7 +10,11 @@
 }
 
 .container > .back {
-  background-image: url(/img/question.svg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(/img/question.svg);
   background-repeat: no-repeat;
   background-position: 4% 4%;
   background-size: 60%;
