@@ -70,7 +70,7 @@ export default function Header() {
     <div
       className={`fixed top-0 left-0 z-[60] flex items-center justify-between
       px-4 lg:px-16 duration-500
-    w-screen h-[100px] ${renderbtn ? '' : 'header'}`}
+    w-screen h-[100px] ${renderbtn ? '' : showBtn ? 'header' : ''}`}
     >
       <Image
         width={300}
