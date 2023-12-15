@@ -101,12 +101,14 @@ export default function Footer() {
         <Image
           width={450}
           height={500}
+          alt="footer personal man watching side"
           src="/img/personal-06-bgN.webp"
           className="footermove01 absolute bottom-0 right-[4%] xl:right-0"
         />
         <Image
           width={450}
           height={500}
+          alt="footer personal man watching you"
           src="/img/personal-06-bgN-2.webp"
           className="footermove02 absolute bottom-0 right-[4%] xl:right-0"
         />
