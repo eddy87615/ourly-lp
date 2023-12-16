@@ -24,7 +24,10 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" href="/img/logo.svg" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
