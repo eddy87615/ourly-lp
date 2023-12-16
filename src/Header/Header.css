@@ -4,6 +4,7 @@
   /* box-shadow: 5px 8px 8px rgba(255, 255, 255, 0.5); */
   transition: all 0.5s;
   border-bottom: 5px solid var(--ourly-theme);
+  height: 100px !important;
   /* border-image: linear-gradient(to bottom, white, transparent) 0.8; */
 }
 
