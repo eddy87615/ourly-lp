@@ -79,6 +79,7 @@ export default function Header() {
         alt="ourly logo"
         className="cursor-pointer w-1/2 lg:w-1/5 h-auto"
         id="logo"
+        priority={true} // {false} | {true}
       />
       <button
         className="font-bold text-button cursor-default"

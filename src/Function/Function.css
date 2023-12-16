@@ -77,7 +77,7 @@
 }
 
 .hexagon03:hover > img {
-  transform: scale(2.5);
+  transform: scale(2.8);
   transition-duration: 0.5s;
 }
 

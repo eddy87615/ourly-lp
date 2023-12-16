@@ -40,7 +40,13 @@ function Fee() {
             className="flex flex-col justify-center items-center w-[100%]
             p-6 lg:p-12 border-4 rounded-[16px] border-[--ourly-theme] bg-white"
           >
-            <Image width={120} height={120} src={obj.img} alt={obj.alt} />
+            <Image
+              width={120}
+              height={120}
+              src={obj.img}
+              alt={obj.alt}
+              className="w-[30%]"
+            />
             <h4 className="text-[20px] lg:text-h4 font-bold text-center py-8">
               {obj.title}
             </h4>
@@ -249,7 +255,7 @@ export default function Form() {
             お問い合わせを送信
           </button>
         </form>
-        <p className="note text-center text-[14px] lg:text-button pt-16 px-10 leading-text">
+        <p className="note text-center text-[14px] lg:text-button pt-16 px-6 leading-text">
           ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
         </p>
       </Element>

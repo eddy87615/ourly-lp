@@ -1,4 +1,5 @@
 import { Noto_Sans_JP } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const inter = Noto_Sans_JP({
