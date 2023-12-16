@@ -10,7 +10,6 @@ import Compare from '@/Compare/Compare';
 import Question from '@/Question/Question';
 import Form from '@/Form/Form';
 import Footer from '@/Footer/Footer';
-import Qiestion from '@/Question/Question';
 import { Suspense } from 'react';
 
 export default function App() {
@@ -26,7 +25,7 @@ export default function App() {
         <Sub />
         <Function />
         <Compare />
-        <Qiestion />
+        <Question />
         <Form />
         <Footer />
       </Suspense>

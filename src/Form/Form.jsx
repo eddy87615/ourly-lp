@@ -6,6 +6,8 @@ import './Form.css';
 import '@/app/globals.css';
 //
 import { Element } from 'react-scroll';
+import { useForm, Controller } from 'react-hook-form';
+import { register } from 'react-scroll/modules/mixins/scroller';
 
 const FeeData = [
   {
@@ -78,6 +80,22 @@ export default function Form() {
         'ourlyの概要から、実際のUIを用いた機能の解説、好評のサポート体制の紹介などをオンラインで行っております。オンライン相談希望の旨をご記載の上、フォームを送信ください。担当者より、候補日を改めてご連絡差し上げます。',
     },
   ];
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+    reset,
+  } = useForm({
+    mode: 'onSubmit',
+  });
+
+  const onSubmit = (data) => {
+    window.alert('送信済み！！');
+    reset();
+  };
+
   return (
     <Element name="section8" className="form px-4 lg:px-32 pb-16 pt-0">
       <Fee />
@@ -86,6 +104,8 @@ export default function Form() {
           className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto 
         flex flex-col 
         px-4 pb-8 lg:px-32 lg:py-20 w-[90%]"
+          id="freetryform"
+          onSubmit={handleSubmit(onSubmit)}
         >
           <div className="mb-8">
             {explain.map((txt, index) => (
@@ -112,7 +132,17 @@ export default function Form() {
               >
                 必須
               </span>
-              <input type="text" id="lastname" placeholder="電子" required />
+              <input
+                type="text"
+                id="lastname"
+                placeholder="電子"
+                {...register('lastname', { required: true })}
+              />
+              {errors.lastname && (
+                <p className="text-red-500 text-[12px] mt-1">
+                  姓を入力してください。
+                </p>
+              )}
             </label>
             <label className="flex flex-col  w-full lg:w-1/2 mb-4">
               名
@@ -123,7 +153,17 @@ export default function Form() {
               >
                 必須
               </span>
-              <input type="text" id="firstname" placeholder="太郎" required />
+              <input
+                type="text"
+                id="firstname"
+                placeholder="太郎"
+                {...register('firstname', { required: true })}
+              />
+              {errors.firstname && (
+                <p className="text-red-500 text-[12px] mt-1">
+                  名を入力してください。
+                </p>
+              )}
             </label>
           </label>
 
@@ -142,8 +182,13 @@ export default function Form() {
                 className="w-full"
                 placeholder="ourly株式会社"
                 type="text"
-                required
+                {...register('company', { required: true })}
               />
+              {errors.company && (
+                <p className="text-red-500 text-[12px] mt-1">
+                  会社名を入力してください。
+                </p>
+              )}
             </label>
             <label className="flex flex-col w-full lg:w-1/2 mb-4">
               部属名
@@ -159,8 +204,13 @@ export default function Form() {
                 placeholder="部属名"
                 type="text"
                 className="w-full"
-                required
+                {...register('department', { required: true })}
               />
+              {errors.department && (
+                <p className="text-red-500 text-[12px] mt-1">
+                  部属名を入力してください。
+                </p>
+              )}
             </label>
           </label>
           <label className="email w-full mb-4">
@@ -180,8 +230,13 @@ export default function Form() {
               type="text"
               placeholder="ourly@example.co.jp"
               className="w-full"
-              required
+              {...register('email', { required: true })}
             />
+            {errors.email && (
+              <p className="text-red-500 text-[12px] mt-1">
+                E-mailを入力してください。
+              </p>
+            )}
           </label>
           <label className="phone w-full flex flex-col">
             電話番号
@@ -197,17 +252,22 @@ export default function Form() {
               type="text"
               placeholder="080-1234-5678"
               className="w-full"
-              required
+              {...register('phone', { required: true })}
             />
+            {errors.phone && (
+              <p className="text-red-500 text-[12px] mt-1">
+                E-mailを入力してください。
+              </p>
+            )}
           </label>
 
           <label className="ckeck flex flex-col my-2 lg:my-6">
             <label className="flex items-center font-normal">
-              <input type="checkbox" id="freetry" />
+              <input type="checkbox" id="freetry" {...register('freetry')} />
               無料トライアルを希望する
             </label>
             <label className="flex items-center  font-normal">
-              <input type="checkbox" id="document" />
+              <input type="checkbox" id="document" {...register('document')} />
               ourlyサービス資料を希望する
             </label>
           </label>
@@ -228,22 +288,31 @@ export default function Form() {
               ご提供いただく個人情報は弊社プライバシーポリシーに従い管理されますので、同意の上ダウンロードください。
             </p>
             <label className="flex items-center font-normal text-[14px] lg:text-text gap-3">
-              <input type="checkbox" id="privacy" required />
+              <input
+                type="checkbox"
+                id="privacy"
+                {...register('privacy', { required: true })}
+              />
               <a
                 href="https://service.ourly.jp/privacy"
                 target="_black"
                 className="text-[--purple-dark] underline text-[14px] lg:text-text"
               >
-                プライバシーポリシー
+                ＊プライバシーポリシー
               </a>
               に同意する
-              <span
+              {/* <span
                 className="absolute text-[10px] lg:text-[10px] 
-                w-fit right-[-2%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[32%] top-1/2 translate-y-[-50%] 
+                w-fit right-[-2%] sm:right-0 md:left-[42%] lg:left-[56%] 2xl:left-[40%] top-1/2 translate-y-[-50%] 
             border border-1 border-ourly-theme bg-white text-[--ourly-theme] px-1"
               >
                 必須
-              </span>
+              </span> */}
+              {errors.privacy && (
+                <p className="text-red-500 text-[12px] mt-1 font-bold">
+                  プライバシーをチェックしてください。
+                </p>
+              )}
             </label>
           </label>
           <button
@@ -251,6 +320,7 @@ export default function Form() {
             type="submit"
             className="text-text lg:text-[24px] bg-ourly-theme text-white w-[200px] h-[50px] lg:w-[370px] lg:h-[70px]
             rounded-lg lg:rounded-2xl my-0 mx-auto lg:mt-10 lg:shadow-ourly duration-500"
+            // onClick={submitBtn}
           >
             お問い合わせを送信
           </button>
