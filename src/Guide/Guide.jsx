@@ -100,8 +100,9 @@ export default function Guide() {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
         const shouldHide = window.innerWidth < 1440;
-
-        document.body.style.overflow = 'hidden';
+        if (!shouldHide) {
+          document.body.style.overflow = 'hidden';
+        }
         setIsHidden(shouldHide);
       }
 

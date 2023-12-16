@@ -308,12 +308,12 @@ export default function Form() {
               >
                 必須
               </span> */}
-              {errors.privacy && (
-                <p className="text-red-500 text-[12px] mt-1 font-bold">
-                  プライバシーをチェックしてください。
-                </p>
-              )}
             </label>
+            {errors.privacy && (
+              <p className="text-red-500 text-[12px] mt-1 font-bold">
+                プライバシーをチェックしてください。
+              </p>
+            )}
           </label>
           <button
             aria-label="お問い合わせを送信 otioawase sending button"
