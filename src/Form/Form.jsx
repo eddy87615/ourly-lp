@@ -256,7 +256,7 @@ export default function Form() {
             />
             {errors.phone && (
               <p className="text-red-500 text-[12px] mt-1">
-                E-mailを入力してください。
+                電話番号を入力してください。
               </p>
             )}
           </label>
