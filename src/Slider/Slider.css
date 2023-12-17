@@ -41,6 +41,12 @@ button:hover {
   box-shadow: none;
 }
 
+.page01,
+.page02,
+.page03 {
+  overflow-x: hidden;
+}
+
 .page01::before {
   content: '';
   position: absolute;

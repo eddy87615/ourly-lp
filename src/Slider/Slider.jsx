@@ -92,13 +92,13 @@ export default function Slider() {
         '--swiper-pagination-color': '#fff',
         '--swiper-navigation-color': '#fff',
       }}
-      spaceBetween={30}
+      spaceBetween={0}
       loop={true}
       centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // }}
       pagination={{
         clickable: true,
       }}
