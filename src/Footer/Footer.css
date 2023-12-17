@@ -74,6 +74,18 @@
   }
 }
 
+@media screen and (max-width: 1430px) {
+  .footermove01,
+  .footermove02 {
+    display: none;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .purplesection::after {
     content: none;

@@ -57,7 +57,7 @@ export default function Footer() {
           私たちの悩み全部ourlyで解決しました！
         </p>
       </div>
-      <div className="purplesection relative bg-[--purple-light] text-white pt-16 px-8">
+      <div className="purplesection relative bg-[--purple-light] text-white pt-16 xl:px-10 2xl:px-24">
         <ul>
           <li className="pb-8">
             <Image
@@ -99,18 +99,18 @@ export default function Footer() {
           </li>
         </ul>
         <Image
-          width={450}
+          width={500}
           height={500}
           alt="footer personal man watching side"
           src="/img/personal-06-bgN.webp"
-          className="footermove01 absolute bottom-0 right-[4%] xl:right-0"
+          className="footermove01 absolute bottom-0 xl:right-0 2xl:right-[6%] xl:w-[30%] 2xl:w-[25%]"
         />
         <Image
-          width={450}
+          width={500}
           height={500}
           alt="footer personal man watching you"
           src="/img/personal-06-bgN-2.webp"
-          className="footermove02 absolute bottom-0 right-[4%] xl:right-0"
+          className="footermove02 absolute bottom-0 xl:right-0 2xl:right-[6%] xl:w-[30%] 2xl:w-[25%]"
         />
       </div>
     </footer>
