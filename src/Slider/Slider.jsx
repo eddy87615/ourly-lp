@@ -168,7 +168,7 @@ export default function Slider() {
               to="section8"
               spy={true}
               smooth={true}
-              offset={rendernav ? '0' : '-100'}
+              offset={rendernav ? 0 : -100}
               duration={500}
             >
               <button
