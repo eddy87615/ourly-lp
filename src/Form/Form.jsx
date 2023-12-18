@@ -28,7 +28,10 @@ const FeeData = [
 
 function Fee() {
   return (
-    <Element className="w-full h-full overflow-hidden">
+    <Element
+      name="section8"
+      className="form px-4 lg:px-32 pb-16 pt-0 w-full h-full overflow-hidden"
+    >
       <h3 className="text-h4 lg:text-h3 font-bold text-center pt-10 pb-4 lg:pt-16">
         料金案内
       </h3>
@@ -97,7 +100,8 @@ export default function Form() {
   };
 
   return (
-    <Element name="section8" className="form px-4 lg:px-32 pb-16 pt-0">
+    // <Element name="section8" className="form px-4 lg:px-32 pb-16 pt-0">
+    <>
       <Fee />
       <Element id="section9">
         <form
@@ -329,6 +333,7 @@ export default function Form() {
           ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
         </p>
       </Element>
-    </Element>
+    </>
+    // </Element>
   );
 }

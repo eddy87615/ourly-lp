@@ -1,11 +1,11 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
 import { SlArrowDown } from 'react-icons/sl';
 //Swiper導入
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { Link as ScrollLink } from 'react-scroll';
 //
 //CSS導入
 import './Slider.css';
@@ -83,6 +83,15 @@ export default function Slider() {
       };
     }
   }, []);
+
+  const handleClick = () => {
+    scroller.scrollTo('section9', {
+      spy: true,
+      smooth: true,
+      offset: -100,
+      duration: 500,
+    });
+  };
 
   const rendernav = windowWidth >= 1000;
 
@@ -168,7 +177,7 @@ export default function Slider() {
               to="section8"
               spy={true}
               smooth={true}
-              offset={rendernav ? 0 : -100}
+              offset={-100}
               duration={500}
             >
               <button
@@ -178,7 +187,6 @@ export default function Slider() {
                bg-white border-ourly-theme border-4 rounded-full 
                text-text md:text-[20px] lg:text-h3 mt-[4%] font-bold shadow-ourly 
                transition-all duration-300`}
-                to="section8"
               >
                 お問い合わせ
               </button>
