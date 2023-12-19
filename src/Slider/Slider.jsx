@@ -30,7 +30,9 @@ export default function Slider() {
       bgclass: 'page01',
       triangleup: 'triangle01',
       triangledown: 'triangle02',
-      imgsrc: '/img/office-bg.webp',
+      imgsrcPC: '/img/office-bg.webp',
+      imgsrcPAD: '/img/KVimg-Pad-01.webp',
+      imgsrcPHONE: '/img/KVimg-Phone-01.webp',
       imgalt: 'bulish normal office background',
       button: 'btn01',
     },
@@ -48,7 +50,9 @@ export default function Slider() {
       bgclass: 'page02',
       triangleup: 'triangle03',
       triangledown: 'triangle04',
-      imgsrc: '/img/30Ywoman-04-bg.webp',
+      imgsrcPC: '/img/30Ywoman-04-bg.webp',
+      imgsrcPAD: '/img/KVimg-Pad-02.webp',
+      imgsrcPHONE: '/img/KVimg-Phone-02.webp',
       imgalt: 'sunshine office background',
       button: 'btn02',
     },
@@ -61,7 +65,9 @@ export default function Slider() {
       bgclass: 'page03',
       triangleup: 'triangle05',
       triangledown: 'triangle06',
-      imgsrc: '/img/happypeople-bg.webp',
+      imgsrcPC: '/img/happypeople-bg.webp',
+      imgsrcPAD: '/img/KVimg-Pad-03.webp',
+      imgsrcPHONE: '/img/KVimg-Phone-03.webp',
       imgalt: 'office background for a cheering team',
       button: 'btn03',
     },
@@ -85,6 +91,9 @@ export default function Slider() {
   }, []);
 
   const rendernav = windowWidth >= 1000;
+  const renderPC = windowWidth >= 1440;
+  const renderPAD = windowWidth <= 1440;
+  const renderPHONE = windowWidth <= 768;
 
   return (
     <Swiper
@@ -188,7 +197,15 @@ export default function Slider() {
           <Image
             width={1350}
             height={940}
-            src={obj.imgsrc}
+            src={
+              renderPC
+                ? obj.imgsrcPC
+                : renderPAD
+                ? obj.imgsrcPAD
+                : renderPHONE
+                ? obj.imgsrcPHONE
+                : ''
+            }
             alt={obj.imgalt}
             className="w-full h-screen "
           />
