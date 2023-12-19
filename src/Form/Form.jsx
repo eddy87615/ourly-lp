@@ -29,8 +29,8 @@ const FeeData = [
 function Fee() {
   return (
     <Element
-      id="section8"
-      // name="section8"
+      // id="section8"
+      name="section8"
       className="form px-4 lg:px-32  pt-0 w-full h-full overflow-hidden"
     >
       <h3 className="text-h4 lg:text-h3 font-bold text-center pt-10 pb-4 lg:pt-16">
