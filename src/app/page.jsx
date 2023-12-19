@@ -1,3 +1,4 @@
+import Loading from '@/Loading/Loading';
 import Header from '@/Header/Header';
 import Guide from '@/Guide/Guide';
 import Slider from '@/Slider/Slider';
@@ -14,21 +15,20 @@ import { Suspense } from 'react';
 
 export default function App() {
   return (
-    <>
-      <Suspense>
-        <Header />
-        <Guide />
-        <Slider />
-        <Scrollnav />
-        <Intro />
-        <Main />
-        <Sub />
-        <Function />
-        <Compare />
-        <Question />
-        <Form />
-        <Footer />
-      </Suspense>
-    </>
+    <Suspense>
+      {/* <Loading /> */}
+      <Header />
+      <Guide />
+      <Slider />
+      <Scrollnav />
+      <Intro />
+      <Main />
+      <Sub />
+      <Function />
+      <Compare />
+      <Question />
+      <Form />
+      <Footer />
+    </Suspense>
   );
 }

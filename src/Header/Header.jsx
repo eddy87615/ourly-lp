@@ -5,8 +5,8 @@ import Image from 'next/image';
 import './Header.css';
 import '@/app/globals.css';
 //
-import { useEffect, useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { useEffect, useState, useRef } from 'react';
+import { Link as ScrollLink, Link } from 'react-scroll';
 import Hamburger from '@/Hamburger/Hamburger';
 
 export default function Header() {
@@ -66,6 +66,25 @@ export default function Header() {
 
   const renderbtn = windowWidth >= 1000;
 
+  const scrollRef = useRef(null);
+  const clicksmooth = (e) => {
+    e.preventDefault();
+    const aonclick = document.getElementById('section8');
+    if (aonclick) {
+      const targetOffset =
+        aonclick.getBoundingClientRect().top + window.scrollY;
+
+      setTimeout(() => {
+        if (Math.abs(window.scrollY - targetOffset) > 5) {
+          aonclick.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }, 500);
+    }
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 z-[60] flex items-center justify-between
@@ -83,31 +102,45 @@ export default function Header() {
         id="logo"
         priority={true} // {false} | {true}
       />
-      <button
+      {/* <button
         className="font-bold text-button cursor-default"
         aria-label="otoiawase button"
-      >
-        <ScrollLink
-          href="section8"
-          to="section8"
-          smooth={true}
-          offset={0}
-          duration={500}
-          className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
-        px-14 py-2 rounded-full bg-white 
+      > */}
+      {/* <Link
+        aria-label="otoiawase button"
+        href="section8"
+        to="section8"
+        smooth={true}
+        offset={0}
+        duration={3000}
+        className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
+        px-14 py-2 rounded-full bg-white font-bold text-button cursor-default
         transition-all duration-500 "
-          style={{
-            opacity: showBtn && renderbtn ? '1' : '0',
-            pointerEvents: showBtn && renderbtn ? 'auto' : 'none',
-            cursor: showBtn && renderbtn ? 'pointer' : '',
-            // transform:
-            //   showBtn && renderbtn ? 'translateY(0)' : 'translateY(-100%)',
-            // display: showBtn && renderbtn ? 'block' : 'none',
-          }}
-        >
-          お問い合わせ
-        </ScrollLink>
-      </button>
+        style={{
+          opacity: showBtn && renderbtn ? '1' : '0',
+          pointerEvents: showBtn && renderbtn ? 'auto' : 'none',
+          cursor: showBtn && renderbtn ? 'pointer' : '',
+        }}
+      > */}
+      <a
+        href="#section8"
+        aria-label="to otoiawase section"
+        // onClick={clicksmooth}
+        // ref={scrollRef}
+        alt="section8"
+        className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
+        px-14 py-2 rounded-full bg-white font-bold text-button cursor-default
+        transition-all duration-500 "
+        style={{
+          opacity: showBtn && renderbtn ? '1' : '0',
+          pointerEvents: showBtn && renderbtn ? 'auto' : 'none',
+          cursor: showBtn && renderbtn ? 'pointer' : '',
+        }}
+      >
+        お問い合わせ
+      </a>
+      {/* </Link> */}
+      {/* </button> */}
       <Hamburger />
     </div>
   );

@@ -146,6 +146,18 @@ export default function Slider() {
   //   }
   // };
 
+  const scrollRef = useRef(null);
+  const clicksmooth = (e) => {
+    e.preventDefault();
+    const aonclick = document.getElementById('section8');
+    if (aonclick) {
+      aonclick.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <Swiper
       style={{
@@ -224,14 +236,7 @@ export default function Slider() {
               leading-h4 lg:leading-h4"
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
-            <Link
-              href="section8"
-              to="section8"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
+            <a href="#section8">
               <button
                 // onClick={otoiawasebtn}
                 // onClick={handleButtonClick}
@@ -244,7 +249,7 @@ export default function Slider() {
               >
                 お問い合わせ
               </button>
-            </Link>
+            </a>
           </div>
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
