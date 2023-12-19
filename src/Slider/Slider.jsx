@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { Link as ScrollLink, scroller } from 'react-scroll';
+import Link from 'next/link';
 import Image from 'next/image';
 import { SlArrowDown } from 'react-icons/sl';
 //Swiper導入
@@ -95,6 +96,21 @@ export default function Slider() {
   const renderPAD = windowWidth <= 1440;
   const renderPHONE = windowWidth <= 768;
 
+  const otoiawasebtn = () => {
+    const formsection = document.getElementById('section8');
+    if (formsection) {
+      const offsetPHONE = -100;
+      const offsetPC = 0;
+      const sectionpositionPHONE = formsection.offsetTop + offsetPHONE;
+      const sectionpositionPC = formsection.offsetTop + offsetPC;
+
+      window.scrollTo({
+        top: `${rendernav ? sectionpositionPC : sectionpositionPHONE}`,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <Swiper
       style={{
@@ -173,25 +189,26 @@ export default function Slider() {
               leading-h4 lg:leading-h4"
               dangerouslySetInnerHTML={{ __html: obj.ourlytext }}
             ></p>
-            <ScrollLink
-              href="section8"
+            {/* <Link
+              href="#section8"
               to="section8"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-200}
               duration={500}
-            >
-              <button
-                className={`${obj.button} relative 
+              > */}
+            <button
+              onClick={otoiawasebtn}
+              className={`${obj.button} relative 
                 w-[200px] md:w-[250px] lg:w-[350px] 
                 h-[60px] md:h-[80px] lg:h-[100px]
                bg-white border-ourly-theme border-4 rounded-full 
                text-text md:text-[20px] lg:text-h3 mt-[4%] font-bold shadow-ourly 
                transition-all duration-300`}
-              >
-                お問い合わせ
-              </button>
-            </ScrollLink>
+            >
+              お問い合わせ
+            </button>
+            {/* </Link> */}
           </div>
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
