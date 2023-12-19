@@ -104,7 +104,7 @@ export default function Form() {
     // <Element name="section8" className="form px-4 lg:px-32 pb-16 pt-0">
     <>
       <Fee />
-      <Element id="section9">
+      <Element name="section9">
         <form
           className=" bg-white border-4 border-purple-dark rounded-[16px] my-0        mx-auto 
         flex flex-col 
