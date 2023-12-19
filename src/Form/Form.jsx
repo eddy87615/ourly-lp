@@ -29,8 +29,9 @@ const FeeData = [
 function Fee() {
   return (
     <Element
-      name="section8"
-      className="form px-4 lg:px-32 pb-16 pt-0 w-full h-full overflow-hidden"
+      id="section8"
+      // name="section8"
+      className="form px-4 lg:px-32  pt-0 w-full h-full overflow-hidden"
     >
       <h3 className="text-h4 lg:text-h3 font-bold text-center pt-10 pb-4 lg:pt-16">
         料金案内
@@ -105,7 +106,7 @@ export default function Form() {
       <Fee />
       <Element id="section9">
         <form
-          className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto 
+          className=" bg-white border-4 border-purple-dark rounded-[16px] my-0        mx-auto 
         flex flex-col 
         px-4 pb-8 lg:px-32 lg:py-20 w-[90%]"
           id="freetryform"
@@ -329,7 +330,7 @@ export default function Form() {
             お問い合わせを送信
           </button>
         </form>
-        <p className="note text-center text-[14px] lg:text-button pt-16 px-6 leading-text">
+        <p className="note text-center text-[14px] lg:text-button py-16 px-6 leading-text">
           ※フォームが送信されないなどの場合は、お手数ですがsupport@ourly.co.jpまでお問い合わせください。
         </p>
       </Element>

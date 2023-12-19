@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, scroller } from 'react-scroll';
 import Image from 'next/image';
 import { SlArrowDown } from 'react-icons/sl';
 //Swiper導入
@@ -83,15 +83,6 @@ export default function Slider() {
       };
     }
   }, []);
-
-  const handleClick = () => {
-    scroller.scrollTo('section9', {
-      spy: true,
-      smooth: true,
-      offset: -100,
-      duration: 500,
-    });
-  };
 
   const rendernav = windowWidth >= 1000;
 
