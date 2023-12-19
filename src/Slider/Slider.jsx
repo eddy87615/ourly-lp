@@ -100,6 +100,7 @@ export default function Slider() {
       style={{
         '--swiper-pagination-color': '#fff',
         '--swiper-navigation-color': '#fff',
+        'overflow-y': 'clip',
       }}
       spaceBetween={0}
       loop={true}
@@ -195,8 +196,8 @@ export default function Slider() {
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
           <Image
-            width={1350}
-            height={940}
+            width={renderPC ? 1350 : renderPAD ? 800 : renderPHONE ? 500 : ''}
+            height={renderPC ? 940 : renderPAD ? 900 : renderPHONE ? 700 : ''}
             src={
               renderPC
                 ? obj.imgsrcPC
