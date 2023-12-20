@@ -44,7 +44,7 @@ export default function Form() {
         <form
           className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto 
         flex flex-col 
-        px-4 pb-8 lg:px-32 lg:py-20 w-[78%]"
+        px-4 pb-8 lg:px-32 lg:py-20 w-[90%] lg:w-[78%]"
           id="freetryform"
           onSubmit={handleSubmit(onSubmit)}
         >
@@ -252,7 +252,7 @@ export default function Form() {
             </label>
             {errors.privacy && (
               <p className="text-red-500 text-[12px] mt-1 font-bold">
-                プライバシーをチェックしてください。
+                プライバシーポリシーをチェックしてください。
               </p>
             )}
           </label>

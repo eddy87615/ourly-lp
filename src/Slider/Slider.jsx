@@ -167,10 +167,10 @@ export default function Slider() {
       spaceBetween={0}
       loop={true}
       centeredSlides={true}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
@@ -279,7 +279,7 @@ export default function Slider() {
           />
         </SwiperSlide>
       ))}
-      <span className="slide-hint absolute bottom-[4%] left-1/2 translate-x-[-50%] z-10 w-[5%] h-auto">
+      <span className="slide-hint absolute bottom-[4%] left-1/2 translate-x-[-50%] z-10 w-[10%] md:w-[5%] h-auto">
         <SlArrowDown style={{ color: 'white' }} className="w-full h-full" />
       </span>
     </Swiper>
