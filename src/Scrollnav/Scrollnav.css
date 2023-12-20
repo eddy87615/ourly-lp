@@ -135,8 +135,23 @@
   border-radius: 8px;
   transition-duration: 0.5s;
 }
-
 .scroll-nav > a:nth-child(8):hover:after {
+  content: '料金案内';
+  width: max-content;
+  height: fit-content;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 200%;
+  background-color: #ff4448;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+
+.scroll-nav > a:nth-child(9):hover:after {
   content: 'お問い合わせ';
   width: max-content;
   height: fit-content;
@@ -150,4 +165,4 @@
   background-color: #ff4448;
   border-radius: 8px;
   transition-duration: 0.5s;
-} /*# sourceMappingURL=Scrollnav.css.map */
+}

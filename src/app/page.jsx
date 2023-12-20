@@ -8,6 +8,7 @@ import Function from '@/Function/Function';
 import Scrollnav from '@/Scrollnav/Scrollnav';
 import Compare from '@/Compare/Compare';
 import Question from '@/Question/Question';
+import Fee from '@/Fee/Fee';
 import Form from '@/Form/Form';
 import Footer from '@/Footer/Footer';
 import Reload from '@/Reload/Reload';
@@ -27,6 +28,7 @@ export default function App() {
       <Function />
       <Compare />
       <Question />
+      <Fee />
       <Form />
       <Footer />
     </Suspense>

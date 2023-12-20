@@ -56,8 +56,13 @@ const scrollnav = [
   },
   {
     id: 'section8',
-    text: 'お問い合わせ',
+    text: '料金案内',
     link: '#section8',
+  },
+  {
+    id: 'section9',
+    text: 'お問い合わせ',
+    link: '#section9',
   },
 ];
 
@@ -106,6 +111,7 @@ export default function Scrollnav() {
       'section6',
       'section7',
       'section8',
+      'section9',
     ];
     for (let i = 0; i < section.length; i++) {
       const element = document.getElementById(section[i]);
@@ -148,7 +154,7 @@ export default function Scrollnav() {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={300}
           key={section.link}
           activeClass="active"
           alt={section.text}

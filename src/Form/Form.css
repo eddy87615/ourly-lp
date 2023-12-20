@@ -36,37 +36,6 @@ label textarea {
   z-index: -1;
 }
 
-.form {
-  background-image: url(/img/logo-P.svg);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 2% 2%;
-}
-
-.fee::after {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 8px;
-  border-radius: 20px;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--purple-dark);
-}
-
-.fee::before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 60px;
-  border-radius: 20px;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--purple-dark);
-}
-
 @media screen and (max-width: 850px) {
   .privacy p {
     font-size: 12px;
