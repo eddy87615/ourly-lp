@@ -275,6 +275,37 @@
     /* right: -10%; */
   }
 }
+@media screen and (max-width: 820px) {
+  .subend01 {
+    justify-content: end;
+    padding-right: 10%;
+  }
+  .subend01 p {
+    width: fit-content;
+  }
+  .subend01 img {
+    left: 10%;
+  }
+
+  .subend02 {
+    justify-content: start;
+  }
+  .subend02 p {
+    width: fit-content;
+    padding-left: 4%;
+  }
+
+  .subend03 {
+    justify-content: end;
+  }
+  .subend03 img {
+    left: 4%;
+  }
+  .subend03 p {
+    width: fit-content;
+    padding-right: 4%;
+  }
+}
 @media screen and (max-width: 768px) {
   .title {
     display: grid;
