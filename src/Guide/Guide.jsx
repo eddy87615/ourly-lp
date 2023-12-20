@@ -35,12 +35,14 @@ const Type = () => {
 
 export default function Guide() {
   const [windowWidth, setWindowWidth] = useState(0);
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
         setWindowWidth(window.innerWidth);
       };
       handleResize();
+      document.body.style.overflow = 'hidden';
 
       window.addEventListener('resize', handleResize);
 
@@ -69,6 +71,7 @@ export default function Guide() {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
     setIsOpen(true);
+    document.body.style.overflowY = 'auto';
   };
 
   const [isGuideOpen, setGuideOpen] = useState({
@@ -90,7 +93,6 @@ export default function Guide() {
       window.scrollTo({
         top: 0,
       });
-      document.body.style.overflow = 'auto';
     }
   };
 
@@ -101,7 +103,9 @@ export default function Guide() {
       if (typeof window !== 'undefined') {
         const shouldHide = window.innerWidth < 1440;
         if (!shouldHide) {
-          document.body.style.overflow = 'hidden';
+          document.body.style.overflowY = 'hidden';
+        } else {
+          document.body.style.overflowY = 'auto';
         }
         setIsHidden(shouldHide);
       }
@@ -112,7 +116,6 @@ export default function Guide() {
         window.removeEventListener('resize', handleResize);
       };
     };
-
     handleResize();
   }, []);
 
@@ -154,7 +157,7 @@ export default function Guide() {
 
   return (
     <div
-      className={`back fixed top-0 left-0 w-full h-screen z-[90] bg-white ${
+      className={`back  fixed top-0 left-0 w-full h-screen z-[90] bg-white ${
         isOpen
           ? 'translate-y-[-200vh] opacity-0 transition-all duration-[2000ms] ease-out'
           : ''

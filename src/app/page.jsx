@@ -1,4 +1,3 @@
-import Loading from '@/Loading/Loading';
 import Header from '@/Header/Header';
 import Guide from '@/Guide/Guide';
 import Slider from '@/Slider/Slider';
@@ -11,12 +10,13 @@ import Compare from '@/Compare/Compare';
 import Question from '@/Question/Question';
 import Form from '@/Form/Form';
 import Footer from '@/Footer/Footer';
+import Reload from '@/Reload/Reload';
 import { Suspense } from 'react';
 
 export default function App() {
   return (
     <Suspense>
-      {/* <Loading /> */}
+      <Reload />
       <Header />
       <Guide />
       <Slider />

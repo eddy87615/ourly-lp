@@ -1,3 +1,4 @@
+import React from 'react';
 import { Noto_Sans_JP } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
@@ -13,7 +14,11 @@ export const metadata = {
   description:
     'ourlyは、社員のエンゲージメントを向上させる、web社内報ツールです。',
 };
-
+if (typeof window !== 'undefined') {
+  window.onload = () => {
+    window.scrollTo(0, 0);
+  };
+}
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
