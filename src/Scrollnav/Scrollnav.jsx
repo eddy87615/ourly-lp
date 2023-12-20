@@ -152,9 +152,9 @@ export default function Scrollnav() {
           href={section.id}
           to={section.id}
           spy={true}
-          smooth={true}
+          smooth={false}
           offset={0}
-          duration={300}
+          duration={500}
           key={section.link}
           activeClass="active"
           alt={section.text}

@@ -42,9 +42,9 @@ export default function Form() {
     <>
       <Element name="section9" id="section9">
         <form
-          className=" bg-white border-4 border-purple-dark rounded-[16px] my-0        mx-auto 
+          className=" bg-white border-4 border-purple-dark rounded-[16px] my-0 mx-auto 
         flex flex-col 
-        px-4 pb-8 lg:px-32 lg:py-20 w-[90%]"
+        px-4 pb-8 lg:px-32 lg:py-20 w-[78%]"
           id="freetryform"
           onSubmit={handleSubmit(onSubmit)}
         >

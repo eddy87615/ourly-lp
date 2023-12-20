@@ -62,7 +62,7 @@ export default function Fee() {
           </div>
         ))}
       </div>
-      <p className="bottomtxt text-[16px] lg:text-h4 leading-h4 text-center relative bottom-0 sm:px-4 px-0 py-[8%]">
+      <p className="bottomtxt text-[16px] lg:text-h4 leading-h4 text-center relative bottom-0 sm:px-4 px-0 py-[4%]">
         お客様ごとに、最適なご提案をいたしますので、
         <br />
         まずは下記お問い合わせフォームよりお問い合わせ下さい。
