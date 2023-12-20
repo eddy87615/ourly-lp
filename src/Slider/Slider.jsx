@@ -163,7 +163,6 @@ export default function Slider() {
       style={{
         '--swiper-pagination-color': '#fff',
         '--swiper-navigation-color': '#fff',
-        'overflow-y': 'clip',
       }}
       spaceBetween={0}
       loop={true}
@@ -181,7 +180,11 @@ export default function Slider() {
       navigation={rendernav ? true : false}
     >
       {slider.map((obj, index) => (
-        <SwiperSlide className={`${obj.bgclass} relative`} key={index}>
+        <SwiperSlide
+          className={`${obj.bgclass} relative`}
+          key={index}
+          style={{ overflow: 'hidden' }}
+        >
           <div className={obj.titleclass}>
             {/* {obj.h1text.split('<br />').map((txt, index) => (
               <h1
