@@ -11,15 +11,25 @@ export default function Loading() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowLoading(false);
+      document.body.style.overflow = 'hidden';
     }, 3000);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
+  useEffect(() => {
+    if (!showLoading) {
+      const loadingbg = document.querySelector('#loadingBG');
+      if (loadingbg) {
+        loadingbg.classList.add('loadingend');
+      }
+    }
+  }, [showLoading]);
+
   return showLoading ? (
     <div
-      className={`back loading w-screen h-screen z-[90] fixed top-0 left-0 flex justify-center items-center
-    ${showLoading ? '' : 'loadingend'}`}
+      className="back loading w-screen h-screen z-[9999] fixed top-0 left-0 flex justify-center items-center"
+      id="loadingBG"
     >
       <Image
         src="/img/ourly_logo.webp"

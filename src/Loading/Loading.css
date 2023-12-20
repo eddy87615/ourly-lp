@@ -1,5 +1,5 @@
 .loading {
-  animation: loading 1s ease infinite;
+  animation: loading 2s ease infinite;
 }
 
 @keyframes loading {
@@ -16,6 +16,5 @@
 
 .loadingend {
   opacity: 0;
-  transform: translateY(-100%);
   transition-duration: 0.5s;
 }

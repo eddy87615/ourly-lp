@@ -67,23 +67,23 @@ export default function Header() {
   const renderbtn = windowWidth >= 1000;
 
   const scrollRef = useRef(null);
-  const clicksmooth = (e) => {
-    e.preventDefault();
-    const aonclick = document.getElementById('section8');
-    if (aonclick) {
-      const targetOffset =
-        aonclick.getBoundingClientRect().top + window.scrollY;
+  // const clicksmooth = (e) => {
+  //   e.preventDefault();
+  //   const aonclick = document.getElementById('section8');
+  //   if (aonclick) {
+  //     const targetOffset =
+  //       aonclick.getBoundingClientRect().top + window.scrollY;
 
-      setTimeout(() => {
-        if (Math.abs(window.scrollY - targetOffset) > 5) {
-          aonclick.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-        }
-      }, 500);
-    }
-  };
+  //     setTimeout(() => {
+  //       if (Math.abs(window.scrollY - targetOffset) > 5) {
+  //         aonclick.scrollIntoView({
+  //           behavior: 'smooth',
+  //           block: 'start',
+  //         });
+  //       }
+  //     }, 500);
+  //   }
+  // };
 
   return (
     <div
@@ -122,12 +122,14 @@ export default function Header() {
           cursor: showBtn && renderbtn ? 'pointer' : '',
         }}
       > */}
-      <a
-        href="#section8"
+      <Link
+        href="section8"
+        to="section8"
         aria-label="to otoiawase section"
         // onClick={clicksmooth}
         // ref={scrollRef}
-        alt="section8"
+        alt="to otoiawase section"
+        offset={renderbtn ? 0 : -100}
         className="otoiawase border-4 border-solid border-ourly-theme shadow-ourly
         px-14 py-2 rounded-full bg-white font-bold text-button cursor-default
         transition-all duration-500 "
@@ -138,7 +140,7 @@ export default function Header() {
         }}
       >
         お問い合わせ
-      </a>
+      </Link>
       {/* </Link> */}
       {/* </button> */}
       <Hamburger />
