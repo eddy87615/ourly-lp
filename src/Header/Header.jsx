@@ -125,7 +125,7 @@ export default function Header() {
       <Link
         href="section8"
         to="section8"
-        aria-label="to otoiawase section"
+        aria-label="お問い合わせ"
         // onClick={clicksmooth}
         // ref={scrollRef}
         alt="to otoiawase section"
