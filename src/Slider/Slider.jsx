@@ -263,8 +263,8 @@ export default function Slider() {
           <span className={obj.triangleup}></span>
           <span className={obj.triangledown}></span>
           <Image
-            width={renderPC ? 1350 : renderPAD ? 750 : renderPHONE ? 412 : ''}
-            height={renderPC ? 940 : renderPAD ? 1000 : renderPHONE ? 823 : ''}
+            width={renderPC ? 1350 : renderPAD ? 824 : renderPHONE ? 412 : ''}
+            height={renderPC ? 940 : renderPAD ? 1646 : renderPHONE ? 823 : ''}
             src={
               renderPC
                 ? obj.imgsrcPC
