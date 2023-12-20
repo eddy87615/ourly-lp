@@ -192,9 +192,9 @@
       'txt txt pic';
   }
 
-  .title .title-grid {
+  /* .title .title-grid {
     padding-right: 30px;
-  }
+  } */
   .title .text-grid {
     padding-top: 24px;
     grid-area: txt;
@@ -368,6 +368,7 @@
   }
   .title .title-grid {
     padding: 0;
+    justify-content: start;
   }
 
   .content-div:hover .pic-grid {
@@ -436,7 +437,7 @@
   .title .title-grid {
     padding: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
   .subend01 {
     justify-content: end;
