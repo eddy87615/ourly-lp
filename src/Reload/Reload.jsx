@@ -12,7 +12,7 @@ const Reload = () => {
     window.addEventListener('beforeunload', reloadtop);
 
     return () => {
-      window.addEventListener('beforeunload', reloadtop);
+      window.removeEventListener('beforeunload', reloadtop);
     };
   }, []);
   return null;
