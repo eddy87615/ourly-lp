@@ -248,7 +248,7 @@ export default function Guide() {
       </div>
       <button
         aria-label="最初からourlyを知る read the page from the top"
-        className="open text-[18px] font-bold bottom-[10%] lg:bottom-[2%] xl:bottom-[6%] 2xl:bottom-[10%] right-[10%] absolute"
+        className="open text-[18px] font-bold bottom-[10%] lg:bottom-[2%] xl:bottom-[8%] 2xl:bottom-[10%] right-[10%] absolute"
         onClick={() => {
           handleOpen();
           handleTop();

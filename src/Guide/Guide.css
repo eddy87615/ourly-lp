@@ -125,4 +125,7 @@
   #guide02 img {
     width: 80%;
   }
+  .guideh1 {
+    padding: 6% 0 !important;
+  }
 }
