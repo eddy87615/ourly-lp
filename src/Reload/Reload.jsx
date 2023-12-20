@@ -9,10 +9,10 @@ const Reload = () => {
     const reloadtop = () => {
       window.scrollTo(0, 0);
     };
-    window.addEventListener('beforeunload', reloadtop);
+    window.addEventListener('unload', reloadtop);
 
     return () => {
-      window.removeEventListener('beforeunload', reloadtop);
+      window.removeEventListener('unload', reloadtop);
     };
   }, []);
   return null;
