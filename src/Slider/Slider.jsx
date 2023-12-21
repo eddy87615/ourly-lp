@@ -243,7 +243,7 @@ export default function Slider() {
               href="section8"
               to="section8"
               offset={rendernav ? 0 : -100}
-              aria-label="to otoiawase section"
+              aria-label="お問い合わせ"
               alt="to otoiawase section"
             >
               <button
