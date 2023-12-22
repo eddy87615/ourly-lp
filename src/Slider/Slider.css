@@ -352,7 +352,7 @@ button:hover {
 
   .page03::before {
     width: 100%;
-    top: 20%;
+    bottom: -10%;
   }
 }
 @media screen and (max-width: 850px) {
