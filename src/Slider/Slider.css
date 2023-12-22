@@ -327,7 +327,6 @@ button:hover {
     top: 50%;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .triangle01,
   .triangle02,
@@ -341,7 +340,21 @@ button:hover {
     display: block;
   }
 }
+@media screen and (max-width: 1180px) {
+  .page01::before {
+    width: 80%;
+  }
+  .title01,
+  .title02,
+  .title03 {
+    top: 20%;
+  }
 
+  .page03::before {
+    width: 100%;
+    top: 20%;
+  }
+}
 @media screen and (max-width: 850px) {
   .triangle01,
   .triangle02,

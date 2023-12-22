@@ -213,6 +213,17 @@
     transform: scale(2.3);
   }
 }
+@media screen and (max-width: 1180px) {
+  .hexagon01,
+  .hexagon02,
+  .hexagon03,
+  .hexagon04,
+  .hexagon05,
+  .hexagon06,
+  .hexagon07 {
+    width: 16% !important;
+  }
+}
 
 @media screen and(max-width:768px) {
   .hexagon01:hover,

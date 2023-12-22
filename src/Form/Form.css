@@ -36,6 +36,12 @@ label textarea {
   z-index: -1;
 }
 
+@media screen and (max-width: 1880px) {
+  form {
+    width: 82% !important;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .privacy p {
     font-size: 12px;

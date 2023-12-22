@@ -85,3 +85,19 @@
   background-position: 10% 20%;
   background-size: 50%;
 }
+
+@media screen and (max-width: 1180px) {
+  .back-img {
+    padding: 0 8% !important;
+  }
+  .ul-grid:before {
+    background-position: 0 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 35%;
+    height: 30%;
+    top: -20%;
+    left: -5%;
+  }
+}
