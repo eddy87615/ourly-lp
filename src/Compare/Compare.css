@@ -23,6 +23,12 @@
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
+
+@media screen and (max-width: 1440px) {
+  .compare img {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 1180px) {
   .compare img {
     width: 70%;

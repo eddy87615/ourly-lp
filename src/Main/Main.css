@@ -94,15 +94,15 @@ main {
 .solvedman02::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 4%;
-  width: 50%;
-  height: 50%;
-  transform: rotate(-20deg);
+  top: 30%;
+  right: 0%;
+  width: 15%;
+  height: 20%;
+  transform: rotate(20deg);
   background-image: url(/img/light.gif);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 30%;
+  background-size: contain;
 }
 
 .annoyingwoman {
@@ -149,7 +149,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.solvedwoman::before {
+/* .solvedwoman::before {
   content: '';
   background-image: url(/img/heart.gif);
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ main {
   left: 0;
   width: 20%;
   height: 50%;
-}
+} */
 
 .annoyingman01::before {
   content: '';
@@ -297,9 +297,10 @@ main {
   }
 
   .solvedman02::before {
-    width: 40%;
-    height: 20%;
+    width: 18%;
+    height: 18%;
     top: 40%;
+    right: 0;
   }
   .solvedman02 {
     background-size: 40%;

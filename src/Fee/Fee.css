@@ -28,7 +28,11 @@
   transform: translate(-50%, -50%);
   background-color: var(--purple-dark);
 }
-
+@media screen and (max-width: 1440px) {
+  .fee {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 1180px) {
   .form {
     padding: 0 4% !important;
