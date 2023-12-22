@@ -167,10 +167,10 @@ export default function Slider() {
       spaceBetween={0}
       loop={true}
       centeredSlides={true}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // }}
       pagination={{
         clickable: true,
       }}
