@@ -137,7 +137,7 @@ export default function Header() {
           opacity: showBtn && renderbtn ? '1' : '0',
           pointerEvents: showBtn && renderbtn ? 'auto' : 'none',
           cursor: showBtn && renderbtn ? 'pointer' : '',
-          // width: showBtn && renderbtn ? '' : '0',
+          width: renderbtn ? '' : '0',
         }}
       >
         お問い合わせ
