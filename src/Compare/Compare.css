@@ -31,7 +31,7 @@
 }
 @media screen and (max-width: 1180px) {
   .compare img {
-    width: 100%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 820px) {
