@@ -19,7 +19,7 @@ main {
 .solvedman01 {
   background-image: url(/img/communication.webp);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 38%;
   background-position: 80% 90%;
 }
 .solvedman01::after {

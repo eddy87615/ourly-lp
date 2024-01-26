@@ -39,6 +39,9 @@
     background-position: 70% 70%;
     width: 50%;
   }
+  .compare img {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
   .compare::before {
