@@ -98,7 +98,7 @@ export default function Header() {
         height={100}
         src="/img/ourly_logo.webp"
         alt="ourly logo"
-        className="cursor-pointer w-1/2 lg:w-1/5 h-auto"
+        className="cursor-pointer w-1/2 sm:w-[30%] lg:w-1/5 h-auto"
         id="logo"
         priority={true} // {false} | {true}
       />
